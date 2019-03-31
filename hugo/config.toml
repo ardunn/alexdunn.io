@@ -1,9 +1,11 @@
-baseurl = "https://www.example.com/"
+baseurl = "https://alexdunn.io/"
 title = "Alex Dunn personal site"
 author = "David Hamp-Gonsalves"
 canonifyurls = true
 languagecode = "en"
-theme = "hugo-black-and-light-theme"
+theme = "black_and_white"
+publishDir = "../docs"
+
 
 pygmentsstyle       = "bw"
 pygmentscodefences  = true
@@ -14,11 +16,11 @@ pygmentscodefences  = true
 
 [[menu.main]]
     name = "About"
-    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+    url  = "/about/"
 [[menu.main]]
     name = "Resume/CV"
-    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+    url  = "/posts/"
 [[menu.main]]
     name = "Posts"
-    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+    url  = "/posts/"
 
