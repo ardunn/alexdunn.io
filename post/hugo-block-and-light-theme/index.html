@@ -20,10 +20,10 @@
     <title>
       
       
-         Getting Started with Hugo 
+         Black &amp; Light Demo 
       
     </title>
-    <link rel="canonical" href="https://alexdunn.io/post/hugoisforlovers/">
+    <link rel="canonical" href="https://alexdunn.io/post/hugo-block-and-light-theme/">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu" rel="stylesheet">
 <style>
@@ -398,111 +398,112 @@
         
           <li><a href="https://alexdunn.io/about/">About</a></li>
         
-          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+          <li><a href="https://alexdunn.io/fun/">Fun</a></li>
         
-          <li><a href="https://alexdunn.io/posts/">Resume/CV</a></li>
+          <li><a href="https://alexdunn.io/post/">Posts</a></li>
+        
+          <li><a href="https://alexdunn.io/post/">Resume/CV</a></li>
         
       </ul>
     </section>
 
 
 <section id=content>
-  <h1> Getting Started with Hugo </h1>
+  <h1> Black &amp; Light Demo </h1>
 
   
     <div id=sub-header>
-      April 2014 · 2 minute read
+      January 2017 · 1 minute read
     </div>
   
 
   <div class="entry-content">
     
 
-<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<p><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">Black and Light</a> is a high contrast, performant and Javascript-free theme.</p>
 
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
+<h2 id="features">Features</h2>
 
-<p>Save it somewhere specific as we will be using it in the next step.</p>
+<ul>
+<li>Loads in a single request (with web-fonts disabled)</li>
+<li>100 / 100 on Google Page Speed test (100 / 100 on mobile with web-fonts disabled)</li>
+<li>Scriptless (unless you enable Google Analyitcs)</li>
+<li>Styles inlined in head</li>
+<li>High Contrast</li>
+</ul>
 
-<p>More complete instructions are available at <a href="https://alexdunn.io/overview/installing/">installing hugo</a></p>
+<h2 id="style-demo">Style Demo</h2>
 
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+<h1 id="h1-heading">h1 Heading</h1>
 
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
+<h2 id="h2-heading">h2 Heading</h2>
 
-<p>Follow the following steps:</p>
+<h3 id="h3-heading">h3 Heading</h3>
+
+<h4 id="h4-heading">h4 Heading</h4>
+
+<h5 id="h5-heading">h5 Heading</h5>
+
+<h6 id="h6-heading">h6 Heading</h6>
+
+<hr />
+
+<p><strong>This is bold text</strong></p>
+
+<p><strong>This is bold text</strong></p>
+
+<p><em>This is italic text</em></p>
+
+<p><em>This is italic text</em></p>
+
+<p><del>Deleted text</del></p>
+
+<blockquote>
+<p>Block quotes are
+written like so.</p>
+
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+
+<p>Some text, and some <code>code</code> and then a nice plain <a href="https://github.com/davidhampgonsalves/davidhampgonsalves.com-hugo" title="title text!">link with title</a>.</p>
+
+<p>and then</p>
+
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+
+<ul>
+<li>Marker character change forces new list start:</li>
+<li>Ac tristique libero volutpat at</li>
+</ul></li>
+<li>Very easy!</li>
+</ul>
+
+<p>vs.</p>
 
 <ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
 </ol>
 
-<p>Corresponding pseudo commands:</p>
+<h2 id="code">Code</h2>
 
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre>
+<p>Inline <code>code</code></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">var</span> foo = <span style="font-weight:bold">function</span> (bar) {
+  <span style="font-weight:bold">return</span> bar++;
+};
 
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
-
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
-
-<p>The best way to learn something is to play with it.</p>
-
+console.log(foo(5));
+</code></pre></div>
   </div>
 
   <div id=links>
     
-      <a class="basic-alignment left" href="https://alexdunn.io/post/migrate-from-jekyll/">&laquo; Migrate to Hugo from Jekyll</a>
+      <a class="basic-alignment left" href="https://alexdunn.io/post/creating-a-new-theme/">&laquo; Creating a New Theme</a>
     
-    
-      <a class="basic-alignment left" href="https://alexdunn.io/post/goisforlovers/">(Hu)go Template Primer &raquo;</a>
     
   </div>
 </section>

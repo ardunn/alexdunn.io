@@ -4,7 +4,7 @@ author = "David Hamp-Gonsalves"
 canonifyurls = true
 languagecode = "en"
 theme = "black_and_white"
-publishDir = "../docs"
+publishDir = "../"
 
 
 pygmentsstyle       = "bw"
@@ -19,8 +19,10 @@ pygmentscodefences  = true
     url  = "/about/"
 [[menu.main]]
     name = "Resume/CV"
-    url  = "/posts/"
+    url  = "/post/"
 [[menu.main]]
     name = "Posts"
-    url  = "/posts/"
-
+    url  = "/post/"
+[[menu.main]]
+    name = "Fun"
+    url  = "/fun/"
