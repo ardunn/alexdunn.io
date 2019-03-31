@@ -1,0 +1,24 @@
+baseurl = "https://www.example.com/"
+title = "Alex Dunn personal site"
+author = "David Hamp-Gonsalves"
+canonifyurls = true
+languagecode = "en"
+theme = "hugo-black-and-light-theme"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "alexdunn.io"
+  disableWebFonts = false
+
+[[menu.main]]
+    name = "About"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Resume/CV"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Posts"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+
