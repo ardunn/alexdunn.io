@@ -6,23 +6,18 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexdunn.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Why Machine Learning etc.</title>
-      <link>https://alexdunn.io/posts/ds_problems/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Blog coming soon...</title>
+      <link>https://alexdunn.io/posts/tmp/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/ds_problems/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+      <guid>https://alexdunn.io/posts/tmp/</guid>
+      <description>Blog is coming soon!</description>
     </item>
     
   </channel>

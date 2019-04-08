@@ -5,8 +5,19 @@ draft: false
 heading: false
 ---
 
+
+Some random non-work related stuff that doesn't make sense being in a post. Probably in some state of disrepair.
+
+
 # TOC
 * [gallery of dslr photos](#photos-gallery)
+* [software that's doing it right](#good-software)
+
+
+## Good software
+* [Notion](https://notion.so) - an app for note taking, productivity, writing, ideas, and just about evanything else.
+* [Dark reader](https://darkreader.org/) - dev reading 
+
 
 
 ## Photos Gallery
