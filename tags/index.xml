@@ -12,56 +12,20 @@
     
     
     <item>
-      <title>Development</title>
-      <link>https://alexdunn.io/tags/development/</link>
+      <title>Data Science</title>
+      <link>https://alexdunn.io/tags/data-science/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/tags/development/</guid>
+      <guid>https://alexdunn.io/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://alexdunn.io/tags/go/</link>
+      <title>Work</title>
+      <link>https://alexdunn.io/tags/work/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://alexdunn.io/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://alexdunn.io/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://alexdunn.io/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://alexdunn.io/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/tags/themes/</guid>
+      <guid>https://alexdunn.io/tags/work/</guid>
       <description></description>
     </item>
     

@@ -1,17 +1,16 @@
 +++
-title = "Getting Started with Hugo"
+title = "Why Machine Learning etc."
 description = ""
 tags = [
-    "go",
-    "golang",
-    "hugo",
-    "development",
+    "data-science",
+    "work",
 ]
 date = "2014-04-02"
 categories = [
     "Development",
     "golang",
 ]
+commentson = true
 +++
 
 ## Step 1. Install Hugo

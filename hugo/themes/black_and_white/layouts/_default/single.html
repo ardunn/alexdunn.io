@@ -23,6 +23,10 @@
   </div>
 </section>
 
+{{ if .Params.commentson }}
+{{ partial "disqus.html" . }}
+{{ end }} 
+
 {{ partial "footer.html" . }}
 
 
