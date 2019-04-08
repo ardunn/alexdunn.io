@@ -1,18 +1,22 @@
 ---
-title: ""
+title: "Fun"
 date: false
 draft: true
 heading: false
 ---
 
+# TOC
+* [gallery of dslr photos](#photos-gallery)
 
-# Some photos
-#### Some landscape pics
 
+## Photos Gallery
+#### Some landscape pics I took with a DSLR
+
+![alt text](/lowres_yuba.jpg)
+yuba river, ca
 
 ![alt text](/lowres_yuba2.jpg)
 yuba river, ca
-
 
 ![alt text](/lowres_astoria.jpg)
 astoria, or
@@ -20,17 +24,14 @@ astoria, or
 ![alt text](/lowres_cathedral.jpg)
 cathedral peak, ca
 
-
 ![alt text](/lowres_creek.jpg)
 eastern sierra, ca
-
 
 ![alt text](/lowres_grouse.jpg)
 grouse ridge, ca
 
 ![alt text](/lowres_grouse2.jpg)
 grouse ridge, ca
-
 
 ![alt text](/lowres_la.jpg)
 downtown la, ca
@@ -41,21 +42,15 @@ echo park, ca
 ![alt text](/lowres_sabrina.jpg)
 sabrina wilderness, ca
 
-
 ![alt text](/lowres_santa_barbara.jpg)
 santa barbara, ca
 
 ![alt text](/lowres_seattle.jpg)
 seattle, wa
 
-
 ![alt text](/lowres_tahoe.jpg)
 lake tahoe, nv
 
 ![alt text](/lowres_yosemite.jpg)
 yosemite, ca
-
-
-![alt text](/lowres_yuba.jpg)
-yuba, ca
 
