@@ -50,10 +50,6 @@
   </url>
   
   <url>
-    <loc>https://alexdunn.io/fun/</loc>
-  </url>
-  
-  <url>
     <loc>https://alexdunn.io/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -75,10 +71,6 @@
     <loc>https://alexdunn.io/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alexdunn.io/cv/</loc>
   </url>
   
   <url>

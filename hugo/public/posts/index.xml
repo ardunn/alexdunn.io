@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://alexdunn.io/</link>
-    <description>Recent content on </description>
+    <title>Posts on </title>
+    <link>https://alexdunn.io/posts/</link>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 08 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://alexdunn.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alexdunn.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -65,38 +65,6 @@ Follow the following steps:
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>Fun</title>
-      <link>https://alexdunn.io/fun/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/fun/</guid>
-      <description>TOC  gallery of dslr photos  Photos Gallery Some landscape pics I took with a DSLR yuba river, ca
-yuba river, ca
-astoria, or
-cathedral peak, ca
-eastern sierra, ca
-grouse ridge, ca
-grouse ridge, ca
-downtown la, ca
-echo park, ca
-sabrina wilderness, ca
-santa barbara, ca
-seattle, wa
-lake tahoe, nv
-yosemite, ca</description>
-    </item>
-    
-    <item>
-      <title>My CV</title>
-      <link>https://alexdunn.io/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/cv/</guid>
-      <description>My CV/Resume I do data science and scientific computing. (And sometimes both of them together) Right now, I develop new machine learning approaches and high-throughput computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
-I&amp;rsquo;m part of the HackingMaterials group at LBL which works closely alongside the Materials Project.</description>
     </item>
     
   </channel>

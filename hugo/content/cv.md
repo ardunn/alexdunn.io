@@ -1,7 +1,8 @@
 ---
 title: "My CV"
 date: false
-draft: true
+draft: false
+heading: false
 ---
 <img src="/headshot_professional.jpg" align="right"  hspace="10" style="box-shadow: 5px 5px 3px grey;"> </img>
 # My CV/Resume

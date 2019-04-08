@@ -1,7 +1,7 @@
 ---
 title: "Fun"
 date: false
-draft: true
+draft: false
 heading: false
 ---
 
