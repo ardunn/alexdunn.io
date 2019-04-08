@@ -1,6 +1,6 @@
 baseurl = "https://alexdunn.io/"
-title = "Alex Dunn personal site"
-author = "David Hamp-Gonsalves"
+title = ""
+author = "Alex Dunn"
 canonifyurls = true
 languagecode = "en"
 theme = "black_and_white"
@@ -15,14 +15,11 @@ pygmentscodefences  = true
   disableWebFonts = false
 
 [[menu.main]]
-    name = "About"
-    url  = "/about/"
-[[menu.main]]
-    name = "Resume/CV"
-    url  = "/post/"
+    name = "CV"
+    url  = "/cv/"
 [[menu.main]]
     name = "Posts"
     url  = "/post/"
 [[menu.main]]
-    name = "Fun"
-    url  = "/fun/"
+    name = "Stuff"
+    url  = "/stuff/"
