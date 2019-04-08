@@ -9,8 +9,11 @@ draft: true
 
 
 ### I do data science and scientific computing. 
-#### And sometimes both of them together. 
-Oh, and I'm a big fan of free and open source software. Check out my resume/CV below (if you're into that sort of thing...)
+#### (And sometimes both of them together) 
+
+Right now, I develop new machine learning approaches and high-throughput computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
+
+I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). Oh, and I'm a big fan of free and open source software, blockchain tech, and just programming, in general. Check out my CV below, if you're into that sort of thing...
 
 `Last updated: 2019-04-01`
 

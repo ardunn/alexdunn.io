@@ -14,12 +14,13 @@ pygmentscodefences  = true
   sitename = "alexdunn.io"
   disableWebFonts = false
 
+
 [[menu.main]]
     name = "CV"
     url  = "/cv/"
 [[menu.main]]
     name = "Posts"
-    url  = "/post/"
+    url  = "/posts/"
 [[menu.main]]
-    name = "Stuff"
-    url  = "/stuff/"
+    name = "Fun"
+    url  = "/fun/"

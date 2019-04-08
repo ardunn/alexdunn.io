@@ -1,10 +1,17 @@
 ---
-title: "welcome"
+title: ""
 date: false
-draft: true
+draft: false
 ---
 
-I'm Alex, a Ph.D. student at UC Berkeley. I develop new machine learning approaches and high-throughput computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials. I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org).
+# welcome
 
+
+Hi, I'm Alex. I'm a wannabe computer polymath, aspiring data engineer, science enthusiast, ski fanatic, motorcycle dilettante and Ph.D. candidate at UC Berkeley. You've stumbled upon my personal site, internet traveller - enjoy your stay!
+
+
+#### If you're interested in my work, check out my [CV](/cv) or my programming/ML/tech [posts](/posts).
+
+#### Here just looking around? Browse the [fun](/fun) page or the non-tech [posts](/posts).
 
 <img src="/ski_mask.jpg", height=500px></img>
