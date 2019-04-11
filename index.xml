@@ -6,18 +6,30 @@
     <description>Recent content in Alex Dunn personal site on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexdunn.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blog coming soon...</title>
-      <link>https://alexdunn.io/posts/tmp/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Machine learning vs. the scientific method</title>
+      <link>https://alexdunn.io/posts/ds_problems/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/tmp/</guid>
-      <description>Blog is coming soon!</description>
+      <guid>https://alexdunn.io/posts/ds_problems/</guid>
+      <description>Machine learning vs. the scientific method As someone who works in scientific computing and machine learning (ML), the question has often crossed my mind:
+ Could machine learning replace science?
+ In other words, let&amp;rsquo;s assume for a moment we want to model something.</description>
+    </item>
+    
+    <item>
+      <title>Tech macguyvering a raspberry pi home cloud</title>
+      <link>https://alexdunn.io/posts/rpi_server/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexdunn.io/posts/rpi_server/</guid>
+      <description>Tech Macguyvering a Raspberry Pi Home Cloud For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home, or make a robot - the list goes on and on. And regardless of your choice of project, the Raspberry Pi community will almost always be there for you if (read: when) you need help.
+But what good is a RPi if you don&amp;rsquo;t have a good project?</description>
     </item>
     
     <item>
@@ -37,7 +49,7 @@ yuba river, ca</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alexdunn.io/cv/</guid>
-      <description>My CV/Resume I do data science and scientific computing. (And sometimes both of them together) Right now, I develop new machine learning approaches and high-throughput computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
+      <description>My CV I&amp;rsquo;m interested in data science and scientific computing. (And sometimes both of them together) Right now, I develop new machine learning approaches and computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
 I&amp;rsquo;m part of the HackingMaterials group at LBL which works closely alongside the Materials Project.</description>
     </item>
     

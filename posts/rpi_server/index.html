@@ -20,10 +20,10 @@
     <title>
       
       
-         Posts 
+         Tech macguyvering a raspberry pi home cloud 
       
     </title>
-    <link rel="canonical" href="https://alexdunn.io/posts/">
+    <link rel="canonical" href="https://alexdunn.io/posts/rpi_server/">
 
     
 
@@ -391,8 +391,6 @@
 
 
     
-      <link href="https://alexdunn.io/posts/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    
   </head>
 
   <body>
@@ -411,27 +409,86 @@
 
 
 <section id=content>
-  <ul class=posts_listing>
+   
+
+  
+    <div id=sub-header>
+      June 2018 · 3 minute read
+    </div>
+  
+
+  <div class="entry-content">
     
-      <li>
-        <h2><a href="https://alexdunn.io/posts/ds_problems/">Machine learning vs. the scientific method</a></h2>
-        <div id=date>
-          <time>April 2019</time>
-        </div>
-      </li>
+
+<h1 id="tech-macguyvering-a-raspberry-pi-home-cloud">Tech Macguyvering a Raspberry Pi Home Cloud</h1>
+
+<p>For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home,  or make a robot - the list goes on and on. And regardless of your choice of project, the Raspberry Pi community will almost always be there for you if (read: when) you need help.</p>
+
+<p><img src="https://alexdunn.io/rpi.png" alt="rpi" /></p>
+
+<h2 id="but-what-good-is-a-rpi-if-you-don-t-have-a-good-project">But what good is a RPi if you don&rsquo;t have a good project?</h2>
+
+<p>This is the question I was faced with, after giddily buying one in 2017. I played around with it &hellip; but honestly? I never really had a need for it, nor could I think of any projects that (1) were cool or interesting, (2) I&rsquo;d actually use on a frequent basis, and (3) didn&rsquo;t require buying $100+ in gadgets I wouldn&rsquo;t otherwise use. So, my RPi 3b was delegated to a lonely drawer, where it sat for over a year.</p>
+
+<h2 id="an-actual-use">An Actual Use</h2>
+
+<p>This year, my personal archive, holding all my family&rsquo;s beloved family pictures since 1997, my financial documents, my photography, nearly 100,000 songs, and 200+ legally <em>cough</em> acquired movies, spilled over the 1TB mark. My poor old laptop&rsquo;s HDD could no longer hold it all. Plus, my HDD was the only current and full copy of my data I had. If it got lost, corrupted, or destroyed somehow, my entire digital life was as good as gone! Backing up to external HDDs via wires was annoying, cloud services for backup cost money (+ I don&rsquo;t trust them), and premanufactured network attached storage (NAS) systems can cost hundreds of dollars. I needed a better solution, using tech I already had. Hence, my Raspberry Pi &ldquo;Home Cloud&rdquo; was born.</p>
+
+<h2 id="making-the-home-cloud">Making the Home Cloud</h2>
+
+<h3 id="disclaimer-this-nas-setup-is-very-hacky-but-works">Disclaimer: This NAS setup is very hacky but works</h3>
+
+<p>When setting up this cloud, my only requirements were:</p>
+
+<ul>
+<li>it be fast enough that I could stream HD movies off of it to the local network without buffering</li>
+<li>it make at least one redundant backup</li>
+<li>it be resistant to my own stupidity (<em>e.g.</em>, an accidental <code>rm -rf * &amp;&amp; shred *</code> won&rsquo;t nuke all my data)</li>
+</ul>
+
+<p>The guide is written such that these requirements are satisfied while not requiring an exorbitant amount of debugging or headaches (i.e., no reformatting to set up RAID with delayed parity). Hey, this is tech maguyver after all, not &ldquo;how to do things the most perfect, right, and clean way humanly possible&rdquo;.</p>
+
+<h3 id="what-does-it-do-in-layman-s-terms">What does it do, in layman&rsquo;s terms?</h3>
+
+<p>Access all documents/photos/movies on my data archive from my laptop or phone wirelessly, whether on the local network or outside the local network. Keep two separate disks, in case of a random failure. Automatically back up the main disk to the backup disk every 24 hours. I no longer have to keep my archive on my laptop, but can still access it whenever I want.</p>
+
+<h3 id="what-does-it-do-specifically">What does it do, specifically?</h3>
+
+<p>Samba and SFTP servers on the local network; SFTP server outside the local network accessible made possible via port forwarding. Uses rsync to sync disks on a regular basis with crontab.</p>
+
+<h3 id="what-you-need">What you need:</h3>
+
+<p><strong>A main computer (or a phone)</strong></p>
+
+<p><img src="https://alexdunn.io/laptop.jpg" alt="computer" /></p>
+
+<p>This is what you will use to SSH into your RPi, and transfer/view media. Or just use your phone with an SSH and Samba/FTP client.</p>
+
+<p><strong>A raspberry pi with an OS installed</strong> - This will control your network attached storage. I used a Raspberry Pi 3b+.</p>
+
+<p><strong>One (or some) external HDDs and USB SATA connectors</strong></p>
+
+<p><img src="https://alexdunn.io/4tb.jpg" width="100" align="left"/> <img src="https://alexdunn.io/8tb.jpg" width="100" align="left"/> <br/></p>
+
+<p>These will be your storage disks. I used some garbage 2TB Seagate Backup Slim I had lying around, and a 8TB Seagate Backup Plus I got as a christmas present.</p>
+
+<p><strong>Access to a wifi network and router, + an ethernet cable</strong></p>
+
+  </div>
+
+  <div id=links>
     
-      <li>
-        <h2><a href="https://alexdunn.io/posts/rpi_server/">Tech macguyvering a raspberry pi home cloud</a></h2>
-        <div id=date>
-          <time>June 2018</time>
-        </div>
-      </li>
     
-  </ul>
+      <a class="basic-alignment left" href="https://alexdunn.io/posts/ds_problems/">Machine learning vs. the scientific method &raquo;</a>
+    
+  </div>
 </section>
+
+ 
 
   
 </body>
 </html>
+
 
 
