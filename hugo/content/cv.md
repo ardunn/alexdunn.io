@@ -5,16 +5,15 @@ draft: false
 heading: false
 ---
 <img src="/headshot_professional.jpg" align="right"  hspace="10" style="box-shadow: 5px 5px 3px grey;"> </img>
-# My CV/Resume
 
 
-
-### I do data science and scientific computing. 
+# My CV
+## I'm interested in data science and scientific computing. 
 #### (And sometimes both of them together) 
 
-Right now, I develop new machine learning approaches and high-throughput computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
+Right now, I develop new machine learning approaches and computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
 
-I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). Oh, and I'm a big fan of free and open source software, blockchain tech, and just programming, in general. Check out my abbreviated CV below, if you're into that sort of thing... if you want the full version, shoot me an email at `ardunn@lbl.gov`.
+I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). I'm also a big fan of free and open source software, blockchain tech, and just programming, in general. Check out my abbreviated CV below, if you're into that sort of thing... if you want the full version, shoot me an email at `ardunn@lbl.gov`.
 
 `Last updated: 2019-04-01`
 
@@ -43,7 +42,7 @@ I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LB
 
 # Experience
 
-1. **Graduate Student Research Assistant @ LBNL.**  Using data-mining to elucidate structure-property relationships and accelerate predictions of material properties. Running DFT calculations to evaluate candidate thermoelectrics, communicating results to experimental collaborators. Writing open-source software packages for data mining materials properties and running massively parallel calculations on supercomputers. _(2017 - present)_
+1. **Graduate Student Research Assistant @ LBNL.**  Using data-mining to elucidate structure-property relationships and accelerate predictions of material properties. Running many thousands of density functional theory (DFT) calculations to evaluate candidate thermoelectrics, communicating results to experimental collaborators. Writing open-source software packages for data mining materials properties and running massively parallel calculations on supercomputers. _(2017 - present)_
 
 2. **Consultant @ MaterialsQM Consulting.** High-throughput synthesis pathway screening using density functional theory and combinatorics. Communicating with clients, preparing reports, and helping guide discovery of novel semiconductor materials. _(2018 - present)_
 
@@ -68,7 +67,7 @@ I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LB
 ### Linux
 - Networking, file operations, process management
 - Parallel CPU computing frameworks such as OpenMP and MPI
-- Parallel CPU computing frameworks such as CUDA and Thrust
+- GPU computing frameworks such as CUDA and Thrust
 - Queue computing platforms such as SLURM and PBS
 
 ### Data science libraries
