@@ -444,7 +444,7 @@
 <li>it be fast enough that I could stream HD movies off of it to the local network without buffering</li>
 <li>it make at least one redundant backup</li>
 <li>it be resistant to my own stupidity (<em>e.g.</em>, an accidental <code>rm -rf * &amp;&amp; shred *</code>)</li>
-<li>it is resistant to being hacked by port scanners etc.</li>
+<li>it is resistant to being hacked by port scanners etc. if available outside the local network</li>
 </ul>
 
 <p>The guide is written such that these requirements are satisfied while not requiring an exorbitant amount of debugging or headaches (i.e., no reformatting to set up RAID with delayed parity). Hey, this is a Tech MacGyver-style guide after all, not &ldquo;how to do things the most perfect, right, and clean way humanly possible&rdquo;. If you want to do that, I&rsquo;d look into home cloud setups like ownCloud.</p>
@@ -511,11 +511,9 @@
 
 <h3 id="a-configure-local-ssh-access-to-your-raspberry-pi">A. Configure local SSH access to your Raspberry Pi.</h3>
 
-<h4 id="objective-set-up-the-pi-so-you-can-access-it-from-your-main-computer-on-the-local-network-after-this-step-you-shouldn-t-need-to-do-any-physical-work">Objective: Set up the Pi so you can access it from your main computer on the local network. After this step, you shouldn&rsquo;t need to do any physical work.</h4>
+<h4 id="objective-set-up-the-pi-so-you-can-access-it-from-your-main-computer-on-the-local-network-after-this-step-you-shouldn-t-need-to-do-any-physical-work-you-should-connect-a-mouse-keyboard-and-monitor-to-your-pi-for-these-steps">Objective: Set up the Pi so you can access it from your main computer on the local network. After this step, you shouldn&rsquo;t need to do any physical work. You should connect a mouse, keyboard, and monitor to your Pi for these steps.</h4>
 
 <ol>
-<li><p>You should connect a mouse, keyboard, and monitor to your Pi for these steps.</p></li>
-
 <li><p>Plug the ethernet cable into your Pi and the other end into your router. Join the network. Your router should automatically assign an IP to the Pi with DHCP.</p></li>
 
 <li><p>Now, we need to enable SSH server on the RPi, so open a terminal on it. Type the following to install the SSH server and start it (it should automatically start on reboots).</p>
@@ -549,7 +547,7 @@ $ sudo service ssh start
 
 <p>The Pi&rsquo;s lease on this IP will last for the next 4,166 days (just long enough to make a DMV appointment). From here forward, you&rsquo;ll be able to SSH into your Pi at this local IP.</p></li>
 
-<li><p>Now we can physically configure your external storage. Plug in your external storage devices to your Pi and then make sure your storage devices are available:</p>
+<li><p>Now we can physically configure your external storage. You are safe to unplug the peripherals from the Pi and put it in its final storage location (mine&rsquo;s in a drawer). Plug in your external storage devices to your Pi and then make sure your storage devices are available via SSH:</p>
 
 <pre><code>raz@pi:~$ lsblk
 NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -569,7 +567,7 @@ mmcblk0     179:0    0 14.9G  0 disk
 
 <h3 id="b-configure-automatic-backups">B. Configure automatic backups</h3>
 
-<p>The two tools we will be using for automatic backups are <code>rsync</code> and <code>crontab</code>. The idea is that <code>rsync</code> will synchronize the disks on a schedule dictated by the system (<code>crontab</code>).</p>
+<h4 id="the-two-tools-we-will-be-using-for-automatic-backups-are-rsync-and-crontab-the-idea-is-that-rsync-will-synchronize-the-disks-on-a-schedule-dictated-by-the-system-crontab">The two tools we will be using for automatic backups are <code>rsync</code> and <code>crontab</code>. The idea is that <code>rsync</code> will synchronize the disks on a schedule dictated by the system (<code>crontab</code>).</h4>
 
 <ol>
 <li><p>Install and configure rsync</p>
@@ -682,12 +680,12 @@ I keep it stashed away in a drawer, out of sight and out of mind. <strong>Beauty
 
 <p>If you want to access your Pi (and data) from outside your local network, read section D.</p>
 
-<h3 id="d-optional-create-and-secure-acces-outside-the-local-network">D. Optional - Create and secure acces outside the local network</h3>
+<h3 id="d-optional-create-and-secure-access-outside-the-local-network">D. Optional - Create and secure access outside the local network</h3>
 
 <ol>
 <li><p>Harden your SSH server.</p>
 
-<p>If you open up your cloud to outside connections, you face a very real threat of cyber-attack, mostly in the form of port-scanners and roaming bots which can (and will) dictionary-attack your open SSH connetion. It is for this reason I recommend <strong>disabling</strong> password authentication into your SSH server - this does not mean there is no authentication at all, it means that your server can be accessed by SSH-keyfile authentication only. Only authorized devices will be able to log into your Pi and local network.</p>
+<p>If you open up your cloud to outside connections, you face a very real threat of cyber-attack, mostly in the form of port-scanners and roaming bots which can (and will) dictionary-attack your open SSH connection. It is for this reason I recommend <strong>disabling</strong> password authentication into your SSH server - this does not mean there is no authentication at all, it means that your server can be accessed by SSH-keyfile authentication only. Only authorized devices will be able to log into your Pi and local network.</p>
 
 <p>First, copy your client id(s) to your server via a secure method. In my case, my SSH clients are my laptop and my phone and my Pi is my server. For a computer, you can simply do (from the client on the local network):</p>
 

@@ -31,7 +31,7 @@ When setting up this cloud, my only requirements were:
 * it be fast enough that I could stream HD movies off of it to the local network without buffering
 * it make at least one redundant backup
 * it be resistant to my own stupidity (*e.g.*, an accidental `rm -rf * && shred *`)
-* it is resistant to being hacked by port scanners etc.
+* it is resistant to being hacked by port scanners etc. if available outside the local network
 
 The guide is written such that these requirements are satisfied while not requiring an exorbitant amount of debugging or headaches (i.e., no reformatting to set up RAID with delayed parity). Hey, this is a Tech MacGyver-style guide after all, not "how to do things the most perfect, right, and clean way humanly possible". If you want to do that, I'd look into home cloud setups like ownCloud.
 
@@ -72,9 +72,7 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
 
 ### A. Configure local SSH access to your Raspberry Pi.
 
-#### Objective: Set up the Pi so you can access it from your main computer on the local network. After this step, you shouldn't need to do any physical work.
-
-1. You should connect a mouse, keyboard, and monitor to your Pi for these steps.
+#### Objective: Set up the Pi so you can access it from your main computer on the local network. After this step, you shouldn't need to do any physical work. You should connect a mouse, keyboard, and monitor to your Pi for these steps.
 
 2. Plug the ethernet cable into your Pi and the other end into your router. Join the network. Your router should automatically assign an IP to the Pi with DHCP.
 
@@ -110,7 +108,7 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
    
     The Pi's lease on this IP will last for the next 4,166 days (just long enough to make a DMV appointment). From here forward, you'll be able to SSH into your Pi at this local IP.
 
-6. Now we can physically configure your external storage. Plug in your external storage devices to your Pi and then make sure your storage devices are available:
+6. Now we can physically configure your external storage. You are safe to unplug the peripherals from the Pi and put it in its final storage location (mine's in a drawer). Plug in your external storage devices to your Pi and then make sure your storage devices are available via SSH:
     
     ```
     raz@pi:~$ lsblk
@@ -131,7 +129,7 @@ Great! If you've gotten this far, all of your physical configuration should be d
 
 ### B. Configure automatic backups
 
-The two tools we will be using for automatic backups are `rsync` and `crontab`. The idea is that `rsync` will synchronize the disks on a schedule dictated by the system (`crontab`). 
+#### The two tools we will be using for automatic backups are `rsync` and `crontab`. The idea is that `rsync` will synchronize the disks on a schedule dictated by the system (`crontab`). 
 
 1. Install and configure rsync
     
@@ -241,11 +239,11 @@ I keep it stashed away in a drawer, out of sight and out of mind. **Beauty is in
 If you want to access your Pi (and data) from outside your local network, read section D. 
 
 
-### D. Optional - Create and secure acces outside the local network
+### D. Optional - Create and secure access outside the local network
 
 1. Harden your SSH server. 
 
-    If you open up your cloud to outside connections, you face a very real threat of cyber-attack, mostly in the form of port-scanners and roaming bots which can (and will) dictionary-attack your open SSH connetion. It is for this reason I recommend **disabling** password authentication into your SSH server - this does not mean there is no authentication at all, it means that your server can be accessed by SSH-keyfile authentication only. Only authorized devices will be able to log into your Pi and local network.
+    If you open up your cloud to outside connections, you face a very real threat of cyber-attack, mostly in the form of port-scanners and roaming bots which can (and will) dictionary-attack your open SSH connection. It is for this reason I recommend **disabling** password authentication into your SSH server - this does not mean there is no authentication at all, it means that your server can be accessed by SSH-keyfile authentication only. Only authorized devices will be able to log into your Pi and local network.
 
     First, copy your client id(s) to your server via a secure method. In my case, my SSH clients are my laptop and my phone and my Pi is my server. For a computer, you can simply do (from the client on the local network):
 
