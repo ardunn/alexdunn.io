@@ -6,7 +6,7 @@ languagecode = "en"
 theme = "black_and_white"
 publishDir = "../"
 
-pygmentsstyle       = "bw"
+pygmentsstyle       = "colorful"
 pygmentscodefences  = true
 
 [params]

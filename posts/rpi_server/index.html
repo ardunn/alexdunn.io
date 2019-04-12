@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         true 
+      
+    </title>
+    <link rel="canonical" href="https://alexdunn.io/posts/rpi_server/">
+
+    
+
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<style>
+  * {
+    border:0;
+    font-family: 'Rubik', sans-serif;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:inherit;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:20px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
+      <ul>
+        
+          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+        
+          <li><a href="https://alexdunn.io/fun/">Fun</a></li>
+        
+          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1>  Tech macguyvering a raspberry pi home cloud </h1> 
+
+  
+    <div id=sub-header>
+      April 2018 · 14 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    
+
+<p>For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home,  or make a robot - the list goes on and on. And regardless of your choice of project, the Raspberry Pi community will almost always be there for you if (read: when) you need help.</p>
+
+<p><img src="https://alexdunn.io/rpi.png" alt="rpi" /></p>
+
+<h2 id="but-what-good-is-a-pi-if-you-don-t-have-a-good-project">But what good is a Pi if you don&rsquo;t have a good project?</h2>
+
+<p>This is the question I was faced with after giddily buying one in 2017. I played around with it &hellip; but honestly? I never really had a need for it, nor could I think of any projects that (1) were cool or interesting, (2) I&rsquo;d actually use on a frequent basis, and (3) didn&rsquo;t require buying $100+ in gadgets I wouldn&rsquo;t otherwise use. So, my poor RPi 3b was delegated to a lonely drawer, where it sat for over a year.</p>
+
+<h2 id="finding-a-use">Finding a use</h2>
+
+<p>This year, my personal archive (holding 20+ years of my family&rsquo;s beloved family pictures, my financial documents, and my photography) spilled over the 1TB mark. My old laptop&rsquo;s HDD could no longer hold it all. Plus, my HDD was the only current and full copy of my data I had. If it got lost, corrupted, or destroyed somehow, my entire digital life was as good as gone! Backing up to external HDDs via wires was annoying, cloud services for backup cost money (+ I don&rsquo;t trust them), and premanufactured network attached storage (NAS) systems can cost hundreds of dollars. I needed a better solution, using tech I already had. Hence, my Raspberry Pi &ldquo;Home Cloud&rdquo; was born.</p>
+
+<h2 id="making-the-home-cloud">Making the Home Cloud</h2>
+
+<h3 id="disclaimer-this-nas-setup-is-hacky-but-works">Disclaimer: This NAS setup is hacky but works</h3>
+
+<p>When setting up this cloud, my only requirements were:</p>
+
+<ul>
+<li>it be fast enough that I could stream HD movies off of it to the local network without buffering</li>
+<li>it make at least one redundant backup</li>
+<li>it be resistant to my own stupidity (<em>e.g.</em>, an accidental <code>rm -rf * &amp;&amp; shred *</code>)</li>
+<li>it is resistant to being hacked by port scanners etc.</li>
+</ul>
+
+<p>The guide is written such that these requirements are satisfied while not requiring an exorbitant amount of debugging or headaches (i.e., no reformatting to set up RAID with delayed parity). Hey, this is a Tech Maguyver-style guide after all, not &ldquo;how to do things the most perfect, right, and clean way humanly possible&rdquo;. If you want to do that, I&rsquo;d look into home cloud setups like ownCloud.</p>
+
+<h3 id="what-does-it-do-in-layman-s-terms">What does it do, in layman&rsquo;s terms?</h3>
+
+<p>Access all documents/photos/movies on my data archive from my laptop or phone wirelessly, whether on the local network or outside the local network. Keep two separate disks, in case of a random failure. Automatically back up the main disk to the backup disk every 24 hours. I no longer have to keep my archive on my laptop, but can still access it whenever I want.</p>
+
+<h3 id="what-does-it-do-specifically">What does it do, specifically?</h3>
+
+<p>Samba and SFTP servers on the local network; SFTP server outside the local network accessible made possible via port forwarding. Uses rsync to sync disks on a regular basis with crontab.</p>
+
+<h3 id="what-you-need">What you need:</h3>
+
+<ol>
+<li><p><strong>A main computer (or a phone)</strong> - This is what you will use to SSH into your Pi, and transfer/view media. Or just use your phone with an SSH and Samba/FTP client.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Yup, it&rsquo;s a laptop</th>
+<th align="center">Yup, it&rsquo;s an iphone</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><img src="https://alexdunn.io/laptop_lowres.jpg" alt="laptop" /></td>
+<td align="center"><img src="https://alexdunn.io/iphone-x-terminus.png" alt="phone" /></td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p><strong>A Raspberry Pi with an OS installed</strong> - This will control your network attached storage. I used a Raspberry Pi 3b+.
+<img src="https://alexdunn.io/rpi_lowres.png" alt="rpi lowres" /></p></li>
+
+<li><p><strong>One (or some) external HDDs and connection cables</strong> - These will be your storage disks. I used some garbage 2TB Seagate Backup Slim I had lying around, and a 8TB Seagate Backup Plus I got as a christmas present. Most external HDDs connect using USB-SATA connections.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Drive #1 (Old Seagate 2TB)</th>
+<th align="center">Drive #2  (newer 8TB Seagate Expansion)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><img src="https://alexdunn.io/4tb_lowres.jpg" alt="4tb" /></td>
+<td align="center"><img src="https://alexdunn.io/8tb_lowres.jpg" alt="8tb" /></td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p><strong>Access to your wifi network and router, + an ethernet cable</strong> - In the interest of rapid file transfer,  you&rsquo;ll definitely want to have your Pi wired rather than wireless. The raspberry pi&rsquo;s wireless speed is noticeably less than the LAN speed: Jeff Greerling&rsquo;s <a href="https://www.pidramble.com/wiki/benchmarks/networking">Raspberry Pi Dramble site</a> has a great table comparing the LAN vs WiFi speeds:
+<img src="https://alexdunn.io/lan_table.png" alt="lan" /></p></li>
+
+<li><p>Some basic bash familiarity</p></li>
+
+<li><p>An hour of your dedicated time.</p></li>
+</ol>
+
+<h2 id="steps">Steps</h2>
+
+<h3 id="a-configure-local-ssh-access-to-your-raspberry-pi">A. Configure local SSH access to your Raspberry Pi.</h3>
+
+<h4 id="objective-set-up-the-pi-so-you-can-access-it-from-your-main-computer-on-the-local-network-after-this-step-you-shouldn-t-need-to-do-any-physical-work">Objective: Set up the Pi so you can access it from your main computer on the local network. After this step, you shouldn&rsquo;t need to do any physical work.</h4>
+
+<ol>
+<li><p>You should connect a mouse, keyboard, and monitor to your Pi for these steps.</p></li>
+
+<li><p>Plug the ethernet cable into your Pi and the other end into your router. Join the network. Your router should automatically assign an IP to the Pi with DHCP.</p></li>
+
+<li><p>Now, we need to enable SSH server on the RPi, so open a terminal on it. Type the following to install the SSH server and start it (it should automatically start on reboots).</p>
+
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install openssh-server
+$ sudo service ssh start
+</code></pre></li>
+
+<li><p>Get the IP of the Pi on the network:</p>
+
+<pre><code>$ ip addr
+    
+...
+2: enxb827ebc8d04f: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether b8:27:eb:c8:d0:4f brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.2/24 brd 192.168.0.255 scope global dynamic enxb827ebc8d04f
+        valid_lft 17842575sec preferred_lft 17842575sec
+...
+</code></pre>
+
+<p>The IP address you are interested in is the <strong>wired</strong> network interface, not the wireless or loopback. So note the <code>inet</code> address of the interace named <code>enxb827ebc8d04f</code> (or similar, <strong>not</strong> <code>wlan0</code>or <code>lo</code>). In this case the IP address I am using is 192.168.0.2.</p>
+
+<p>Try rebooting the Pi and SSHing into it via another computer or phone (<em>e.g.</em>, <code>ssh raz@192.168.0.2</code> - my username is <code>raz</code>, which I&rsquo;ll use for the rest of the tutorial). If you can reboot and SSH into the Pi, it&rsquo;s now time to make sure we can SSH in <em>reliably</em> by assigning a static IP to the Pi.</p></li>
+
+<li><p>Enable a static (or long dynamic lease) IP for your raspberry Pi.</p>
+
+<p>On your computer or phone, go into your router and assign your Pi an infinite (or very long) DHCP lease on its IP address. This will enable you to SSH or Samba into your Pi in the future without IP hiccups. Go into your browser and configure your router by going to usually <code>192.168.0.1</code> or <code>10.0.0.1</code>.  Exactly how you change this lease time depends on your router. When you&rsquo;re done, you should see something like this:</p>
+
+<p><img src="https://alexdunn.io/dhcp.png" alt="dhcp" /></p>
+
+<p>The Pi&rsquo;s lease on this IP will last for the next 4,166 days (just long enough to make a DMV appointment). From here forward, you&rsquo;ll be able to SSH into your Pi at this local IP.</p></li>
+
+<li><p>Now we can physically configure your external storage. Plug in your external storage devices to your Pi and then make sure your storage devices are available:</p>
+
+<pre><code>raz@pi:~$ lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    0  1.9T  0 disk
+└─sda1        8:1    0  1.9T  0 part /home/raz/disk2
+sdb           8:16   0  7.3T  0 disk
+└─sdb1        8:17   0  7.3T  0 part /home/raz/disk8
+mmcblk0     179:0    0 14.9G  0 disk
+├─mmcblk0p1 179:1    0   63M  0 part /boot
+└─mmcblk0p2 179:2    0 14.8G  0 part /
+</code></pre>
+
+<p>I have mine mounted at <code>/home/raz/disk*</code> - yours will by default be mounted elsewhere such as <code>/media/raz</code>. My 8TB disk is mounted as <code>disk8</code> and the 2TB is mounted as <code>disk2</code>.</p></li>
+</ol>
+
+<p>Great! If you&rsquo;ve gotten this far, all of your physical configuration should be done.</p>
+
+<h3 id="b-configure-automatic-backups">B. Configure automatic backups</h3>
+
+<p>The two tools we will be using for automatic backups are <code>rsync</code> and <code>crontab</code>. The idea is that <code>rsync</code> will synchronize the disks on a schedule dictated by the system (<code>crontab</code>).</p>
+
+<ol>
+<li><p>Install and configure rsync</p>
+
+<p>First we install rsync if you do not already have it installed:</p>
+
+<pre><code>raz@pi:~$ sudo apt-get install rsync
+</code></pre>
+
+<p>Now we will have rsync make a copy of our master disk to our backup disk. The master disk is what we will use later as our file server; the backup will just be there in case something goes wrong. In my case, I am using the 8TB disk as the master because it is a good amount faster than the older 2TB disk.<br />
+Make a new file in the Pi&rsquo;s home directory named <code>sync_script.sh</code> with the following contents:</p>
+
+<pre><code>#!/bin/bash
+# In ~/sync_script.sh on your raspberry pi
+dt=$(date '+%d.%m.%Y-%H:%M:%S');
+rsync -auvhs /home/raz/disk8/* /home/raz/disk2 --delete &gt; /home/raz/logs/&quot;$dt&quot;.txti 2&gt;&amp;1
+</code></pre>
+
+<p>This script uses rsync to back up the master to the backup, including deletions and renames on the master. If you need to change the behavior, change the arguments of the rsync command. When backups occur, log files are written to a logs directory organized by date - you&rsquo;ll need this for the next step. You&rsquo;ll also need to change the directories for your own raspberry pi and mount points. Change <code>/home/raz/disk8</code> to the mount point of your master drive and <code>/home/backup/disk2</code> to the mount point of your backup, and change <code>/home/raz/logs/</code> if you want a different logs directory.</p></li>
+
+<li><p>Configure crontab for backups</p>
+
+<p>Enter the crontab editor with:</p>
+
+<pre><code>raz@pi:~$ crontab -e
+</code></pre>
+
+<p>Add the following line to the crontab file:</p>
+
+<pre><code>0 2 * * * bash ~/sync_script.sh
+</code></pre>
+
+<p>This runs your sync script at 2:00am every day. Change the crontab specification if you want a different backup frequency - <a href="https://crontab.guru/">crontab guru</a> has a great interactive tool. I like a daily backup because it backs up frequently enough for the contents of the disks to be redundant, but not so frequently that I can&rsquo;t undo a rogue <code>rm -rf</code> on the master drive. Once you&rsquo;ve decided on a crontab setup, exit the crontab editor.</p></li>
+</ol>
+
+<p>Now your data is being backed up automatically. You should try running <code>raz@pi:~$ source ~/sync_script</code> and check the logs in your newly-setup log dir to make sure it is syncing as intended. The next step is to make your master drive easily accessible from the local network.</p>
+
+<h3 id="c-enable-a-samba-share">C. Enable a Samba Share</h3>
+
+<p>By default, all SSH-enabled servers have SFTP enabled. So you are already able to connect via your computer&rsquo;s file explorer or FTP apps on your phone or computer.</p>
+
+<p><em>However</em>, depending on the files and hardware you are running on, a Samba share may be as fast (or even faster) than SFTP; this is because the Pi&rsquo;s little CPU has to encrypt SFTP packets whereas Samba does not (by default). For normal usage (watching HD videos over the network, for example) being served from the Pi, I&rsquo;ve found Samba to be much faster. Aaaaaaaaand if you are a Windows user (boo, hiss) you&rsquo;ll have an easier time getting Windows Explorer to connect to your share.</p>
+
+<ol>
+<li><p>Install Samba.</p>
+
+<pre><code>raz@pi:~$ sudo apt-get install samba samba-common
+</code></pre></li>
+
+<li><p>Configure Samba.
+There are tons of online guides for this, but we&rsquo;ll go through a quick walkthrough here in the same way I configured mine (<em>i.e.</em>, the absolute easiest and fastest way possible).</p>
+
+<p>First, edit the your Pi&rsquo;s Samba configuration file <code>raz@pi:~$ sudo vim /etc/samba/smb.conf</code>. If you&rsquo;re feeling dangerous, don&rsquo;t make a backup of this file. Then, add this text for your share (and replace the <code>Path</code> with your master drive&rsquo;s mount point):</p>
+
+<pre><code># In /etc/samba/smb.conf
+[share]
+Comment =samba_share
+Path = /home/raz/disk8
+Browseable = yes
+Writeable = Yes
+only guest = no
+create mask = 0777
+directory mask = 0777
+Public = yes
+Guest ok = no
+</code></pre>
+
+<p>You shouldn&rsquo;t have to add yourself to a user group with this approach. This configuration basically says that <em>anyone</em> with an account on the Pi can login to the samba share. You can restrict this if needed, but I am the only one with an account on my Pi so this simple approach works fine..</p>
+
+<p>Now enable the Samba <code>smdb</code> service:</p>
+
+<pre><code>sudo service smbd restart
+</code></pre></li>
+
+<li><p>Check that you can access your shared drive.</p>
+
+<p>On Linux, most file browsers (such as Nautilus) will have a &ldquo;connect to server&rdquo; option which can be configured to automatically connect via SMB or SFTP to your share.</p>
+
+<p><img src="https://alexdunn.io/connect_to_server.png" alt="connect1" /></p>
+
+<p><em>These linux screenshots are from an earlier verison of this tutorial which used a different IP and mountpoint.</em></p>
+
+<p><img src="https://alexdunn.io/connect_to_server_2.png" alt="connect1" /></p>
+
+<p><em>Protip: Only make your password four letters long for extra danger!</em></p>
+
+<p><img src="https://alexdunn.io/connect_to_server_3.png" alt="connect1" /></p>
+
+<p>Configured correctly, your linux device will now automatically connect to your share.</p>
+
+<p>On Mac, you can just press cmd + K in Finder to connect via SMB or SFTP. Unfortunately, newer versions of MacOS (10.14+ but possibly earlier versions) allow read/write to SMB, but only allow read for SFTP. If you want to <em>upload</em> as well as <em>download</em> files then, you&rsquo;ll need to use SMB or a 3rd party app.
+<img src="https://alexdunn.io/smb_window.png" alt="finder" /></p>
+
+<p><img src="https://alexdunn.io/mac_smb.png" alt="finder2" /></p>
+
+<p>On Windows, you can typically just click &ldquo;Network&rdquo; or &ldquo;Network locations&rdquo; in File Explorer. On your phone, most SFTP or Samba apps will work fine.</p></li>
+</ol>
+
+<hr />
+
+<h1 id="and-youre-done">And youre done!</h1>
+
+<h2 id="congrats-on-the-new-home-cloud">Congrats on the new home cloud!</h2>
+
+<p>This is what my physical setup looks like:</p>
+
+<p><em>Stunning, I know</em>
+<img src="https://alexdunn.io/disaster_lowres.jpg" alt="disaster" />
+I keep it stashed away in a drawer, out of sight and out of mind. <strong>Beauty is in the eye of the beholder&hellip;</strong></p>
+
+<p>If you want to access your Pi (and data) from outside your local network, read section D.</p>
+
+<h3 id="d-optional-create-and-secure-acces-outside-the-local-network">D. Optional - Create and secure acces outside the local network</h3>
+
+<ol>
+<li><p>Harden your SSH server.</p>
+
+<p>If you open up your cloud to outside connections, you face a very real threat of cyber-attack, mostly in the form of port-scanners and roaming bots which can (and will) dictionary-attack your open SSH connetion. It is for this reason I recommend <strong>disabling</strong> password authentication into your SSH server - this does not mean there is no authentication at all, it means that your server can be accessed by SSH-keyfile authentication only. Only authorized devices will be able to log into your Pi and local network.</p>
+
+<p>First, copy your client id(s) to your server via a secure method. In my case, my SSH clients are my laptop and my phone and my Pi is my server. For a computer, you can simply do (from the client on the local network):</p>
+
+<pre><code>$ ssh-keygen
+$ ssh-copy-id -i ~/.ssh/id_rsa raz@192.168.0.2
+</code></pre>
+
+<p>You should test that you can access the Pi without a password:</p>
+
+<pre><code>$ ssh raz@192.168.0.2
+raz@pi:~$
+...
+</code></pre>
+
+<p>Now that your Pi is set up to allow for passwordless SSH logins, you should go into your Pi&rsquo;s <code>/etc/ssh/sshd_config</code> file and adjust the following lines:</p>
+
+<pre><code># Authentication:
+LoginGraceTime 120
+PermitRootLogin prohibit-password
+StrictModes yes
+    
+...
+
+# Change to no to disable tunnelled clear text passwords
+PasswordAuthentication no
+</code></pre>
+
+<p>For more security, you can also change the SSH port, though this is not really necessary since we will be doing this in the next step for the outward facing connection.</p>
+
+<pre><code># What ports, IPs and protocols we listen for
+Port 12345  # pick some random port
+</code></pre>
+
+<p>Then restart the server with <code>raz@pi:~$ sudo service ssh restart</code>. Open a new terminal on the client and try logging in. You should log in without a password (provided your copied client <code>id_rsa</code> was not password-protected). Then use a different device or account <strong>not</strong> authorized on the Pi to try to login. You should be completely unable to (even with the correct password).</p>
+
+<p>For more help on setting up secure SSH correctly, see <a href="https://www.ssh.com/ssh/copy-id">ssh.com</a>. For more logging and hardening tools (such as auto-banning IP&rsquo;s that show malicious signs), check out <a href="https://www.fail2ban.org/wiki/index.php/Main_Page">Fail2Ban</a>, which I <em>highly</em> recommend.</p></li>
+
+<li><p>Enable port-forwarding on your router. Your server should be secure enough now that we can open it up to - <em>gasp!</em> - the world wide web. In your router&rsquo;s interface, there should be a section for forwarding ports. You&rsquo;ll want to map your network gateway (likely 0.0.0.0) with some random (unused by common services) port to your Pi local IP (in this example 192.168.0.2) with the default port (22) or the custom port you set in the previous step.</p>
+
+<p>This is a screenshot of what my configuration looks like (custom ports redacted):</p>
+
+<p><img src="https://alexdunn.io/port_forward.png" alt="port forward" /></p></li>
+
+<li><p>Test our your SSH/SFTP remote connection. Try connecting to your public IP from a login source outside of your local network (trying this from inside your local network will sometimes not work depending on your router and ISP). You can find out your public IP using:</p>
+
+<pre><code>$ curl ifconfig.me
+</code></pre>
+
+<p>If you can successfully SSH into your Pi, you should be able to SFTP into your Pi remotely - in other words, you can get your files from any (internet-connected) location in the world! All while having your files be safely in your home, under your own control, and backed up (at least backed up in case of disk failure or erasure, and not say, a house fire). To enable remote samba, I recommend you look at some online tutorials and tread carefully.</p></li>
+</ol>
+
+<h4 id="potential-problems-if-your-isp-changes-your-public-ip-regularly-this-port-forwarding-approach-will-only-work-for-short-periods-of-time-weeks">Potential problems: If your ISP changes your public IP regularly, this port-forwarding approach will only work for short periods of time (weeks).</h4>
+
+<h2 id="maintenance-and-conclusions">Maintenance and Conclusions</h2>
+
+<p>The crontab commands pipe all the errors and output to a log file on the Pi on a daily basis. Of course, we could make the commands more sophisticated - &ldquo;if there is an error during rsync, send me an email, remount all HDDs, and try again&rdquo; (if you do this high-five to you) - but generally, simple is good enough for this little cloud.</p>
+
+<p>In the end, we accomplished what we wanted:</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> fast enough to stream HD movies (via Samba, locally at least)</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> make at least one redundant backup (extra backup disk)</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> be resistant to my own stupidity (delayed but frequent backups)</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> resistant to being hacked (by hardening)</label></li>
+</ul>
+
+<p>I hope you enjoyed and get as much use out of the Pi as I do!</p>
+
+  </div>
+
+  <div id=links>
+    
+    
+  </div>
+</section>
+
+ 
+
+  
+</body>
+</html>
+
+
+

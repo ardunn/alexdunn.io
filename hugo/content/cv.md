@@ -4,10 +4,10 @@ date: false
 draft: false
 heading: false
 ---
-<img src="/headshot_professional.jpg" align="right"  hspace="10" style="box-shadow: 5px 5px 3px grey;"> </img>
-
-
 # My CV
+
+<img src="/headshot_professional.jpg" align="right"  hspace="20" style="box-shadow: 5px 5px 3px grey;"> </img>
+
 ## I'm interested in data science and scientific computing. 
 #### (And sometimes both of them together) 
 
