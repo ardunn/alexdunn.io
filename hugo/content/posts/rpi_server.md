@@ -20,6 +20,7 @@ This is the question I was faced with after giddily buying one in 2017. I played
 
 This year, my personal archive (holding 20+ years of my family's beloved family pictures, my financial documents, and my photography) spilled over the 1TB mark. My old laptop's HDD could no longer hold it all. Plus, my HDD was the only current and full copy of my data I had. If it got lost, corrupted, or destroyed somehow, my entire digital life was as good as gone! Backing up to external HDDs via wires was annoying, cloud services for backup cost money (+ I don't trust them), and premanufactured network attached storage (NAS) systems can cost hundreds of dollars. I needed a better solution, using tech I already had. Hence, my Raspberry Pi "Home Cloud" was born.
 
+![cloud](/cloud.png)
 
 ## Making the Home Cloud 
 

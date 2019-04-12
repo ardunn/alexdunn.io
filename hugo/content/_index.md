@@ -12,6 +12,6 @@ heading: false
 
 <img src="/ski_mask.jpg", height=400px></img>
 
-* If you're interested in my work, check out my [CV](/cv) or my programming/ML/tech [posts](/posts).
-* Here just looking around? Browse the [fun](/fun) page or the non-tech [posts](/posts).
+* If you're interested in my work, check out my [CV](/work) or my programming/ML/tech [posts](/posts).
+* Here just looking around? Browse the [random](/random) page or the non-tech [posts](/posts).
 * Need to contact me? `denhaus@gmail.com`
