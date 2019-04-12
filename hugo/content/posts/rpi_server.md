@@ -1,5 +1,5 @@
 +++
-title = "Tech macguyvering a raspberry pi home cloud"
+title = "Tech Macgyvering a raspberry pi home cloud"
 description = ""
 date = "2018-04-05"
 heading= true
@@ -33,7 +33,7 @@ When setting up this cloud, my only requirements were:
 * it be resistant to my own stupidity (*e.g.*, an accidental `rm -rf * && shred *`)
 * it is resistant to being hacked by port scanners etc.
 
-The guide is written such that these requirements are satisfied while not requiring an exorbitant amount of debugging or headaches (i.e., no reformatting to set up RAID with delayed parity). Hey, this is a Tech Maguyver-style guide after all, not "how to do things the most perfect, right, and clean way humanly possible". If you want to do that, I'd look into home cloud setups like ownCloud.
+The guide is written such that these requirements are satisfied while not requiring an exorbitant amount of debugging or headaches (i.e., no reformatting to set up RAID with delayed parity). Hey, this is a Tech Macgyver-style guide after all, not "how to do things the most perfect, right, and clean way humanly possible". If you want to do that, I'd look into home cloud setups like ownCloud.
 
 ### What does it do, in layman's terms?
 

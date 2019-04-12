@@ -12,24 +12,13 @@
     
     
     <item>
-      <title>Tech macguyvering a raspberry pi home cloud</title>
+      <title>Tech Macgyvering a raspberry pi home cloud</title>
       <link>https://alexdunn.io/posts/rpi_server/</link>
       <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://alexdunn.io/posts/rpi_server/</guid>
       <description>For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home, or make a robot - the list goes on and on. And regardless of your choice of project, the Raspberry Pi community will almost always be there for you if (read: when) you need help.
 But what good is a Pi if you don&amp;rsquo;t have a good project?</description>
-    </item>
-    
-    <item>
-      <title>Fun</title>
-      <link>https://alexdunn.io/random/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/random/</guid>
-      <description>Some random non-work related stuff that doesn&amp;rsquo;t make sense being in a post. Probably in some state of disrepair.
-TOC  gallery of dslr photos software that&amp;rsquo;s doing it right  Good software  Notion - an app for note taking, productivity, writing, ideas, and just about evanything else. Dark reader - dev reading  Photos Gallery Some landscape pics I took with a DSLR yuba river, ca
-yuba river, ca</description>
     </item>
     
     <item>
@@ -41,6 +30,17 @@ yuba river, ca</description>
       <description>My CV 
 I&amp;rsquo;m interested in data science and scientific computing. (And sometimes both of them together) Right now, I develop new machine learning approaches and computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
 I&amp;rsquo;m part of the HackingMaterials group at LBL which works closely alongside the Materials Project.</description>
+    </item>
+    
+    <item>
+      <title>Random</title>
+      <link>https://alexdunn.io/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexdunn.io/random/</guid>
+      <description>Some random non-work related stuff that doesn&amp;rsquo;t make sense being in a post. Probably in some state of disrepair.
+TOC  gallery of dslr photos software that&amp;rsquo;s doing it right  Good software  Notion - an app for note taking, productivity, writing, ideas, and just about evanything else. Dark reader - dev reading  Photos Gallery Some landscape pics I took with a DSLR yuba river, ca
+yuba river, ca</description>
     </item>
     
   </channel>

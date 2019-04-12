@@ -1,5 +1,5 @@
 ---
-title: "Fun"
+title: "Random"
 date: false
 draft: false
 heading: false
