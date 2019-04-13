@@ -8,7 +8,7 @@ heading: false
 # welcome
 
 
-#### I'm Alex - enthusiast of science, freeskiing, machine intelligence, motorcycles, mathematics, programming, and engineering. You've stumbled upon my personal site, internet traveller - enjoy your stay! 
+#### I'm Alex - enthusiast of science, freeskiing, machine intelligence, two-wheeled vehicles, and all things computing. You've stumbled upon my personal site, internet traveller - enjoy your stay! 
 
 <img src="/ski_mask.jpg", height=400px></img>
 
