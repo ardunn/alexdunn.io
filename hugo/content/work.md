@@ -27,7 +27,7 @@ I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LB
 # Papers
 1. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
 
-2. **Dunn, A.**, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** J. Phys: Materials. [citation details to-be-updated](https://doi.org/10.1088/2515-7639/ab0c3d)
+2. **Dunn, A.**, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** _J. Phys. Mater._ [2, 034002 (2019).](https://doi.org/10.1088/2515-7639/ab0c3d)
 
 
 # Public Speaking
