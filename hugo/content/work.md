@@ -13,7 +13,7 @@ heading: false
 
 Right now, I develop new machine learning approaches and computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
 
-I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). I'm also a big fan of free and open source software, blockchain tech, and just programming, in general. Check out my abbreviated CV below, if you're into that sort of thing... if you want the full version, shoot me an email at `ardunn@lbl.gov`.
+I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). I'm also a big fan of free and open source software, blockchain tech, and just programming, in general. Check out my abbreviated CV below, if you're into that sort of thing... if you want the full version, shoot me an email at `ardunn@lbl.gov`.
 
 `Last updated: 2019-04-01`
 
@@ -30,7 +30,7 @@ I'm part of the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LB
 2. **Dunn, A.**, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** _J. Phys. Mater._ [2, 034002 (2019).](https://doi.org/10.1088/2515-7639/ab0c3d)
 
 
-# Public Speaking
+# Speaking
 1. [Oral] **Dunn, A.**, Wang, Q., Ganose, A., Faghaninia, A., Jain, A. “An Automatic Materials Science Machine Learning Tool for Benchmarking and Prediction” AI-based Investigation of Material Properties (TMS 2019), San Antonio, Texas. _Presented March 12, 2019_
 
 2. [Oral] **Dunn A.**, Faghaninia, A. “Matminer: Data Mining for Materials Science” at Materials Project Workshop 2018, Berkeley, California. _Presented August 10, 2018_
