@@ -11,7 +11,7 @@ heading: false
 ## I'm interested in data science and scientific computing. 
 #### (And sometimes both of them together) 
 
-<img src="/headshot_professional.jpg" align="right"  hspace="20" style="margin: 0px 30px; box-shadow: 5px 5px 3px grey;"> </img>
+<img src="/headshot_professional.jpg" align="right"  hspace="20" style="margin: 10px 30px; box-shadow: 5px 5px 3px grey;"> </img>
 
 Right now, I develop new machine learning approaches and computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
 
