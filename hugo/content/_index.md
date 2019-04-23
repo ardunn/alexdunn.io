@@ -5,10 +5,8 @@ draft: false
 heading: false
 ---
 
-# welcome
-
-
-#### I'm Alex - enthusiast of science, freeskiing, machine intelligence, two-wheeled vehicles, and all things computing. You've stumbled upon my personal site, internet traveller - enjoy your stay! 
+# I'm Alex. 
+Enthusiast of science, freeskiing, machine intelligence, two-wheelers, and all things computing.
 
 <img src="/ski_mask.jpg", height=400px, style="box-shadow: 5px 5px 3px grey;"></img>
 
