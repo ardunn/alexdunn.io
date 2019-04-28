@@ -14,9 +14,13 @@ Some random non-work related stuff that doesn't make sense being in a post. Prob
 * [software that's doing it right](#good-software)
 
 
-## Good software
-* [Notion](https://notion.so) - an app for note taking, productivity, writing, ideas, and just about evanything else.
-* [Dark reader](https://darkreader.org/) - dev reading 
+## Software that's doing it right
+#### (For the most part)
+* [Notion](https://notion.so) - an app for note taking, productivity, writing, and ideas
+* [Dark reader](https://darkreader.org/) - web browsing that's easier on the eyes
+* [fzf](https://github.com/junegunn/fzf) - a fuzzy file finder for your terminal emulator or tty
+* [dmenu-extended](https://github.com/MarkHedleyJones/dmenu-extended) - Similar to fzf but for linux GUIs with dmenu enabled
+* [polybar](https://github.com/jaagr/polybar) - A status bar for linux 
 
 
 
