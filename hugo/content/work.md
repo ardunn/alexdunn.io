@@ -13,9 +13,11 @@ heading: false
 
 <img src="/headshot_professional.jpg" align="right"  hspace="20" style="margin: 10px 30px; box-shadow: 5px 5px 3px grey;"> </img>
 
-Right now, I develop new machine learning approaches and computational tools to accelerate discovery of novel materials (particularly for energy applications) - or in not so many words, I use computers to help find and design new materials.
+I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). I use computers to help find and design new materials using data science and _ab-initio_ calculations. I'm also a big fan of free and open source software, blockchain tech, and just programming, in general.
 
-I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at LBL which works closely alongside the [Materials Project](materialsproject.org). I'm also a big fan of free and open source software, blockchain tech, and just programming, in general. Check out my abbreviated CV below, if you're into that sort of thing... for the  full version, shoot me an email at `ardunn@lbl.gov`.
+* [Github](https://github.com/ardunn)
+* [Google Scholar](https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en)
+* [LinkedIn](https://www.linkedin.com/in/dunnslinked/)
 
 `Last updated: 2019-04-01`
 
@@ -23,7 +25,7 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 
 
 # Formal education
-* **B.Sc.**, Chemical Engineering (Magna Cum Laude) - UCLA (_2014-2017_). Advisor: Yvonne Chen
+* **B.Sc.**, Chemical Engineering - UCLA (_2014-2017_). Advisor: Yvonne Chen
 * **Ph.D.** Materials Science and Engineering - UC Berkeley (_2017-present_). Advisors: Gerbrand Ceder, Anubhav Jain [**Research topic**: Data Science and HPC for Materials Design]
 
 # Papers
@@ -55,6 +57,16 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 5. **Lead App Designer @ UCLA Dept. of Anesthesiology Mobile App Team.** Lead UX design for a mobile application for perioperative/anesthetic care for UCLA Health. Worked alongside the UCLA Health Center to develop a comprehensive program for wireless bioinformatics. _(2015 - 2016)_
 
 
+# Leadership, Memberships,  and Awards
+
+1. **NERSC User Group [Executive Committee](https://www.nersc.gov/users/NUG/NUGEX/)** - Executive Committe Member _(2019 - 2022)_
+2. **[Computational Materials Science at Berkeley](https://computationalmaterials.github.io/)** - Co-Founder, officer _(2018)_
+3. **Magna Cum Laude** - UCLA _(2017)_
+4. **Tau Beta Pi CA Epsilon** - Distinguished member _(2016)_
+5. **Edward and Doris Rhoad Scholarship** - Selected recipient _(2014)_
+6. **National AP Scholar with Distinction** - _(2014)_
+7. **Regent's and Chancellor's Scholarship at Berkeley** - Selected but declined _(2014)_
+
 # Skills
 
 ### Programming
@@ -84,7 +96,6 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 - **Git**
 - **WordPress**
 
-
 # Open source software
 * **[rocketsled](https://github.com/hackingmaterials/rocketsled):** (maintainer) Black box optimization framework for high-throughput computing.
 * **[automatminer](https://github.com/hackingmaterials/automatminer):** (maintainer) An autoML tool for predicting materials properties..
@@ -94,8 +105,3 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 * **[atomate](https://github.com/hackingmaterials/atomate):** (contributor) Pre-built workflows to calculate materials properties.
 * among others...
 
-
-# Links
-* [Github](https://github.com/ardunn)
-* [Google Scholar](https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en)
-* [LinkedIn](https://www.linkedin.com/in/dunnslinked/)
