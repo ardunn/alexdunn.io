@@ -5,7 +5,15 @@ date = "2019-04-05"
 heading= true
 +++
 
+## TOC:
 
+* Introduction
+* [Step A: Configure SSH Access](#local)
+* [Step B: Configure automatic backups with crontab and rsync](#backups)
+* [Step C: Easily mount your Pi with SSHFS](#mount)
+* [Step D (optional): Configure access outside the local network](#external)
+* [Step E (optional): Configure a samba share](#samba)
+* [Maintenance and Conclusions](#conclusions)
 
 For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home,  or make a robot - the list goes on and on. And regardless of your choice of project, the Raspberry Pi community will almost always be there for you if (read: when) you need help.
 
@@ -70,8 +78,8 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
 
 ## Steps
 
-### A. Configure local SSH access to your Raspberry Pi.
 
+### <a name="local"></a> A. Configure local SSH access to your Raspberry Pi.
 #### Objective: Set up the Pi so you can access it from your main computer on the local network. After this step, you shouldn't need to do any physical work. You should connect a mouse, keyboard, and monitor to your Pi for these steps.
 
 2. Plug the ethernet cable into your Pi and the other end into your router. Join the network. Your router should automatically assign an IP to the Pi with DHCP.
@@ -127,7 +135,7 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
 Great! If you've gotten this far, all of your physical configuration should be done.
 
 
-### B. Configure automatic backups
+### B<a name="backups"></a>. Configure automatic backups
 
 #### The two tools we will be using for automatic backups are `rsync` and `crontab`. The idea is that `rsync` will synchronize the disks on a schedule dictated by the system (`crontab`). 
 
@@ -166,67 +174,30 @@ Great! If you've gotten this far, all of your physical configuration should be d
 
 Now your data is being backed up automatically. You should try running `raz@pi:~$ source ~/sync_script` and check the logs in your newly-setup log dir to make sure it is syncing as intended. The next step is to make your master drive easily accessible from the local network.
 
-### C. Enable a Samba Share
+### <a name="mount"></a> C. Easily mount your server
 
 By default, all SSH-enabled servers have SFTP enabled. So you are already able to connect via your computer's file explorer or FTP apps on your phone or computer. 
 
-_However_, depending on the files and hardware you are running on, a Samba share may be as fast (or even faster) than SFTP; this is because the Pi's little CPU has to encrypt SFTP packets whereas Samba does not (by default). For normal usage (watching HD videos over the network, for example) being served from the Pi, I've found Samba to be much faster. Aaaaaaaaand if you are a Windows user (boo, hiss) you'll have an easier time getting Windows Explorer to connect to your share.
+However, a more convenient way of accessing your share is with sshfs. sshfs is a simple SFTP utility which mounts your server to a computer and makes it appear like any other hard drive. If you're on Linux with the `apt` pacakge manager, you should be able to do a simple
 
-1. Install Samba.
-    ```
-    raz@pi:~$ sudo apt-get install samba samba-common
-    ```
+```
+$ sudo apt-get install sshfs
+```
 
-2. Configure Samba.
-    There are tons of online guides for this, but we'll go through a quick walkthrough here in the same way I configured mine (_i.e._, the absolute easiest and fastest way possible).
+If it is not already installed. For Mac, [check out this helpful FUSE package](https://github.com/osxfuse/osxfuse/wiki/SSHFS). For Windows, the [sshfs-win package](https://github.com/billziss-gh/sshfs-win)  might be helpful. 
 
-    First, edit the your Pi's Samba configuration file `raz@pi:~$ sudo vim /etc/samba/smb.conf`. If you're feeling dangerous, don't make a backup of this file. Then, add this text for your share (and replace the `Path` with your master drive's mount point):
+Then `mkdir` a directory where you'd like to mount your server. I personally use `~/pi/`. For further convenience, you can set up an alias command in your `/.bashrc` to mount it with a short command:
 
-    ```
-    # In /etc/samba/smb.conf
-    [share]
-    Comment =samba_share
-    Path = /home/raz/disk8
-    Browseable = yes
-    Writeable = Yes
-    only guest = no
-    create mask = 0777
-    directory mask = 0777
-    Public = yes
-    Guest ok = no
-    ```
+```
+alias pifs="sshfs raz@$LOCAL_SERVER_IP:/home/raz/disk8 /home/x/pi/"
+```
 
-    You shouldn't have to add yourself to a user group with this approach. This configuration basically says that _anyone_ with an account on the Pi can login to the samba share. You can restrict this if needed, but I am the only one with an account on my Pi so this simple approach works fine..
+Now go ahead and mount your server with `pifs`. You should be able to browse your server files in a terminal, file browser, or almost any other application!
 
-    Now enable the Samba `smdb` service:
-    ```
-    sudo service smbd restart
-    ```
+![sshfs_mounted](/sshfs_mountd.png)
 
-3. Check that you can access your shared drive.
- 
-    On Linux, most file browsers (such as Nautilus) will have a "connect to server" option which can be configured to automatically connect via SMB or SFTP to your share.
+_If you go through the steps in part D, you'll need to change your IP to your public facing one (or add an additional alias). You'll also need to specify the port you are using if it is not the standard port 22._
 
-    ![connect1](/connect_to_server.png)
-
-    _These linux screenshots are from an earlier verison of this tutorial which used a different IP and mountpoint._ 
-
-    ![connect1](/connect_to_server_2.png)
-
-    _Protip: Only make your password four letters long for extra danger!_
-
-    ![connect1](/connect_to_server_3.png)
-
-    Configured correctly, your linux device will now automatically connect to your share.
-
-    On Mac, you can just press cmd + K in Finder to connect via SMB or SFTP. Unfortunately, newer versions of MacOS (10.14+ but possibly earlier versions) allow read/write to SMB, but only allow read for SFTP. If you want to _upload_ as well as _download_ files then, you'll need to use SMB or a 3rd party app.
-    ![finder](/smb_window.png)
-
-    ![finder2](/mac_smb.png)
-
-    On Windows, you can typically just click "Network" or "Network locations" in File Explorer. On your phone, most SFTP or Samba apps will work fine.
-
----
 
 # And youre done!
 ## Congrats on the new home cloud!
@@ -239,7 +210,7 @@ I keep it stashed away in a drawer, out of sight and out of mind. **Beauty is in
 If you want to access your Pi (and data) from outside your local network, read section D. 
 
 
-### D. Optional - Create and secure access outside the local network
+### <a name="external"></a> D. Optional - Create and secure access outside the local network
 
 1. Harden your SSH server. 
 
@@ -297,17 +268,87 @@ If you want to access your Pi (and data) from outside your local network, read s
     $ curl ifconfig.me
     ```
 
-    If you can successfully SSH into your Pi, you should be able to SFTP into your Pi remotely - in other words, you can get your files from any (internet-connected) location in the world! All while having your files be safely in your home, under your own control, and backed up (at least backed up in case of disk failure or erasure, and not say, a house fire). To enable remote samba, I recommend you look at some online tutorials and tread carefully.
+    If you can successfully SSH into your Pi, you should be able to SFTP into your Pi remotely - in other words, you can get your files from any (internet-connected) location in the world! All while having your files be safely in your home, under your own control, and backed up (at least backed up in case of disk failure or erasure, and not say, a house fire).
+
+If you completed part C (enabling SSHFS), you can add an alias in your `~/.bashrc` for accessing your server from anywhere:
+
+```
+alias pifsremote="sshfs -p 12345 raz@$REMOTE_IP:/home/raz/disk8 /home/x/pi/"
+```
 
 #### Potential problems: If your ISP changes your public IP regularly, this port-forwarding approach will only work for short periods of time (weeks). 
 
-## Maintenance and Conclusions
+
+### <a name="samba"></a> E. (optional) Enable a Samba Share
+
+Depending on the files and hardware you are running on, a Samba share may be as fast (or even faster) than SFTP; this is because the Pi's little CPU has to encrypt SFTP packets whereas Samba does not (by default). For normal usage (watching HD videos over the network, for example) being served from the Pi, I've found Samba to be much faster. Aaaaaaaaand if you are a Windows user (boo, hiss) you'll have an easier time getting Windows Explorer to connect to your share.
+
+1. Install Samba.
+    ```
+    raz@pi:~$ sudo apt-get install samba samba-common
+    ```
+
+2. Configure Samba.
+    There are tons of online guides for this, but we'll go through a quick walkthrough here in the same way I configured mine (_i.e._, the absolute easiest and fastest way possible).
+
+    First, edit the your Pi's Samba configuration file `raz@pi:~$ sudo vim /etc/samba/smb.conf`. If you're feeling dangerous, don't make a backup of this file. Then, add this text for your share (and replace the `Path` with your master drive's mount point):
+
+    ```
+    # In /etc/samba/smb.conf
+    [share]
+    Comment =samba_share
+    Path = /home/raz/disk8
+    Browseable = yes
+    Writeable = Yes
+    only guest = no
+    create mask = 0777
+    directory mask = 0777
+    Public = yes
+    Guest ok = no
+    ```
+
+    You shouldn't have to add yourself to a user group with this approach. This configuration basically says that _anyone_ with an account on the Pi can login to the samba share. You can restrict this if needed, but I am the only one with an account on my Pi so this simple approach works fine..
+
+    Now enable the Samba `smdb` service:
+    ```
+    raz@pi:~$ sudo service smbd restart
+    ```
+
+3. Check that you can access your shared drive.
+ 
+    On Linux, most file browsers (such as Nautilus) will have a "connect to server" option which can be configured to automatically connect via SMB or SFTP to your share.
+
+    ![connect1](/connect_to_server.png)
+
+    _These linux screenshots are from an earlier verison of this tutorial which used a different IP and mountpoint._ 
+
+    ![connect1](/connect_to_server_2.png)
+
+    _Protip: Only make your password four letters long for extra danger!_
+
+    ![connect1](/connect_to_server_3.png)
+
+    Configured correctly, your linux device will now automatically connect to your share.
+
+    On Mac, you can just press cmd + K in Finder to connect via SMB or SFTP. Unfortunately, newer versions of MacOS (10.14+ but possibly earlier versions) allow read/write to SMB, but only allow read for SFTP. If you want to _upload_ as well as _download_ files then, you'll need to use SMB or a 3rd party app.
+    ![finder](/smb_window.png)
+
+    ![finder2](/mac_smb.png)
+
+    
+On Windows, you can typically just click "Network" or "Network locations" in File Explorer. On your phone, most SFTP or Samba apps will work fine.
+
+Remember, this samba share is only accessible on the local network, as it was intended. To enable remote samba, I recommend you look at some online tutorials and tread carefully.
+
+---
+
+## <a name="conclusions"></a> Maintenance and Conclusions
 
 The crontab commands pipe all the errors and output to a log file on the Pi on a daily basis. Of course, we could make the commands more sophisticated - "if there is an error during rsync, send me an email, remount all HDDs, and try again" (if you do this high-five to you) - but generally, simple is good enough for this little cloud. 
 
 In the end, we accomplished what we wanted:
 
-- [X] fast enough to stream HD movies (via Samba, locally at least)
+- [X] fast enough to stream HD movies (via SSHFS remotely or locally, or Samba locally)
 - [X] make at least one redundant backup (extra backup disk)
 - [X] be resistant to my own stupidity (delayed but frequent backups)
 - [X] resistant to being hacked (by hardening)
