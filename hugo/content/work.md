@@ -35,13 +35,15 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 
 
 # Speaking
-1. [Oral] **Dunn, A.**, Wang, Q., Ganose, A., Faghaninia, A., Jain, A. “An Automatic Materials Science Machine Learning Tool for Benchmarking and Prediction” AI-based Investigation of Material Properties (TMS 2019), San Antonio, Texas. _Presented March 12, 2019_
+1. **[Invited]** **Dunn, A.**, Jain, A. "Software tools for Accelerating Materials Discovery with Machine Learning" at Foundational and Applied Data Science for Molecular and Material Science Engineering (Lehigh I-DISC Institute for Data, Intelligent Systems, and Computation), Bethlehem, Pennsylvania. _Presented May 23, 2019_.
 
-2. [Oral] **Dunn A.**, Faghaninia, A. “Matminer: Data Mining for Materials Science” at Materials Project Workshop 2018, Berkeley, California. _Presented August 10, 2018_
+2. **Dunn, A.**, Wang, Q., Ganose, A., Faghaninia, A., Jain, A. “An Automatic Materials Science Machine Learning Tool for Benchmarking and Prediction” at AI-based Investigation of Material Properties (TMS 2019), San Antonio, Texas. _Presented March 12, 2019_
 
-3. [Poster] **Dunn A.**, Bajaj, S., Jain, A. “Automatic Optimization Algorithms for Maximum-Throughput Materials Design and Discovery” at Science Undergraduate Laboratory Internship Program, Berkeley, California. _Presented August 5, 2016_
+3. **Dunn A.**, Faghaninia, A. “Matminer: Data Mining for Materials Science” at Materials Project Workshop 2018, Berkeley, California. _Presented August 10, 2018_
 
-4. [Oral] **Dunn, A.**, Ray, A., Daloglu, M.U., Ozcan, A. “The Development of Polymer-based Nanolenses Towards Enhanced Nanoparticle Imaging” at UCLA HHMI Day, Los Angeles, California. _Presented May 31, 2016_
+4. **Dunn A.**, Bajaj, S., Jain, A. “Automatic Optimization Algorithms for Maximum-Throughput Materials Design and Discovery” at Science Undergraduate Laboratory Internship Program, Berkeley, California. _Presented August 5, 2016_
+
+5. **Dunn, A.**, Ray, A., Daloglu, M.U., Ozcan, A. “The Development of Polymer-based Nanolenses Towards Enhanced Nanoparticle Imaging” at UCLA HHMI Day, Los Angeles, California. _Presented May 31, 2016_
 
 
 # Experience
