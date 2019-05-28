@@ -12,7 +12,7 @@ heading: false
 #### (And sometimes both of them together) 
 
 {{% figure src="/headshot_professional.jpg#floatright" %}}
-I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov) which works closely alongside the [Materials Project](materialsproject.org). I use computers to help find and design new materials using data science and _ab-initio_ calculations.
+I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov) which works closely alongside the [Materials Project](https://materialsproject.org). I use computers to help find and design new materials using data science and _ab-initio_ calculations.
 
 * [Github](https://github.com/ardunn)
 * [Google Scholar](https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en)
