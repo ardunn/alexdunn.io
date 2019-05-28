@@ -8,7 +8,7 @@ heading: false
 # I'm Alex. 
 Enthusiast of science, freeskiing, machine intelligence, two-wheelers, and all things computing.
 
-<img src="/ski_mask.jpg", height=400px, style="box-shadow: 5px 5px 3px grey;"></img>
+<img src="/ski_mask.jpg", height=400px></img>
 
 * Interested in my work? Check out my [CV](/work)
 * Here just looking around? Browse the [posts](/posts).
