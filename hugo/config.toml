@@ -15,8 +15,8 @@ pygmentscodefences  = true
 
 
 [[menu.main]]
-    name = "Work"
-    url  = "/work/"
+    name = "CV"
+    url  = "/cv/"
 [[menu.main]]
     name = "Posts"
     url  = "/posts/"

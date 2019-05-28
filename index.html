@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.54.0" />
+	<meta name="generator" content="Hugo 0.40.1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="HandheldFriendly" content="True">
@@ -38,21 +38,27 @@
     vertical-align:baseline;
     margin:0;
     padding:0;
-    color: black;
+    color: #d3d3d3;
     text-decoration-skip: ink;
+    background-color: #181a1b;
+	    
   }
 
   body {
 	  font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
     font-size:17px;
     line-height:160%;
-    color:#1d1313;
     max-width:700px;
     margin:auto;
+
   }
 
   p {
     margin: 20px 0;
+
+	 
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   a img {
@@ -74,13 +80,14 @@
   }
 
   pre, code {
-    font: 12px  Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
+    font: 18px  Consolas, "Liberation Mono", Menlo, Courier, monospace;
   }
 
   code {
-    font-size: 12px;
+    font-size: 18px;
     padding: 4px;
+
+    overflow: hidden;
   }
 
   pre {
@@ -203,8 +210,8 @@
   }
 
   #sub-header, time {
-    color:#403c3b;
-    font-size:13px;
+    color:grey;
+    font-size:18px;
   }
 
   #sub-header {
@@ -212,8 +219,8 @@
   }
 
   #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
+    font-size:55px;
+    color:white;
     line-height:120%;
   }
 
@@ -244,7 +251,7 @@
   #content {
     text-align:left;
     width:100%;
-    font-size:15px;
+    font-size:22px;
     padding:20px 0 80px;
   }
 
@@ -253,11 +260,11 @@
   }
 
   #content h2 {
-    font-size:25px;
+    font-size:30px;
   }
 
   #content .entry-content {
-    margin-top:15px;
+    margin-top:22px;
   }
 
   #content time {
@@ -277,7 +284,7 @@
   }
 
   .posts_listing li {
-    margin:0 0 25px 15px;
+    margin:0 0 25px 20px;
   }
 
   .posts_listing li a:hover,#nav a:hover {
@@ -298,7 +305,7 @@
   #nav li {
     list-style-type:none;
     display:table-cell;
-    font-size:15px;
+    font-size:22px;
     padding: 0 20px;
   }
 
@@ -344,7 +351,7 @@
     }
 
     #content h1 {
-      font-size:25px;
+      font-size:28px;
     }
 
     #content h2 {
@@ -374,21 +381,34 @@
     #content {
       margin-top:0;
       padding-top:20px;
-      font-size:12px;
+      font-size:22px;
     }
 
     #content h1 {
-      font-size:20px;
+      font-size:26px;
     }
 
     #content h2 {
-      font-size:18px;
+      font-size:24px;
     }
 
     .posts_listing li div{
-      font-size:12px;
+      font-size:22px;
     }
   }
+
+img[src$='#floatleft']
+{
+	float:left;
+        
+}
+
+img[src$='#floatright']
+{
+	float:right;
+        margin-left: 15px;
+        margin-right: 30px;
+}
 </style>
 
 
@@ -402,11 +422,11 @@
       <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
       <ul>
         
+          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+        
           <li><a href="https://alexdunn.io/posts/">Posts</a></li>
         
           <li><a href="https://alexdunn.io/random/">Random</a></li>
-        
-          <li><a href="https://alexdunn.io/work/">Work</a></li>
         
       </ul>
     </section>
@@ -427,8 +447,8 @@
 <p><img src="https://alexdunn.io/ski_mask.jpg", height=400px, style="box-shadow: 5px 5px 3px grey;"></img></p>
 
 <ul>
-<li>If you&rsquo;re interested in my work, check out my <a href="https://alexdunn.io/work">CV</a> or my programming/ML/tech <a href="https://alexdunn.io/posts">posts</a>.</li>
-<li>Here just looking around? Browse the <a href="https://alexdunn.io/random">random</a> page or the non-tech <a href="https://alexdunn.io/posts">posts</a>.</li>
+<li>Interested in my work? Check out my <a href="https://alexdunn.io/work">CV</a></li>
+<li>Here just looking around? Browse the <a href="https://alexdunn.io/posts">posts</a>.</li>
 <li>Need to contact me? <code>denhaus@gmail.com</code></li>
 <li><a href="https://github.com/ardunn">Github</a></li>
 <li><a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&amp;hl=en">Google Scholar</a></li>

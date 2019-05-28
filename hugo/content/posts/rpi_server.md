@@ -55,9 +55,9 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
 
 1. **A main computer (or a phone)** - This is what you will use to SSH into your Pi, and transfer/view media. Or just use your phone with an SSH and Samba/FTP client.
 
-     Yup, it's a laptop    |   Yup, it's an iphone
+     Yep, it's a laptop    |   Yep, it's an iphone
     :-------------------------:|:-------------------------:
-    ![laptop](/laptop_lowres.jpg)  |  ![phone](/iphone-x-terminus.png)
+    ![laptop](/laptop_lowres.png)  |  ![phone](/iphone-x-terminus.png)
 
 2. **A Raspberry Pi with an OS installed** - This will control your network attached storage. I used a Raspberry Pi 3b+.
 ![rpi lowres](/rpi_lowres.png)
@@ -66,7 +66,7 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
 
     Drive #1 (Old Seagate 2TB)     |  Drive #2  (newer 8TB Seagate Expansion)
     :-------------------------:|:-------------------------:
-    ![4tb](/4tb_lowres.jpg)  |  ![8tb](/8tb_lowres.jpg)
+    ![4tb](/4tb_lowres.png)  |  ![8tb](/8tb_lowres.png)
 
 
 4. **Access to your wifi network and router, + an ethernet cable** - In the interest of rapid file transfer,  you'll definitely want to have your Pi wired rather than wireless. The raspberry pi's wireless speed is noticeably less than the LAN speed: Jeff Greerling's [Raspberry Pi Dramble site](https://www.pidramble.com/wiki/benchmarks/networking) has a great table comparing the LAN vs WiFi speeds:
