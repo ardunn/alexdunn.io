@@ -21,7 +21,7 @@ Some random non-work related stuff that doesn't make sense being in a post. Prob
 * [fzf](https://github.com/junegunn/fzf) - a fuzzy file finder for your terminal emulator or tty
 * [dmenu-extended](https://github.com/MarkHedleyJones/dmenu-extended) - Similar to fzf but for linux GUIs with dmenu enabled
 * [polybar](https://github.com/jaagr/polybar) - A status bar for linux 
-
+* [Julia](https://julialang.org) - A high performance interpreted language for scientific computing
 
 
 ## Photos Gallery
