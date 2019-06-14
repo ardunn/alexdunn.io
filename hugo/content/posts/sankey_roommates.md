@@ -5,5 +5,40 @@ date = "2019-06-11"
 heading= true
 +++
 
-![alt text](/4x2_roommates_whitetxt.png)
 
+### Finding new roommates can be a serious pain. 
+
+One of our roommates is leaving in July, so the unfortunate responsibility to find a replacement has fallen upon me. 99% of the time, I'd call upon a friend to fill a spot, but our house is a bit out in the sticks -- far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.
+
+So I turned to the trusty backwater of the internet. *Craigslist.*
+
+### The Screening
+
+Craigslist is a reliable tool, for sure. It's guaranteed to give you a large population of replies. But a simple fact is that CL is filled with scammers, criminals, and otherwise shady people who you'd rather not live with. So we roommates and our landlord devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb. 
+
+![screening](/roomies_diagram.png)
+
+First comes a short conversation over email, straight from the ad. Then, a short phone interview. If that all goes well, we invite them over to the house (we'd hope to screen out any sketchy people by this point). If they like the house and we like them, they move onto our landlord's approval process. Then, they're our new roommate!
+
+### Results
+
+Below is a Sankey Diagram (made with [SankeyMatic](http://sankeymatic.com/)) of the whole process over the last two months. In total, almost 50 responses screened! 
+
+<div class="image">
+   <img  src="/4x2_roommates_whitetxt.png" alt="Some awesome text"/>
+</div>
+
+*Hint: Hover over the picture to zoom!*
+
+Breaking down the stats, our "acceptance rate" is 3/46, or 6.5%. If we limit that to Craigslist inquiries only, it's 1/43, or 2.3% -- even lower! That's [lower](https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html) than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)
+
+If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is only 46! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not.
+
+A better way to think about these numbers is with statistics, using a hypothesis test. Let's first identify an acceptance rate we can compare against. The most selective Ivy-league university is Stanford, which at in 2019, has a 5.1% acceptance rate:
+
+![acceptance](/acceptance_rates.png)
+*We'll just ignore the Curtis Institute of Music for the time being*
+
+Now, we'll formulate our hypoth
+
+In the end, we actually wound up going with an acquaintance of mine who I got to know pretty well during the previous year. 
