@@ -6,10 +6,19 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexdunn.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Flow of Data: Finding a New Roommate</title>
+      <link>https://alexdunn.io/posts/sankey_roommates/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexdunn.io/posts/sankey_roommates/</guid>
+      <description>Finding new roommates can be a serious pain. One of our roommates is leaving in July, so the unfortunate responsibility to find a replacement has fallen upon me. 99% of the time, I&amp;rsquo;d call upon a friend to fill a spot, but our house is a bit out in the sticks &amp;ndash; far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.</description>
+    </item>
     
     <item>
       <title>Tech-MacGyvering a Raspberry Pi Home Cloud</title>

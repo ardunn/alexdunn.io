@@ -5,6 +5,8 @@ date = "2019-06-11"
 heading= true
 +++
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 ### Finding new roommates can be a serious pain. 
 
@@ -34,11 +36,7 @@ Breaking down the stats, our "acceptance rate" is 3/46, or 6.5%. If we limit tha
 
 If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is only 46! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not.
 
-A better way to think about these numbers is with statistics, using a hypothesis test. Let's first identify an acceptance rate we can compare against. The most selective Ivy-league university is Stanford, which at in 2019, has a 5.1% acceptance rate:
 
-![acceptance](/acceptance_rates.png)
-*We'll just ignore the Curtis Institute of Music for the time being*
+### Statistical analysis
 
-Now, we'll formulate our hypoth
-
-In the end, we actually wound up going with an acquaintance of mine who I got to know pretty well during the previous year. 
+This section is coming soon!

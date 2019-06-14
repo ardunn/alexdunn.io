@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://alexdunn.io/posts/sankey_roommates/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alexdunn.io/posts/rpi_server/</loc>
     <lastmod>2019-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://alexdunn.io/</loc>
-    <lastmod>2019-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,7 +28,7 @@
   
   <url>
     <loc>https://alexdunn.io/posts/</loc>
-    <lastmod>2019-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
