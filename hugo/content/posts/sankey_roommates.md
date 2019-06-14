@@ -32,11 +32,11 @@ Below is a Sankey Diagram (made with [SankeyMatic](http://sankeymatic.com/)) of 
 
 *Hint: Hover over the picture to zoom!*
 
-Breaking down the stats, our "acceptance rate" is 3/46, or 6.5%. If we limit that to Craigslist inquiries only, it's 1/43, or 2.3% -- even lower! That's [lower](https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html) than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)
+Breaking down the stats, our "acceptance rate" is 3/46, or 6.5%. If we limit that to Craigslist inquiries only, it's 1/44, or 2.3% -- even lower! That's [lower](https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html) than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)
 
 If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is only 46! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not.
 
 
 ### Statistical analysis
 
-This section is coming soon!
+Coming soon!
