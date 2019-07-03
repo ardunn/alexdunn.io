@@ -18,7 +18,7 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 * [Google Scholar](https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en)
 * [LinkedIn](https://www.linkedin.com/in/dunnslinked/)
 
-`Last updated: 2019-05-27`
+`Last updated: 2019-07-03`
 
 
 # Formal education
@@ -27,10 +27,11 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
     * **Research topic**: Materials Design with Data Science and HPC
 
 # Papers
-1. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
+1. Tshitoyan, V., Dagdelen, J., Weston, L., **Dunn, A.**,  Rong Z., Kononova, O., Persson, K.A., Ceder, G.,& Jain, A. **Unsupervised word embeddings capture latent knowledge from materials science literature** _Nature_ [571, 95-98 (2019)](https://doi.org/10.1038/s41586-019-1335-8)
 
 2. **Dunn, A.**, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** _J. Phys. Mater._ [2, 034002 (2019).](https://doi.org/10.1088/2515-7639/ab0c3d)
 
+3. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
 
 # Speaking
 1. **[Invited]** **Dunn, A.**, Jain, A. "Software tools for Accelerating Materials Discovery with Machine Learning" at Foundational and Applied Data Science for Molecular and Material Science Engineering (Lehigh I-DISC Institute for Data, Intelligent Systems, and Computation), Bethlehem, Pennsylvania. _May 23, 2019_.
