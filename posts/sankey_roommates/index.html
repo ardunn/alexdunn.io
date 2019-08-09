@@ -460,47 +460,85 @@ img[src$='#floatright']
 
   
     <div id=sub-header>
-      June 2019 · 2 minute read
+      June 2019 · 3 minute read
     </div>
   
 
   <div class="entry-content">
     
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
 </script>
 
 <h3 id="finding-new-roommates-can-be-a-serious-pain">Finding new roommates can be a serious pain.</h3>
 
-<p>One of our roommates is leaving in July, so the unfortunate responsibility to find a replacement has fallen upon me. 99% of the time, I&rsquo;d call upon a friend to fill a spot, but our house is a bit out in the sticks &ndash; far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.</p>
+<p>Both of housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I&rsquo;d call upon a friend to fill a spot, but our house is a bit out in the sticks &ndash; far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.</p>
 
 <p>So I turned to the trusty backwater of the internet. <em>Craigslist.</em></p>
 
 <h3 id="the-screening">The Screening</h3>
 
-<p>Craigslist is a reliable tool, for sure. It&rsquo;s guaranteed to give you a large population of replies. But a simple fact is that CL is filled with scammers, criminals, and otherwise shady people who you&rsquo;d rather not live with. So we roommates and our landlord devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb.</p>
+<p>Craigslist is a reliable tool in that it&rsquo;s guaranteed to give you a large population of replies. But a simple fact is that CL is filled with scammers, criminals, and otherwise shady people who you&rsquo;d rather not live with. So my landlord and I devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb.</p>
 
-<p><img src="https://alexdunn.io/roomies_diagram.png" alt="screening" /></p>
+<p><img src="https://alexdunn.io/screening_big.png" alt="screening" /></p>
 
 <p>First comes a short conversation over email, straight from the ad. Then, a short phone interview. If that all goes well, we invite them over to the house (we&rsquo;d hope to screen out any sketchy people by this point). If they like the house and we like them, they move onto our landlord&rsquo;s approval process. Then, they&rsquo;re our new roommate!</p>
 
 <h3 id="results">Results</h3>
 
-<p>Below is a Sankey Diagram (made with <a href="http://sankeymatic.com/">SankeyMatic</a>) of the whole process over the last two months. In total, almost 50 responses screened!</p>
+<p>Below is a Sankey Diagram (made with <a href="http://sankeymatic.com/">SankeyMatic</a>) of the whole process over the last two months. In total, almost 100 responses screened!</p>
 
 <div class="image">
-   <img  src="https://alexdunn.io/4x2_roommates_whitetxt.png" alt="Some awesome text"/>
+   <img  src="https://alexdunn.io/roommates_sankey.png" alt="Some awesome text"/>
 </div>
 
 <p><em>Hint: Hover over the picture to zoom!</em></p>
 
-<p>Breaking down the stats, our &ldquo;acceptance rate&rdquo; is <sup>3</sup>&frasl;<sub>46</sub>, or 6.5%. If we limit that to Craigslist inquiries only, it&rsquo;s <sup>1</sup>&frasl;<sub>44</sub>, or 2.3% &ndash; even lower! That&rsquo;s <a href="https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html">lower</a> than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)</p>
+<p>In the end, one of our roommates wound up being a craigslister and the other was from a personal connection.</p>
 
-<p>If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our <em>n</em> is only 46! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not.</p>
+<p>Breaking down the stats, final &ldquo;acceptance rate&rdquo; for all candidates is <sup>2</sup>&frasl;<sub>87</sub>, or 2.29%. If we limit that to Craigslist inquiries only, it&rsquo;s <sup>1</sup>&frasl;<sub>67</sub>, or 1.49% &ndash; even lower! That&rsquo;s <a href="https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html">lower</a> than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)</p>
 
-<h3 id="statistical-analysis">Statistical analysis</h3>
+<p>If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our <em>n</em> is &lt;100 in both cases! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world&rsquo;s top universities?</p>
 
-<p>Coming soon!</p>
+<h3 id="we-need-to-use-some-statistics-to-answer-this-pressing-and-important-question">We need to use some statistics to answer this pressing and important question.</h3>
+
+<p>Let&rsquo;s get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford&rsquo;s acceptance rate of 5.1% (admission year 2019). First, we must form a proper null hypothesis. We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford&rsquo;s. If we fail to reject the null hypothesis, there is insufficient statistical evidence.</p>
+
+<p>Here we&rsquo;ll use the notation <code>$ p_{\text{Stanford}} $</code> to represent the Stanford acceptance probability. This number is treated as a population statistic. Our overall acceptance probability is <code>$ p_{\text{roommate}} $</code>, and it&rsquo;s point estimate is what we previously calculated from our sample: <code>$ p_{\text{roommate}} = 0.0229 $</code>.</p>
+
+<p>Our hypothesis test is:</p>
+
+<div>$$H_{0}: p_{\text{roommate}} \geq p_{\text{Stanford}} $$</div>
+<div>$$H_{a}: p_{\text{roommate}} < p_{\text{Stanford}} $$</div>
+
+<p>Work in progress, rest coming soon!</p>
 
   </div>
 
@@ -515,6 +553,10 @@ img[src$='#floatright']
  
 
   
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>
 
