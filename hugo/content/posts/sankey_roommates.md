@@ -1,7 +1,7 @@
 +++
 title = "A Flow of Data: Finding a New Roommate"
 description = ""
-date = "2019-06-11"
+date = "2019-08-08"
 heading= true
 +++
 
