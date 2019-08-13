@@ -20,7 +20,7 @@
     <title>
       
       
-	A Flow of Data: Finding a New Roommate
+	Finding Roommates: Data Flows n&#39; Janky Stats
       
     </title>
     <link rel="canonical" href="https://alexdunn.io/posts/sankey_roommates/">
@@ -456,7 +456,7 @@ img[src$='#floatright']
 
 
 <section id=content>
-  <h1>  A Flow of Data: Finding a New Roommate </h1> 
+  <h1>  Finding Roommates: Data Flows n&#39; Janky Stats </h1> 
 
   
     <div id=sub-header>
@@ -499,13 +499,13 @@ MathJax.Hub.Config({
 
 <h3 id="finding-new-roommates-can-be-a-serious-pain">Finding new roommates can be a serious pain.</h3>
 
-<p>Both of housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I&rsquo;d call upon a friend to fill a spot, but our house is a bit out in the sticks &ndash; far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.</p>
+<p>Both of my housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I&rsquo;d call upon a friend to fill a spot, but our house is a bit out in the sticks &ndash; far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.</p>
 
 <p>So I turned to the trusty backwater of the internet. <em>Craigslist.</em></p>
 
 <h3 id="the-screening">The Screening</h3>
 
-<p>Craigslist is a reliable tool in that it&rsquo;s guaranteed to give you a large population of replies. But a simple fact is that CL is filled with scammers, criminals, and otherwise shady people who you&rsquo;d rather not live with. So my landlord and I devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb.</p>
+<p>Craigslist is a reliable tool, insofar that it&rsquo;s guaranteed to give you a large population of replies. But here&rsquo;s a simple fact about Craigslist: it&rsquo;s <em>filled</em> with scammers, criminals, and otherwise shady people who you&rsquo;d rather not live with. So my landlord and I devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb.</p>
 
 <p><img src="https://alexdunn.io/screening_big.png" alt="screening" /></p>
 
@@ -525,11 +525,11 @@ MathJax.Hub.Config({
 
 <p>Breaking down the stats, final &ldquo;acceptance rate&rdquo; for all candidates is <sup>2</sup>&frasl;<sub>87</sub>, or 2.29%. If we limit that to Craigslist inquiries only, it&rsquo;s <sup>1</sup>&frasl;<sub>67</sub>, or 1.49% &ndash; even lower! That&rsquo;s <a href="https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html">lower</a> than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)</p>
 
-<p>If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our <em>n</em> is &lt;100 in both cases! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world&rsquo;s top universities?</p>
+<p>If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our <em>n</em> is &lt;100 in both cases! The college admissions statistics, in contrast, are taken frrom hundreds of thousands of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world&rsquo;s top universities?</p>
 
 <h3 id="we-need-to-use-some-statistics-to-answer-this-pressing-and-important-question">We need to use some statistics to answer this pressing and important question.</h3>
 
-<p>Let&rsquo;s get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford&rsquo;s acceptance rate of 5.1% (admission year 2019). First, we must form a proper null hypothesis. We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford&rsquo;s. If we fail to reject the null hypothesis, there is insufficient statistical evidence.</p>
+<p>Let&rsquo;s get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford&rsquo;s acceptance rate of 5.1% (admission year 2019). <strong>First, we must form a proper null hypothesis.</strong> We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford&rsquo;s. If we fail to reject the null hypothesis, there is insufficient statistical evidence.</p>
 
 <p>Here we&rsquo;ll use the notation <code>$ p_{\text{Stanford}} $</code> to represent the Stanford acceptance probability. This number is treated as a population statistic. Our overall acceptance probability is <code>$ p_{\text{roommate}} $</code>, and it&rsquo;s point estimate is what we previously calculated from our sample: <code>$ p_{\text{roommate}} = 0.0229 $</code>.</p>
 
