@@ -1,5 +1,5 @@
 +++
-title = "A Flow of Data: Finding a New Roommate"
+title = "Finding Roommates: Data Flows n' Janky Stats"
 description = ""
 date = "2019-08-08"
 heading= true
@@ -37,13 +37,13 @@ MathJax.Hub.Config({
 
 ### Finding new roommates can be a serious pain. 
 
-Both of housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I'd call upon a friend to fill a spot, but our house is a bit out in the sticks -- far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.
+Both of my housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I'd call upon a friend to fill a spot, but our house is a bit out in the sticks -- far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.
 
 So I turned to the trusty backwater of the internet. *Craigslist.*
 
 ### The Screening
 
-Craigslist is a reliable tool in that it's guaranteed to give you a large population of replies. But a simple fact is that CL is filled with scammers, criminals, and otherwise shady people who you'd rather not live with. So my landlord and I devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb. 
+Craigslist is a reliable tool, insofar that it's guaranteed to give you a large population of replies. But here's a simple fact about Craigslist: it's *filled* with scammers, criminals, and otherwise shady people who you'd rather not live with. So my landlord and I devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb. 
 
 ![screening](/screening_big.png)
 
@@ -63,12 +63,12 @@ In the end, one of our roommates wound up being a craigslister and the other was
 
 Breaking down the stats, final "acceptance rate" for all candidates is 2/87, or 2.29%. If we limit that to Craigslist inquiries only, it's 1/67, or 1.49% -- even lower! That's [lower](https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html) than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)
 
-If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is <100 in both cases! The college admissions statistics, in contrast, are taken from millions of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world's top universities?
+If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is <100 in both cases! The college admissions statistics, in contrast, are taken frrom hundreds of thousands of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world's top universities?
 
 ### We need to use some statistics to answer this pressing and important question.
 
 
-Let's get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford's acceptance rate of 5.1% (admission year 2019). First, we must form a proper null hypothesis. We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford's. If we fail to reject the null hypothesis, there is insufficient statistical evidence.
+Let's get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford's acceptance rate of 5.1% (admission year 2019). **First, we must form a proper null hypothesis.** We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford's. If we fail to reject the null hypothesis, there is insufficient statistical evidence.
 
 Here we'll use the notation `$ p_{\text{Stanford}} $` to represent the Stanford acceptance probability. This number is treated as a population statistic. Our overall acceptance probability is `$ p_{\text{roommate}} $`, and it's point estimate is what we previously calculated from our sample: `$ p_{\text{roommate}} = 0.0229 $`.
 
@@ -79,4 +79,6 @@ Our hypothesis test is:
 
 
 Work in progress, rest coming soon!
+
+
 

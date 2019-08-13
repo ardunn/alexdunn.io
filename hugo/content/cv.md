@@ -18,7 +18,7 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 * [Google Scholar](https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en)
 * [LinkedIn](https://www.linkedin.com/in/dunnslinked/)
 
-`Last updated: 2019-07-03`
+`Last updated: 2019-08-13`
 
 
 # Formal education
@@ -34,6 +34,7 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 3. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
 
 # Speaking
+
 1. **[Invited]** **Dunn, A.**, Jain, A. "Software tools for Accelerating Materials Discovery with Machine Learning" at Foundational and Applied Data Science for Molecular and Material Science Engineering (Lehigh I-DISC Institute for Data, Intelligent Systems, and Computation), Bethlehem, Pennsylvania. _May 23, 2019_.
 
 2. **Dunn, A.**, Wang, Q., Ganose, A., Faghaninia, A., Jain, A. “An Automatic Materials Science Machine Learning Tool for Benchmarking and Prediction” at AI-based Investigation of Material Properties (TMS 2019), San Antonio, Texas. _March 12, 2019_
@@ -44,12 +45,13 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 
 5. **Dunn, A.**, Ray, A., Daloglu, M.U., Ozcan, A. “The Development of Polymer-based Nanolenses Towards Enhanced Nanoparticle Imaging” at UCLA HHMI Day, Los Angeles, California. _May 31, 2016_
 
+6. Ganose A., **Dunn, A.** "Data Mining for Materials" at Materials Project Workshop 2019, Berkeley, California. _August 2, 2019_
 
 # Experience
 
 1. **Graduate Student Research Assistant @ LBNL.**  Using data-mining to elucidate structure-property relationships and accelerate predictions of material properties. Running many thousands of density functional theory (DFT) calculations to evaluate candidate thermoelectrics, communicating results to experimental collaborators. Writing open-source software packages for data mining materials properties and running massively parallel calculations on supercomputers. (_2017 -_ present)
 
-2. **Consultant @ MaterialsQM Consulting.** High-throughput synthesis pathway screening using density functional theory and combinatorics. Communicating with clients, preparing reports, and helping guide discovery of novel semiconductor materials. (_2018 -_ present)
+2. **Consultant @ MaterialsQM Consulting.** High-throughput synthesis pathway screening using density functional theory and combinatorics. Communicating with clients, preparing reports, and helping guide discovery of novel semiconductor materials. (_2018 - 2019_)
 
 3. **Undergraduate Student Research Assistant @ LBNL.** Remote position. Wrote a black-box Bayesian optimization (adaptive design) package for use with the workflow software FireWorks. Incorporated several machine learning algorithms as optimization engines, and tested the performance on two example use cases in materials science. (_2016 - 2017_)
 
