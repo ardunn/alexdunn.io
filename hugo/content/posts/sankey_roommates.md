@@ -81,4 +81,8 @@ Our hypothesis test is:
 Work in progress, rest coming soon!
 
 
+We can't use Chi-squared because...
 
+### Conclusion (rename this)
+
+Talk about how convincing a case we made, but that it is still not good enough. Since Stanford's applicants are usually driven people with their lives put together and craigslisters are just random people, the pool of people our populations represent are fundamentall different. This is one of the practical challenges with modern data science

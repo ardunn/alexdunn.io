@@ -55,6 +55,8 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 
 3. **Undergraduate Student Research Assistant @ LBNL.** Remote position. Wrote a black-box Bayesian optimization (adaptive design) package for use with the workflow software FireWorks. Incorporated several machine learning algorithms as optimization engines, and tested the performance on two example use cases in materials science. (_2016 - 2017_)
 
+4. **Principal Web Developer @ RYE Limousine, Inc.** Remote position. Designed and deployed corporate website serving hundreds of customers per month for limousine service using Wordpress and LimoAnywhere. Website included live chat between RYE employees and customers and ability for customers to interface with remote scheduling system. (_2018_)
+
 4. **Howard Hughes Medical Institute Undergraduate Researcher @ UCLA.** Studied on-chip microscopy at the Ozcan Lab. Investigated techniques for rapidly polymerizing nanolenses inside mobile microscopes to identify nanoparticles (such as viruses). (_2015 - 2016_)
 
 5. **Lead App Designer @ UCLA Dept. of Anesthesiology Mobile App Team.** Lead UX design for a mobile application for perioperative/anesthetic care for UCLA Health. Worked alongside the UCLA Health Center to develop a comprehensive program for wireless bioinformatics. (_2015 - 2016_)
