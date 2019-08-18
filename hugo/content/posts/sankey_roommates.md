@@ -77,8 +77,10 @@ Our hypothesis test is:
 <div>$$H_{0}: p_{\text{roommate}} \geq p_{\text{Stanford}} $$</div>
 <div>$$H_{a}: p_{\text{roommate}} < p_{\text{Stanford}} $$</div>
 
+Now we must determine a way to generate the test statistic for `$ p_{\text{roommate}}$`. A `$\Chi^{2}$` test might come to mind as a good way to generate this test statistic; however, the `$\Chi^{2}$` test assumes the 
 
-Work in progress, rest coming soon!
+
+Binomial test assumptions: All events are independent of eachother
 
 
 We can't use Chi-squared because...
