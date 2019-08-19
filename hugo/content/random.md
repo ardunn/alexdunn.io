@@ -22,6 +22,7 @@ Some random non-work related stuff that doesn't make sense being in a post. Prob
 * [dmenu-extended](https://github.com/MarkHedleyJones/dmenu-extended) - Similar to fzf but for linux GUIs with dmenu enabled
 * [polybar](https://github.com/jaagr/polybar) - A status bar for linux 
 * [Julia](https://julialang.org) - A high performance interpreted language for scientific computing
+* [Universal Media Server](https://github.com/UniversalMediaServer/UniversalMediaServer/) - An excellent open source media server, without any of the overhead/frills of Plex/Kodi
 
 
 ## Photos Gallery
