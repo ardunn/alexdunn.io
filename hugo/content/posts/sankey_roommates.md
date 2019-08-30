@@ -1,5 +1,5 @@
 +++
-title = "Finding Roommates: Data Flows n' Janky Stats"
+title = "Bad Statistics: A Tale of Two Roommates"
 description = ""
 date = "2019-08-08"
 heading= true
@@ -35,7 +35,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-## Finding new roommates can be a serious pain. 
+### Finding new roommates can be a serious pain. 
 
 Both of my housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I'd call upon a friend to fill a spot, but our house is a bit out in the sticks -- far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.
 
@@ -69,9 +69,9 @@ In the end, one of our roommates wound up being a craigslister and the other was
 
 Breaking down the stats, final "acceptance rate" for all candidates is 2/87, or 2.29%. If we limit that to Craigslist inquiries only, it's 1/67, or 1.49% -- even lower! That's [lower](https://www.educationcorner.com/colleges-with-lowest-acceptance-rates.html) than Stanford, Harvard, Yale, MIT, Princeton, and Caltech. So you might say getting into our house is harder than getting into the best universities in the world. :)
 
-If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is <100 in both cases! The college admissions statistics, in contrast, are taken frrom hundreds of thousands of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world's top universities?
+If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our `$ n $` is <100 in both cases! The college admissions statistics, in contrast, are taken frrom hundreds of thousands of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world's top universities?
 
-##### We need to use some statistics to answer this pressing and important question.
+##### We need to bust out our AP Stats handbook and use statistics to answer this pressing and important question.
 
 ## <a name="stats"></a> A statistical test...
 
@@ -86,7 +86,7 @@ Our hypothesis test is:
 
 
 
-We'll choose a significance level of `$ \alpha = 0.05 $`; our hypotheses are written as one-tailed tests. Now, all we need is a test statistic of some kind!
+We'll choose a significance level of `$ \alpha = 0.05 $`; our hypotheses are written as one-tailed tests, and our null distribution is defined for `$ p_{\text{roommate}} = p_{\text{Stanford}} $` Now, all we need is a test statistic of some kind!
 
 In particular, we need a statistic for whether the proportion of *one* variable with *two* outcomes is different from the expected proportion; in our case, the outcomes are whether a candidate becomes a roommate or not, and our "expected proportion" is `$ p_{\text{Stanford}} = 0.051$`. The two usual tests for this scenario are:
 
@@ -115,7 +115,7 @@ The `$ \chi^{2} $` test will not work here since while 1 and 2 hold, our expecte
 
 <div>$$P(X=k) = C(n, k)p^{k}(1-p)^{n-k} $$</div>
 
-Where `$ n $` is the number of samples, `$ k $` is the number of "successes" (actually being a roommate, in our case), `$ C(n, k)$` is the formula for the number of combinations for `$ k$` selections from `$ n$` objects, and `$ p $` is just our population probability, `$ p_{\text{Stanford}} $`. If you're wondering where this equation comes from, I'll refer you to [this excellent derivation](https://newonlinecourses.science.psu.edu/stat414/node/67/) which requires no math background and is written in plain language (for the non-math savvy amongst us).
+Where `$ n $` is the number of samples, `$ k $` is the number of "successes" (actually being a roommate, in our case), `$ C(n, k)$` is the formula for the number of combinations for `$ k$` selections from `$ n$` objects, and `$ p $` is just our population probability, `$ p_{\text{Stanford}} $`. `$ P$` is the **probability of randomly observing a sample statistic as or more extreme than this sample, assuming the null hypothesis is true.** In other words, if this probability is high, it's likely out sample was just a fluke and the null hypothesis is true. If you're wondering where this equation comes from, I'll refer you to [this excellent derivation](https://newonlinecourses.science.psu.edu/stat414/node/67/) which requires no math background and is written in plain language (for the non-math savvy amongst us).
 
 Let's set some variables from what we know:
 
@@ -166,10 +166,10 @@ Let's plot the PMF to better visualize our distribution;
 ![binomial](/binomial.png)
 
 
-Finally, we find `$ \boxed{ P(X \leq 2) = 0.179394} $`, more than our `$ \alpha =0.05 $` significance level. This some great news for our null hypothesis, because it means we fail to reject it! Conversely, it's some pretty terrible news for our alternate hypothesis.
+Finally, we find `$ \boxed{ P(X \leq 2) = 0.179394} $`, more than our `$ \alpha =0.05 $` significance level.This  great news for our null hypothesis, because it means we fail to reject it! Conversely, it's some pretty terrible news for our alternate hypothesis. Simply, this means there is a high probability our low roommate accpetance rate was a fluke.
 
 ###### We don't have sufficient evidence that our roommate selection process is more selective than Stanford (at the 5% significance level).
-If you would have jumped to conclusions, you might have sullied the name of the  great Stanford university!
+If you would have jumped to conclusions, you might have sullied the name of the great Stanford university!
 
 <br/>
 ## <a name="conclusion"></a> What if I told you...
@@ -184,10 +184,10 @@ What if I told you..
 
 While I feel the above is a pretty convincing case, let's consider a few practical problems:
 
-1. **Population statistic** - Craigslisters are different from Stanford applicants. I think we can all aggree your average Ivy-League applicant has their life pretty well put together; they're high achievers in high school, likely have financially stable parents (guarantors), and can pass a background check. Craigslisters and Facebook randos on the other hand are ... who-knows-what. These two groups are fundamentally different populations, one with likely a much higher intrinsic ability to pass a housing screening. How would our numbers change if all the interviewees were typical Stanford applicants?  Or consider the inverse: what if all Stanford applicants were drawn from the same general population as our interviewees? i'd wager the Stanford applicants would increase our screening acceptance rate, and that less than 5% of our interviewees would be accepted to Stanford. The populations are different. So then, is it really fair to take `$ p_{\text{Stanford}} $` for comparison with `$ p_{\text{roommate}} $`? 
+1. **Population statistic** - Craigslisters are different from Stanford applicants. I think we can all aggree your average Ivy-League applicant has their life pretty well put together; they're high achievers in high school, likely have financially stable parents (guarantors), and can pass a background check. Craigslisters and Facebook randos on the other hand are ... who-knows-what. These two groups are fundamentally different populations, one with likely a much higher intrinsic ability to pass a housing screening. How would our numbers change if all the interviewees were typical Stanford applicants?  Or consider the inverse: what if all Stanford applicants were drawn from the same general population as our interviewees? i'd wager the Stanford applicants would increase our screening acceptance rate, and that less than 5% of our interviewees would be accepted to Stanford. So then, is it really fair to take `$ p_{\text{Stanford}} $` for comparison with `$ p_{\text{roommate}} $`?.
 
 
-2. **Indepedent observations** - Real life observations are not necessarily independent. My interviews certainly were not. Depending on how many quality applicants I had "in reserve", I put in more or less effort in recruiting new applicants. Moreover, the more applicants I interviewed, the more annoyed towards the process I became, making the acceptance of later candidates less likely. Thus, the sampling (interviewing) of one candidate affected the outcome of many of those that came after him/her. This violates one of the core assumptions of the binomial test.
+2. **Indepedent observations** - Real life observations are not necessarily independent. My interviews certainly were not. Depending on how many quality applicants I had "in reserve", I put in more or less effort in recruiting new applicants. Moreover, the more applicants I interviewed, the more annoyed towards the process I became, making the acceptance of later candidates less likely. Thus, the sampling (interviewing) of one candidate affected the outcome of many of those that came after him/her. This violates one of the core assumptions of the binomial test. Additionally (although it is splitting hairs a bit), the exact binomial test is for experiments *with replacement* - in screening roommates, candidates who have already been rejected have no chance to reapply. So although the population is rather large, and ignoring that not replacing indviduals after sampling does not change the outcome much, it is still worth noting that the binomial test is approximate in this case - Fisher's exact test would be more fitting, perhaps.
 
 
 3. **Hidden variables** - While not directly invalidating our statistical test, there are some hidden variables which might convolute the roommate acceptance rate. Timing is certainly a hidden variable; for example, I put in more effort in recruiting applicants the closer I got to the end of our lease. Even my daily mood on any given day influenced how I percieved certain applicants - I apologize to everyone who caught me on Monday morning. The point is, we have *hidden variables* which can shift the distribution in significant and unknown ways.
