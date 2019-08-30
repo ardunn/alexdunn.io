@@ -41,7 +41,7 @@ Both of my housemates moved onto bigger and better things in July, so the unfort
 
 So I turned to the trusty backwater of the internet. *Craigslist.*
 
-### TOC
+## TOC
 
 1. [The screening process](#screening)
 2. [Results](#results)
