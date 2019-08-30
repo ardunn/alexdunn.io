@@ -6,6 +6,8 @@ from scipy.interpolate import UnivariateSpline, interp1d
 n = 86
 p = 0.051
 
+# shoutout to https://stats.stackexchange.com/questions/412967/what-is-the-proper-test-for-sparse-binomial-data/412976#412976
+# for helping
 
 k_range = 18
 k_vals = list(range(k_range))
