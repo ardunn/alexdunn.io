@@ -35,21 +35,27 @@ MathJax.Hub.Config({
 });
 </script>
 
-### Finding new roommates can be a serious pain. 
+## Finding new roommates can be a serious pain. 
 
 Both of my housemates moved onto bigger and better things in July, so the unfortunate responsibility to find replacements fell upon me. 99% of the time, I'd call upon a friend to fill a spot, but our house is a bit out in the sticks -- far away from the happening SF Bay tech hubs and city centers, and nobody I knew in the area was looking to change their living arrangement.
 
 So I turned to the trusty backwater of the internet. *Craigslist.*
 
-### The Screening
+
+1. [The screening process](#screening)
+2. [Results](#results)
+3. [A statistical test](#stats)
+4. [Now what if I told you...](#conclusion)
+
+## <a name="screening"></a> The Screening Process
 
 Craigslist is a reliable tool, insofar that it's guaranteed to give you a large population of replies. But here's a simple fact about Craigslist: it's *filled* with scammers, criminals, and otherwise shady people who you'd rather not live with. So my landlord and I devised a screening procedure to hopefully weed out the slobs, petty criminals, bots, and serial killers of the interweb. 
 
-![screening](/screening_big.png)
+![screening](/screening_small.png)
 
 First comes a short conversation over email, straight from the ad. Then, a short phone interview. If that all goes well, we invite them over to the house (we'd hope to screen out any sketchy people by this point). If they like the house and we like them, they move onto our landlord's approval process. Then, they're our new roommate!
 
-### Results
+## <a name="results"></a> Results
 
 Below is a Sankey Diagram (made with [SankeyMatic](http://sankeymatic.com/)) of the whole process over the last two months. In total, almost 100 responses screened! 
 
@@ -65,8 +71,9 @@ Breaking down the stats, final "acceptance rate" for all candidates is 2/87, or 
 
 If you did say that though, the analyst in me would tell you to hold up! This is a textbook sampling problem, our *n* is <100 in both cases! The college admissions statistics, in contrast, are taken frrom hundreds of thousands of data points. If we had only interviewed half the candidates and accepted none, would our true acceptance rate be 0%? Of course not. We have data on a sample of a population, not comprehensive data of the population itself. So how can we determine whether our screening process is more selective than the world's top universities?
 
-### We need to use some statistics to answer this pressing and important question.
+##### We need to use some statistics to answer this pressing and important question.
 
+## <a name="stats"></a> A statistical test...
 
 Let's get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford's acceptance rate of 5.1% (admission year 2019). **First, we must form a proper null hypothesis.** We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford's. If we fail to reject the null hypothesis, there is insufficient statistical evidence.
 
@@ -129,27 +136,66 @@ In continuous probability distributions, we could take the integral of `$ P(X) $
 
 In other words, the probability of fewer or equal to `$ k$` successes is equal to the probability that there are either 0, 1, or 2 successes.
 
-Calculating, we find:
+
+Now we'll use trusty python scipy to calculate:
+
+```
+from scipy.stats import binom
+n = 86
+p = 0.051
+sum = 0
+for k in [0, 1, 2]:
+    binomial = binom.pmf(k, n, p)
+    print(f"{k}, {binomial}")
+    sum += binomial
+print(sum)
+```
+
+After running:
 
 
+| `$ k $` | `$ P(x = k) $` |
+|:----------------------| -----------------:|
+|          0          |  0.011      |
+|          1          |  0.051      |
+|          2          |  0.117      |
+|        0-2   |  0.179      |
 
-<center>
 
-| Successes (`$ k $`) | `$ P(x = k) $` |
-----------------------| -----------------
-|          0          |  0.011089      |
-|          1          |  0.051250      |
-|          2          |  0.117054      |
-|        0, 1, or 2   |  0.179394      |
+Let's plot the PMF to better visualize our distribution;
+![binomial](/binomial.png)
 
-</center>
 
 Finally, we find `$ \boxed{ P(X \leq 2) = 0.179394} $`, more than our `$ \alpha =0.05 $` significance level. This some great news for our null hypothesis, because it means we fail to reject it! Conversely, it's some pretty terrible news for our alternate hypothesis.
 
-#### Using a binomial test, we find is insufficient evidence that our roommate selection process is more selective than Stanford University was in 2019. (at the 5% significance level).
+###### We don't have sufficient evidence that our roommate selection process is more selective than Stanford (at the 5% significance level).
+If you would have jumped to conclusions, you might have sullied the name of the  great Stanford university!
 
-### Conclusion (rename this)
+<br/>
+## <a name="conclusion"></a> What if I told you...
 
-Whew, if your brain isn't spinning at least
+Now that I've made the arduous case that we **can't** jump to conclusions in saying our roommate selection process is more competitive than top-tier universities...
 
-Talk about how convincing a case we made, but that it is still not good enough. Since Stanford's applicants are usually driven people with their lives put together and craigslisters are just random people, the pool of people our populations represent are fundamentall different. This is one of the practical challenges with modern data science
+![morepheus](/morpheus.jpeg)
+
+What if I told you..
+
+###### Our statistical test was bunk!
+
+While I feel the above is a pretty convincing case, let's consider a few practical problems:
+
+1. **Population statistic** - Craigslisters are different from Stanford applicants. I think we can all aggree your average Ivy-League applicant has their life pretty well put together; they're high achievers in high school, likely have financially stable parents (guarantors), and can pass a background check. Craigslisters and Facebook randos on the other hand are ... who-knows-what. These two groups are fundamentally different populations, one with likely a much higher intrinsic ability to pass a housing screening. How would our numbers change if all the interviewees were typical Stanford applicants?  Or consider the inverse: what if all Stanford applicants were drawn from the same general population as our interviewees? i'd wager the Stanford applicants would increase our screening acceptance rate, and that less than 5% of our interviewees would be accepted to Stanford. The populations are different. So then, is it really fair to take `$ p_{\text{Stanford}} $` for comparison with `$ p_{\text{roommate}} $`? 
+
+
+2. **Indepedent observations** - Real life observations are not necessarily independent. My interviews certainly were not. Depending on how many quality applicants I had "in reserve", I put in more or less effort in recruiting new applicants. Moreover, the more applicants I interviewed, the more annoyed towards the process I became, making the acceptance of later candidates less likely. Thus, the sampling (interviewing) of one candidate affected the outcome of many of those that came after him/her. This violates one of the core assumptions of the binomial test.
+
+
+3. **Hidden variables** - While not directly invalidating our statistical test, there are some hidden variables which might convolute the roommate acceptance rate. Timing is certainly a hidden variable; for example, I put in more effort in recruiting applicants the closer I got to the end of our lease. Even my daily mood on any given day influenced how I percieved certain applicants - I apologize to everyone who caught me on Monday morning. The point is, we have *hidden variables* which can shift the distribution in significant and unknown ways.
+
+
+The numbers tell us something, but that something is **not** necessarily what we concluded in the previous section. Getting an accurate answer requires a much more complex and thorough analysis. Throwing around statistics willy-nilly will lead you to conclusions which may not be true but which people will believe because numbers stand behind them - erroneous as they may be. The end result is you (the data scientist) or the company you work for making poor strategic decisions. Cue one of the all-too-common "our model worked well in testing, why isn't it working in deployment" stories.
+
+As data science and machine learning come further into the mainstream, it's imperative we try our damndest to set up problems correctly and use our models to approximate reality, rather than bend reality to make our models work.
+
+![lie](/lie_with_statistics.jpeg)
+
