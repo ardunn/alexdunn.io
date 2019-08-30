@@ -166,7 +166,7 @@ Let's plot the PMF to better visualize our distribution;
 ![binomial](/binomial.png)
 
 
-Finally, we find `$ \boxed{ P(X \leq 2) = 0.179394} $`, more than our `$ \alpha =0.05 $` significance level.This  great news for our null hypothesis, because it means we fail to reject it! Conversely, it's some pretty terrible news for our alternate hypothesis. Simply, this means there is a high probability our low roommate accpetance rate was a fluke.
+Finally, we find `$ \boxed{ P(X \leq 2) = 0.179394} $`, more than our `$ \alpha =0.05 $` significance level. This is great news for our null hypothesis, because it means we fail to reject it! Conversely, it's some pretty terrible news for our alternate hypothesis. Simply, this means there is a high probability our low roommate accpetance rate was a fluke.
 
 ###### We don't have sufficient evidence that our roommate selection process is more selective than Stanford (at the 5% significance level).
 If you would have jumped to conclusions, you might have sullied the name of the great Stanford university!
