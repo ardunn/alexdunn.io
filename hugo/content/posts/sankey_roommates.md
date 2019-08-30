@@ -70,20 +70,44 @@ If you did say that though, the analyst in me would tell you to hold up! This is
 
 Let's get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford's acceptance rate of 5.1% (admission year 2019). **First, we must form a proper null hypothesis.** We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford's. If we fail to reject the null hypothesis, there is insufficient statistical evidence.
 
-Here we'll use the notation `$ p_{\text{Stanford}} $` to represent the Stanford acceptance probability. This number is treated as a population statistic. Our overall acceptance probability is `$ p_{\text{roommate}} $`, and it's point estimate is what we previously calculated from our sample: `$ p_{\text{roommate}} = 0.0229 $`.
+Here we'll use the notation `$ p_{\text{Stanford}} $` to represent the Stanford acceptance probability. This number is treated as a population statistic. Our overall acceptance probability is `$ p_{\text{roommate}} $`, and it's point estimate is what we previously calculated from our sample: `$ p_{\text{roommate}} = 0.0229 $`. Stanford's acceptance rate was `$ p_{\text{Stanford}} = 0.051$` in 2019. 
 
 Our hypothesis test is:
 
 <div>$$H_{0}: p_{\text{roommate}} \geq p_{\text{Stanford}} $$</div>
 <div>$$H_{a}: p_{\text{roommate}} < p_{\text{Stanford}} $$</div>
 
-Now we must determine a way to generate the test statistic for `$ p_{\text{roommate}}$`. A `$\Chi^{2}$` test might come to mind as a good way to generate this test statistic; however, the `$\Chi^{2}$` test assumes the 
+We need to determine a the test statistic of some type for `$ p_{\text{roommate}}$`. In our case, we need a statistic for whether the proportion of *one* variable with *two* outcomes is different from the expected proportion; in our case, the outcomes are whether a candidate becomes a roommate or not, and our "expected proportion" is `$ p_{\text{Stanford}} $`. The two usual tests for this scenario are:
 
+</br>
 
-Binomial test assumptions: All events are independent of eachother
+##### Pearson's `$ \chi^{2} $` one-variable test: 
+A very popular test based on a `$ \chi^{2} $`-distribution (an approximation of a normal distribution). This test holds as long as the following hold:
 
+1. The sampling is random (i.e., each population individual has an equal chance of being selected for the sample)
+2. The observations are independent (e.g., Observation 52 does not depend on Observation 51)
+3. The expected frequencies of each outcome are greater than 1 and mostly greater than 5. Expected freqency is just the expected probability multiplied by the sample size. the exact cutoff for "mostly" varies by who you ask, but 80% is commonly used. 
 
-We can't use Chi-squared because...
+</br>
+
+#####  Binomial test
+An exact test, meaning it is not based on approximate distributions or parametric assumptions. This test holds as long as:
+
+1. The sampling is random
+2. The observations are independent.
+
+</br>
+
+##### Applying the binomial test
+
+The `$ \chi^{2} $` test will not work here since while 1 and 2 hold, our expected frequency for being a roommate is `$ p_{\text{Stanford}} \cdot n_{\text{candidates}} = 0.102$`, and we need **all** of our expected frequencies to be greater than 1.  We'll use the binomial test statistic based on the probability mass function, defined as:
+
+<div>$$P(X=k) = C(n, k)p^{k}(1-p)^{n-k} $$</div>
+
+Where `$ n $` is the number of samples, `$ k $` is the number of "successes" (actually being a roommate, in our case), `$ C(n, k)$` is the formula for the number of combinations for `$ k$` selections from `$ n$` objects, and `$ p $` is just our population probability, `$ p_{\text{Stanford}} $`. If you're wondering where this equation comes from, I'll refer you to [this excellent derivation](https://newonlinecourses.science.psu.edu/stat414/node/67/) which requires little math background and is written in plain language (for the non-math savvy amongst us).
+
+Let's set some variables from what we know:
+* 
 
 ### Conclusion (rename this)
 
