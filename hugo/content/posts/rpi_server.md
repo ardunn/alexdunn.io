@@ -178,7 +178,7 @@ Now your data is being backed up automatically. You should try running `raz@pi:~
 
 By default, all SSH-enabled servers have SFTP enabled. So you are already able to connect via your computer's file explorer or FTP apps on your phone or computer. 
 
-However, a more convenient way of accessing your share is with sshfs. sshfs is a simple SFTP utility which mounts your server to a computer and makes it appear like any other hard drive. If you're on Linux with the `apt` pacakge manager, you should be able to do a simple
+However, a more convenient way of accessing your share is with sshfs. sshfs is a simple SFTP utility which mounts your server to a computer and makes it appear like any other hard drive. If you're on Linux with the `apt` package manager, you should be able to do a simple
 
 ```
 $ sudo apt-get install sshfs
