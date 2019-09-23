@@ -114,7 +114,7 @@ It supports Latex math typesetting and is resource-light even when manipulating 
 ### Dark Reader
 `Adde 9/22/2019`
 
-[Dark reader](https://github.com/darkreader/darkreader) is a browser plugin for Chromium-based browsers that transforms regular webpages into dark mode webpages. What sets this plugin apart from the competitors is how *easy* on the eyes the colors are; other dark mode plugins display ultra-high contrast ratios (e.g., `#FFFFFF` on `#000000`) which are the reading equivalent of a staring contest with the sun, whereas Dark reader's color inversions feel like reading e-ink. Also it is easily toggalbe via `alt+shift+d`!
+[Dark reader](https://github.com/darkreader/darkreader) is a browser plugin for Chromium-based browsers that transforms regular webpages into dark mode webpages. What sets this plugin apart from the competitors is how *easy* on the eyes the colors are; other dark mode plugins display ultra-high contrast ratios (e.g., `#FFFFFF` on `#000000`) which are the reading equivalent of a staring contest with the sun, whereas Dark reader's color inversions feel like reading e-ink. Also it is easily toggle-able via `alt+shift+d`!
 
 <img src="/darkreader.png" width="300"></img>
 
