@@ -14,9 +14,8 @@ heading: false
 {{% figure src="/headshot_professional.jpg#floatright" %}}
 I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov) which works closely alongside the [Materials Project](https://materialsproject.org). I use computers to help find and design new materials using data science and _ab-initio_ calculations.
 
-* [Github](https://github.com/ardunn)
-* [Google Scholar](https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en)
-* [LinkedIn](https://www.linkedin.com/in/dunnslinked/)
+| <a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en"><img src="/gscholar.png" width="50" /></a>     | <a href="https://www.linkedin.com/in/dunnslinked/"><img src="/linkedin.png" width="50"></a>   | <a href="https://github.com/ardunn"><img src="/github.png" width="50"></a>    |
+|--------------------------------------------------------------------------------------------------------------------   |---------------------------------------------------------------------------------------------- |-----------------------------------------------------------------------------  |
 
 `Last updated: 2019-08-13`
 
@@ -110,3 +109,6 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 * **[atomate](https://github.com/hackingmaterials/atomate):** (contributor) Pre-built workflows to calculate materials properties.
 * among others...
 
+<center>
+<img src="/idisc_presentation.jpg" width=300>
+</center>
