@@ -12,7 +12,7 @@ heading: false
 #### (And sometimes both of them together) 
 
 {{% figure src="/headshot_professional.jpg#floatright" %}}
-I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov) which works closely alongside the [Materials Project](https://materialsproject.org). I use computers to help find and design new materials using data science and _ab-initio_ calculations.
+As a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov), **I use computers to help find and design new materials** using machine learning and high-throughput simulations of quantum mechanics (such as density functional theory). I also work alongside the [Materials Project](https://materialsproject.org), a research effort and online repository with over 100,000 registered users.
 
 | <a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en"><img src="/gscholar.png" width="50" /></a>     | <a href="https://www.linkedin.com/in/dunnslinked/"><img src="/linkedin.png" width="50"></a>   | <a href="https://github.com/ardunn"><img src="/github.png" width="50"></a>    |
 |--------------------------------------------------------------------------------------------------------------------   |---------------------------------------------------------------------------------------------- |-----------------------------------------------------------------------------  |
@@ -93,17 +93,21 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 - **Numerical analysis** - pandas, numpy, scipy
 - **Tools of the trade** - ipython, jupyter notebook, matplotlib, plotly
 
-### Other software and frameworkse
-- **VASP** - _Ab-initio_ Density Functional Theory simulation software
-- **MATLAB**
+### Other software and frameworks (ordered by experience)
 - **LaTeX**
 - **Git**
+- **MATLAB**
 - **WordPress**
+- **HTML, CSS**
+- **VASP** - _Ab-initio_ Density Functional Theory simulation software
+- **Docker**
+
 
 # Open source software
 * **[rocketsled](https://github.com/hackingmaterials/rocketsled):** (maintainer) Black box optimization framework for high-throughput computing.
 * **[automatminer](https://github.com/hackingmaterials/automatminer):** (maintainer) An autoML tool for predicting materials properties..
 * **[matminer](https://github.com/hackingmaterials/matminer):** (primary developer) Data mining tools for materials science.
+* **[matscholar](https://github.com/materialsintelligence):** (developer) Text mining analysis of millions of materials science abstracts, including public API and [website](matscholar.com).
 * **[pymatgen](https://github.com/materialsproject/pymatgen):** (contributor) Python materials genomics.
 * **[fireworks](https://github.com/materialsproject/fireworks):** (contributor) High throughput workflow management.
 * **[atomate](https://github.com/hackingmaterials/atomate):** (contributor) Pre-built workflows to calculate materials properties.
