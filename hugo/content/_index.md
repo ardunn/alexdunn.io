@@ -6,7 +6,7 @@ heading: false
 ---
 
 # I'm Alex. 
-Enthusiast of science, freeskiing, machine intelligence, two-wheelers, and all things computing. Lover of linux, hater of front-end web dev.
+Enthusiast of science, freeskiing, machine intelligence, two-wheelers, and all things computing. Lover of linux, hater of CSS.
 
 <img src="/composite.png"></img>
 

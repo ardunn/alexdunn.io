@@ -12,7 +12,7 @@ heading: false
 #### (And sometimes both of them together) 
 
 {{% figure src="/headshot_professional.jpg#floatright" %}}
-As a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov), **I use computers to help find and design new materials** using machine learning and high-throughput simulations of quantum mechanics (such as density functional theory). I also work alongside the [Materials Project](https://materialsproject.org), a research effort and online repository with over 100,000 registered users.
+I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov), **I use computers to help find and design new materials;** particularly, I develop machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help others do the same. I also work alongside the [Materials Project](https://materialsproject.org), an online reearch effort with over 100,000 registered users.
 
 | <a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en"><img src="/gscholar.png" width="50" /></a>     | <a href="https://www.linkedin.com/in/dunnslinked/"><img src="/linkedin.png" width="50"></a>   | <a href="https://github.com/ardunn"><img src="/github.png" width="50"></a>    |
 |--------------------------------------------------------------------------------------------------------------------   |---------------------------------------------------------------------------------------------- |-----------------------------------------------------------------------------  |
