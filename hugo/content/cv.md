@@ -19,6 +19,12 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 
 `Last updated: 2019-09-30`
 
+# Research interests
+* Materials property prediction with ML and AutoML
+* Adaptive design (black box optimization)
+* Text mining for accelerated materials design
+* High throughput and massively parallel scientific computation
+
 
 # Formal education
 * **B.Sc.**, Chemical Engineering - UCLA (_2014 - 2017_)
