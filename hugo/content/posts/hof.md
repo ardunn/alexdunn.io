@@ -128,3 +128,13 @@ It supports Latex math typesetting and is resource-light even when manipulating 
 Slow. Slow. So...slow (I'm looking at you, Electron framework). No dark mode. Passwords get voided for no reason if you are adding a connection and click away from the "Add Connection" screen. You have to click at least 3 times to open up another connection (i.e., to look at 2 dbs at one time). In general Compass is a frustrating application, made even more infuriating by the fact there are few competitive free alternatives. Do better, MongoDB. Do better.
 
 <img src="/mongodb_compass.png" width="500"></img>
+
+
+### Slack
+`Added 9/30/2019`
+
+Slack should do essentially what IRC does. Store small images and short text conversations, and then retrieve them quickly when needed. What does Slack *actually* do? Take eons to load **text** conversations, have integrations which are not helpful, implement an obtrusive way to switch between workspaces. Closed source. Admins can read all DMs. There's no dark mode on the app, and the color schemes are disgusting. Search sucks. There are better open source alternatives (Mattermost, Zulip). If you are lucky enough to use anything else - or even, have the privledge of laser focus, AKA using no IM service at all - I implore you to do so. Stop using Slack.
+
+<img src="/slack.png" width="500"></img>
+
+
