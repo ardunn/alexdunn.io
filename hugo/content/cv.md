@@ -20,9 +20,9 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 `Last updated: 2019-09-30`
 
 # Research interests
-* Materials property prediction with ML and AutoML
-* Adaptive design (black box optimization)
-* Text mining for accelerated materials design
+* Solid state materials property prediction with ML and AutoML
+* Adaptive design (black box optimization) for scientific computation
+* Large scale text mining for accelerated materials design
 * High throughput and massively parallel scientific computation
 
 
