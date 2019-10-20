@@ -36,6 +36,7 @@ Then there is the HOF's antithesis, the **Hall of Shame**: a list full of buggy,
 
 <img src="/hos.png" width="175"></img>
 
+
 </br>
 #### A quick disclaimer
 If you find your favorite website/program/code in the Hall of Shame or the bane of your cyber-existence in the Hall of Fame, fret not. These are not expert reviews, just my opinions as a humble user and enthusiast. 
@@ -130,11 +131,27 @@ Slow. Slow. So...slow (I'm looking at you, Electron framework). No dark mode. Pa
 <img src="/mongodb_compass.png" width="500"></img>
 
 
+
 ### Slack
 `Added 9/30/2019`
 
-Slack should do essentially what IRC does. Store small images and short text conversations, and then retrieve them quickly when needed. What does Slack *actually* do? Take eons to load **text** conversations, have integrations which are not helpful, implement an obtrusive way to switch between workspaces. Closed source. Admins can read all DMs. There's no dark mode on the app, and the color schemes are disgusting. Search sucks. There are better open source alternatives (Mattermost, Zulip). If you are lucky enough to use anything else - or even, have the privledge of laser focus, AKA using no IM service at all - I implore you to do so. Stop using Slack.
+Slack should do essentially what IRC does: store  short text conversations, and then retrieve them quickly when needed (along with the occasional image link). What does Slack *actually* do? Take eons to load **text** conversations, have integrations which are not helpful, implement an obtrusive way to switch between workspaces. Closed source. Admins can read all DMs. There's no dark mode on the app, and the color schemes are disgusting. Search sucks. There are better open source alternatives (Mattermost, Zulip). If you are lucky enough to use anything else, I implore you to do so. Stop using Slack.
 
 <img src="/slack.png" width="500"></img>
+
+
+### Apple Music App (mobile) 
+`Added 10/19/2019`
+
+First off, I want to say my gripes with Apple Music are about the app UI itself, not the music streaming, playlist selection, etc. The most frustrating thing about Apple Music is that Apple had something truly great: the Music app of a few years ago. But Apple being Apple is hellbent on slowly-but-surely making the app more unusable. Let's take a very brief tally on features of the app that were present at some point - but are no longer;
+
+- The ability to filter your library by downloaded songs.
+- Sane repeat buttons (now it requires 3 taps in very unintuitive places onscreen)
+- A sane bottom row of icons, such as "Playlists", "Artists", "Albums", etc. At the time of this writing, there is "For You", "Browse", and "Radio". Almost no one I know uses any of these on a regular basis, yet they are permanent and prominent icons on the screen.
+- A reasonable way to see the album/artist from the currently playing song. Now, this requires two taps (once on the relatively small artist screen, and once on the pop up dialog for artist/album). 
+- ...and many other first-world problems
+
+<img src="/apple_music.png" height="500"></img>
+
 
 
