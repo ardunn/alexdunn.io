@@ -83,6 +83,7 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 ### Programming
 * **Python** - 4+ years experience
 * **Bash scripting** - 4+ years experience
+* **NoSQL (MongoDB)** - 4+ years experience
 * **Julia** - 1 year experience
 * **C++** - 1 year experience
 * **C** - occasional use
