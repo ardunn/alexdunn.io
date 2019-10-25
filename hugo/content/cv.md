@@ -8,22 +8,23 @@ heading: false
 
 
 
-## I like data science and scientific computing. 
-#### (And sometimes both of them together) 
-
 {{% figure src="/headshot_professional.jpg#floatright" %}}
-I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov). **I use computers to help find and design new materials;** I develop machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help others do the same. I also work alongside the [Materials Project](https://materialsproject.org), an online resarch effort with over 100,000 registered users.
+### Scientific computing and data science. 
+##### (And sometimes both together) 
 
 | <a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en"><img src="/gscholar.png" width="50" /></a>     | <a href="https://www.linkedin.com/in/dunnslinked/"><img src="/linkedin.png" width="50"></a>   | <a href="https://github.com/ardunn"><img src="/github.png" width="50"></a>    |
 |--------------------------------------------------------------------------------------------------------------------   |---------------------------------------------------------------------------------------------- |-----------------------------------------------------------------------------  |
 
-`Last updated: 2019-09-30`
+I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov). **I use computers to help find and design new materials;** I develop machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help others do the same. I also work alongside the [Materials Project](https://materialsproject.org), an online resarch effort with over 100,000 registered users.
+
+`Last updated: 2019.10.25`
 
 # Research interests
 * Solid state materials property prediction with ML and AutoML
 * Adaptive design (black box optimization) for scientific computation
 * Large scale text mining for accelerated materials design
 * High throughput and massively parallel scientific computation
+* Presenting these technologies via accessible, open interfaces (such as webpages)
 
 
 # Formal education
@@ -93,20 +94,21 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 - Parallel CPU computing frameworks such as OpenMP and MPI
 - GPU computing frameworks such as CUDA and Thrust
 - Queue computing platforms such as SLURM and PBS
+- DevOps tools such as Docker and Rancher
 
 ### Data science libraries
 - **Machine learning** - scikit-learn, keras, pytorch
 - **Numerical analysis** - pandas, numpy, scipy
+- **Dashboarding** - Plotly Dash
 - **Tools of the trade** - ipython, jupyter notebook, matplotlib, plotly
 
 ### Other software and frameworks (ordered by experience)
+- **MongoDB**
+- **HTML, CSS**
 - **LaTeX**
 - **Git**
 - **MATLAB**
-- **WordPress**
-- **HTML, CSS**
 - **VASP** - _Ab-initio_ Density Functional Theory simulation software
-- **Docker**
 
 
 # Open source software
