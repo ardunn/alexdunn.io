@@ -130,7 +130,11 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
     └─mmcblk0p2 179:2    0 14.8G  0 part /
     ```
 
-    I have mine mounted at `/home/raz/disk*` - yours will by default be mounted elsewhere such as `/media/raz`. My 8TB disk is mounted as `disk8` and the 2TB is mounted as `disk2`. 
+   I have mine mounted at `/home/raz/disk*` - yours will by default be mounted elsewhere such as `/media/raz`. My 8TB disk is mounted as `disk8` and the 2TB is mounted as `disk2`. If you want to mount this drive automatically on boot, edit your `/etc/fstab` file - there are lots of good guides online for this, but to save you some time, determine the UUID for your device with `blkid /dev/sdxY` and add a line like:
+
+    UUID=5C0D3CF332CF3A92  /home/raz/disk8 ntfs defaults 0 2
+
+To your `/etc/fstab` file.
 
 Great! If you've gotten this far, all of your physical configuration should be done.
 

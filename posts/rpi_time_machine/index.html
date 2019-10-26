@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120668741-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120668741-2');
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+	Raspberry Pi Home Cloud 2: Apple Time Capsule
+      
+    </title>
+    <link rel="canonical" href="https://alexdunn.io/posts/rpi_time_machine/">
+
+    
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+
+<style>
+  * {
+    border:0;
+    font-family: 'Barlow Semi Condensed', 'Arial', sans-serif;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: #b0b0b0;
+    text-decoration-skip: ink;
+    background-color: #1f1f1f;
+	    
+  }
+
+  body {
+    font-size:17px;
+    line-height:160%;
+    max-width:700px;
+    margin:auto;
+
+  }
+
+ img {
+    max-width: 100%;
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 100%;    
+}
+
+.image img {
+    -webkit-transition: all 1s ease;  
+  	-moz-transition: all 1s ease;  
+  	-o-transition: all 1s ease;  
+  	-ms-transition: all 1s ease;  
+  	transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(2.00);  
+    -moz-transform:scale(2.00);  
+    -ms-transform:scale(2.00);  
+    -o-transform:scale(2.00);  
+     transform:scale(2.00);
+}
+
+  p {
+    margin: 20px 0;
+
+	 
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 18px  Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  }
+
+  code {
+    font-size: 18px;
+    padding: 4px;
+
+    overflow: hidden;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:inherit;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:grey;
+    font-size:18px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:55px;
+    color:white;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:22px;
+    padding:20px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:30px;
+  }
+
+  #content .entry-content {
+    margin-top:22px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 20px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:22px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:28px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:22px;
+    }
+
+    #content h1 {
+      font-size:26px;
+    }
+
+    #content h2 {
+      font-size:24px;
+    }
+
+    .posts_listing li div{
+      font-size:22px;
+    }
+  }
+
+img[src$='#floatleft']
+{
+	float:left;
+        
+}
+
+img[src$='#floatright']
+{
+	float:right;
+        margin-left: 15px;
+        margin-right: 30px;
+}
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
+      <ul>
+        
+          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+        
+          <li><a href="https://alexdunn.io/photos/">Photos</a></li>
+        
+          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1>  Raspberry Pi Home Cloud 2: Apple Time Capsule </h1> 
+
+  
+    <div id=sub-header>
+      October 2019 · 11 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    
+
+<h2 id="toc">TOC:</h2>
+
+<ul>
+<li>Motivation</li>
+<li><a href="#req">Step A: Requirements</a></li>
+<li><a href="#setup">Step B: Physical setup and formatting</a></li>
+<li><a href="#mount">Step C: Mounting and configuration</a></li>
+<li><a href="#test">Step D: Test out your new time machine</a></li>
+<li><a href="#conclusions">Maintenance and Conclusions</a></li>
+</ul>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>I have a Macbook Pro (2017) dedicated exclusively to my work as a graduate student. If I lost it and had no backup, i would be uttely devastated. Having a backup is an absolute necessity - as the saying goes:</p>
+
+<p><em>If you have one copy of your data, you really have zero.</em></p>
+
+<p>Since the connector for the HDD is USB 3.0 but my Macbook only accepts USB-C type connections, a dongle is required. Plugging in a drive via a dongle is annoying and (in my experience) unreliable, depending on the dongle. Yes, I am aware we are dealing with some real first-world-problems here, but&hellip;</p>
+
+<p><img src="https://alexdunn.io/mbp.png" width=400></img></p>
+
+<p><strong>There has to be a better way. Why not wireless, automatic, and reliable?</strong></p>
+
+<p>Well, I could buy an official Apple AirPort Time Capsule, right?</p>
+
+<p><img src="https://alexdunn.io/time_capsule.png" width=400></img></p>
+
+<p>Let&rsquo;s see how much these are going for now&hellip;</p>
+
+<p><img src="https://alexdunn.io/time_capsule_price.png" width=400></img></p>
+
+<p><em>Ah, cool. More than rent in most states.</em></p>
+
+<p>Since I already had a <a href="https://alexdunn.io/posts/rpi_server/">hacky home cloud set up</a> and the needed hardware to make the Time Capsule, I decided to add a wireless time machine backup to my existing setup. What I wound up with was a system that:</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> <strong>Backs up my work Macbook to an external HDD <em>wirelessly</em> and <em>automatically</em></strong> every time it connects to my home network</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> <strong>Requires <em>very little maintenance</em></strong> (I haven&rsquo;t even looked at it between when I set it up a few months ago and now, as I write this)</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item">  <strong>Isn&rsquo;t <em>too hard</em> to set up.</strong> Your mileage may vary, but this will likely take you between 30 minutes (consider a career in IT if this is you) and a few hours (don&rsquo;t quit your day job)</label></li>
+</ul>
+
+<p>Well it turns out getting it configured was not <em>too</em> troublesome (compared to my expectations, at least). Most of the guides I found on tech forums worked <em>somewhat</em> but did failed at some step in the process. I am hoping this guide can serve as a relatively reliable way to get a Pi Time Capsule working on your system. With that, I&rsquo;ll add the disclaimer:</p>
+
+<h1 id="possible-frustration-level-8-10">Possible frustration level: <sup>8</sup>&frasl;<sub>10</sub></h1>
+
+<p>Check out the guide below on how to do it.</p>
+
+<p></br></p>
+
+<h2 id="step-a-a-name-req-a-requirements">Step A:<a name="req"></a> Requirements</h2>
+
+<p>What you&rsquo;ll need:</p>
+
+<ul>
+<li>A Macbook with macOS 10.14+ installed on it. I&rsquo;m not sure if this will work with versions of 10.15 or later.</li>
+<li>An external HDD, preferrably with more than 1TB storage.</li>
+<li>A Raspberry Pi (3b, 3b+, or 4 will work) with SSH access on the local network.</li>
+<li>A router</li>
+</ul>
+
+<p>What I&rsquo;m using, for reference:</p>
+
+<ul>
+<li>A Seagate 2TB (model number STGX2000400) external HDD</li>
+<li>A 2017 MacBook Pro with touchbar running macOS 10.14.4</li>
+<li>A raspberry Pi running Ubuntu Xenial 16.04.6 Server Edition</li>
+<li>A Motorola SBG6580 router (yes, it&rsquo;s ancient, I know). It&rsquo;s connected to the raspberry Pi via ethernet.</li>
+</ul>
+
+<p>The technique in this guide uses Samba for the network transfer protocol and <strong>does not require</strong> Netatalk, which was required on older versions of macOS. If you don&rsquo;t mind configuring Netatalk (and the consequent headaches), I recommend you look up one of the many available guides for <a href="https://raymii.org/s/articles/Build_a_35_dollar_Time_Capsule_-_Raspberry_Pi_Time_Machine.html">Netatalk configuration</a>.</p>
+
+<h3 id="step-a1-install-hfs-software-requirements">Step A1: Install HFS+ Software requirements</h3>
+
+<p>In this step, we&rsquo;ll download and install the requirements for working with Apple&rsquo;s HFS+ system.</p>
+
+<p>If you can&rsquo;t SSH into your Pi, you should configure that now.</p>
+
+<p>When you are able to SSH into your Pi, download the packages needed to interact with Apple&rsquo;s time machine filesystems:</p>
+
+<pre><code>raz@pi: sudo apt-get install hfsprogs hfsutils hfsplus
+</code></pre>
+
+<h3 id="step-a2-install-samba-4-9-2">Step A2: Install Samba 4.9.2</h3>
+
+<p>You&rsquo;ll also need a relatively new version of Samba, the network file transfer software package. The versions provided by <code>apt</code> on Ubuntu are ancient, so you&rsquo;ll need to download a binary or build it from the source.</p>
+
+<p>Make sure your system samba will not interfere with the newer version:</p>
+
+<pre><code>raz@pi: sudo apt-get remove samba
+</code></pre>
+
+<p>I am using <a href="https://www.samba.org/samba/history/samba-4.9.2.html">Samba 4.9.2</a>; I&rsquo;d recommend doing the same. You can download the source and build it like:</p>
+
+<pre><code>raz@pi: wget https://download.samba.org/pub/samba/stable/samba-4.9.2.tar.gz
+raz@pi: tar -xzf samba-4.9.2.tar.gz
+</code></pre>
+
+<p>Make a file called <code>build.sh</code>:</p>
+
+<pre><code>DEB_HOST_MULTIARCH=$(dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+./configure \
+    --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc \
+    --localstatedir=/var --libdir=/usr/lib/$DEB_HOST_MULTIARCH \
+    --with-privatedir=/var/lib/samba/private \
+    --with-smbpasswd-file=/etc/samba/smbpasswd \
+    --enable-fhs --enable-spotlight --with-systemd
+
+make -j$(nproc)
+sudo make install
+
+sudo cp bin/default/packaging/systemd/*.service /lib/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable {nmb,smb,smbd,winbind}.service
+sudo systemctl start {nmb,smb,smbd,winbind}.service
+</code></pre>
+
+<p>And put it in the directory you just extracted. Then run it. This configures, builds, installs, and enables samba 4.9.2 on your system.</p>
+
+<pre><code>raz@pi: source build.sh
+</code></pre>
+
+<p>If all goes well, you should now have the right samba version on your system. Check it with</p>
+
+<pre><code>raz@pi: which samba
+</code></pre>
+
+<p>it should say <code>/usr/sbin/samba</code> or similar, depending on your configuration.</p>
+
+<p>Don&rsquo;t worry if the <code>nmb</code> and <code>winbind</code> services don&rsquo;t start; you don&rsquo;t need them. Check your samba service is running:</p>
+
+<pre><code>raz@pi: sudo systemctl status smb
+raz@pi: sudo systemctl status smbd
+</code></pre>
+
+<p>Your <code>smbd</code> service must be running and should output something like:</p>
+
+<pre><code>● smbd.service - LSB: start Samba SMB/CIFS daemon (smbd)
+  Loaded: loaded (/etc/init.d/smbd; bad; vendor preset: enabled)
+  Active: active (running) since Fri 2019-10-25 10:57:04 PDT; 8h ago
+  Docs: man:systemd-sysv-generator(8)
+  CGroup: /system.slice/smbd.service
+       ├─1307 /usr/sbin/smbd -D
+       ├─1309 /usr/sbin/smbd -D
+       ├─1310 /usr/sbin/smbd -D
+       └─1351 /usr/sbin/smbd -D
+
+Oct 25 10:57:02 pi systemd[1]: Starting LSB: start Samba SMB/CIFS daemon (smbd)...
+Oct 25 10:57:03 pi smbd[1134]:  * Starting SMB/CIFS daemon smbd
+Oct 25 10:57:04 pi smbd[1134]:    ...done.
+Oct 25 10:57:04 pi systemd[1]: Started LSB: start Samba SMB/CIFS daemon (smbd).
+Oct 25 13:54:19 pi smbd[19931]: pam_unix(samba:session): session opened for user raz by (uid=0)
+Oct 25 13:56:39 pi smbd[19950]: pam_unix(samba:session): session opened for user raz by (uid=0)
+Oct 25 15:18:08 pi smbd[19950]: pam_unix(samba:session): session closed for user raz
+Oct 25 17:29:26 pi smbd[19931]: pam_unix(samba:session): session closed for user raz
+</code></pre>
+
+<p>If your service is not running, try enabling and starting the <code>smbd</code> or <code>smb</code> services manually</p>
+
+<pre><code>raz@pi: sudo systemctl enable smbd
+raz@pi: sudo systemctl start smbd
+</code></pre>
+
+<p></br></p>
+
+<h2 id="step-a-name-setup-a-b-physical-setup-and-formatting">Step <a name="setup"></a>B: Physical Setup and Formatting</h2>
+
+<h3 id="step-b0-optional-if-you-have-dongle-and-mac-handy-format-your-hdd-to-be-a-time-machine-backup-if-you-have-not-already">Step B0 (optional): If you have dongle and Mac handy, format your HDD to be a Time Machine Backup if you have not already.</h3>
+
+<p>This will make your life a lot easier if you can format your HDD to the Apple filesystem requirement (HFS+) using the Mac Disk Utility <em>before</em> you plug it in. Open up Disk Utility, select your external disk, and format it as MacOS Extended (Journaled).</p>
+
+<h3 id="step-b1-physical-configuration">Step B1: Physical configuration</h3>
+
+<p>Whether or not you did step B0, plug in your HDD to the Pi. Your physical setup should be similar to this diagram.</p>
+
+<p><img src="https://alexdunn.io/time_capsule_diagram.png" width=800></img></p>
+
+<p>Check that the HDD is recognized as a block device with <code>lsblk</code>. If you have already formatted the drive then the disk may have automatically mounted.</p>
+
+<pre><code>raz@pi: lsblk
+sda           8:0    0  1.8T  0 disk
+├─sda1        8:1    0  200M  0 part
+└─sda2        8:2    0  1.8T  0 part
+...
+</code></pre>
+
+<p>My device is <code>sda</code>. The paritition I&rsquo;ll use is <code>/dev/sda2</code>. Yours may be differently named depending on the block device assigned to your HDD by the OS.</p>
+
+<h3 id="step-b2-format-the-drive">Step B2: Format the drive</h3>
+
+<p>I&rsquo;ll be brief here but if you did not do Step B0, now comes the hardest step in the whole process: formatting the drive to a form Time Machine can recognize. The instructions here will be brief and might work for you on the first try. If that is the case, consider yourself lucky - otherwise, Google/DuckDuckGo/Bing(yikes) is your friend.</p>
+
+<p>if your drive is mounted, unmount it.</p>
+
+<pre><code>sudo umount /dev/sda2
+</code></pre>
+
+<p><strong>Warning: make sure you are using <em>your</em> device&rsquo;s block device id</strong> (e.g. <code>/dev/sdb</code>, etc.). Don&rsquo;t just blindly copy and paste these commands!</p>
+
+<p>Open GParted (you can use <code>parted</code> too). If you&rsquo;re SSH&rsquo;d into your Pi you can enable X forwarding to bring up the GParted GUI on the computer you&rsquo;re using. Do this by logging out of your Pi and logging in again, doing <code>ssh -X raz@10.0.0.8</code>. Use your username and local IP instead of mine, obviously.</p>
+
+<p>Start GParted:</p>
+
+<pre><code>raz@pi: sudo gparted
+</code></pre>
+
+<p><img src="https://alexdunn.io/time_machine_pi_gparted.png" width=700></img>
+<em>My drive is already formatted in this picture</em></p>
+
+<p>Select your HDD using the selection box in the upper righthand corner. <strong>Make sure you are using the correct drive.</strong> I am no longer accepting angry emails from people who formatted their root filesystems.</p>
+
+<p>Depending on your partition scheme, you may need to delete all your partitions. I did not, since (as you can see in the picture) I had only a tiny amount of space taken up by an old EFI partition. Once you have a large unallocated partition, right click the partition hover over <code>Format to...</code>, selecting <code>hfs+</code>. If this option is not available, make sure you installed the <code>hfs</code> requirements in Step A1.</p>
+
+<p>Now click <code>Apply!</code> to format the drive.</p>
+
+<p>If your drive formatted successfully, you will see <code>hfs+</code> as the filesystem for the partition you made. My formatted partition is <code>/dev/sda2</code></p>
+
+<p></br></p>
+
+<h2 id="step-a-name-mount-a-c-mounting-and-configuration">Step <a name="mount"></a>C: Mounting and configuration</h2>
+
+<p>If you&rsquo;ve made it this far, congrats, you&rsquo;re 90% of the way there!</p>
+
+<h3 id="step-c1-configure-fstab-and-mount">Step C1: Configure <code>fstab</code> and mount</h3>
+
+<p>Decide where you want to mount the disk. I use <code>/home/raz/disk2</code> on my machine.</p>
+
+<p>To make your drive mount on boot, configure the fstab file. The most reliable way is using the UUID. Find this with the <code>blkid</code> tool, which comes installed on most Debian-based distributions.</p>
+
+<pre><code>raz@pi: blkid /dev/sda2 # this is the partition I have formatted as hfs+
+
+/dev/sda2: UUID=&quot;621c9dbc-1614-3538-80a5-38d798657cdb&quot; LABEL=&quot;untitled&quot; TYPE=&quot;hfsplus&quot; PARTLABEL=&quot;My Passport for Mac&quot; PARTUUID=&quot;405751cc-68b9-4a09-a2f9-2fa06aac0c7b&quot;
+</code></pre>
+
+<p>The UUID you want is the first <code>UUID=</code> field returned. Copy this, then</p>
+
+<pre><code>raz@pi: sudo vim /etc/fstab
+</code></pre>
+
+<p>Add the following line, using your mountpoint and UUID:</p>
+
+<pre><code>UUID=621c9dbc-1614-3538-80a5-38d798657cdb /home/raz/disk2 hfsplus force,rw 0 2
+</code></pre>
+
+<p>The first column is the ID. The second is the mountpoint. The third is the filesystem type. The fourth column is our mounting options - since we need both read and write privileges, we use <code>rw</code> and we also <code>force</code> the mount. You can read more about the final two columns <a href="https://linuxroutes.com/linux-fstab/">here</a>.</p>
+
+<p>Now, a quick moment of truth:</p>
+
+<pre><code>raz@pi: sudo mount -a
+</code></pre>
+
+<p>And check your mounted devices (mine is <code>/dev/sda2</code>):</p>
+
+<pre><code>raz@pi: lsblk
+
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    0  1.8T  0 disk 
+├─sda1        8:1    0  200M  0 part 
+└─sda2        8:2    0  1.8T  0 part /home/raz/disk2
+sdb           8:16   0  3.7T  0 disk 
+└─sdb1        8:17   0  3.7T  0 part /home/raz/disk4
+sdc           8:32   0  7.3T  0 disk 
+└─sdc1        8:33   0  7.3T  0 part /home/raz/disk8
+mmcblk0     179:0    0 14.9G  0 disk 
+├─mmcblk0p1 179:1    0   63M  0 part /boot
+└─mmcblk0p2 179:2    0 14.8G  0 part /
+</code></pre>
+
+<p>If you do</p>
+
+<pre><code>raz@pi: sudo fdisk -l
+</code></pre>
+
+<p>And look for the disk, you should see something like:</p>
+
+<pre><code>Disk /dev/sda: 1.8 TiB, 2000365289472 bytes, 3906963456 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 37D20BEA-D14A-4C22-BD8F-BC552AE064F1
+
+Device      Start        End    Sectors  Size Type
+/dev/sda1      40     409639     409600  200M EFI System
+/dev/sda2  409640 3906701271 3906291632  1.8T Apple HFS/HFS+
+</code></pre>
+
+<p><strong>The hfs filesystem is now mounted and ready to be used by samba!</strong></p>
+
+<h3 id="step-c2-writing-the-samba-config-file">Step C2: Writing the samba config file.</h3>
+
+<p>You should open up the samba configuration file: <code>/etc/samba/smb.conf</code> and customize the general options to your needs, if you have not already. Then add your time machine share. Mine is called <code>timemachine</code>.</p>
+
+<pre><code>raz@pi: sudo vim /etc/samba/smb.conf
+
+# in /etc/samba/smb.conf
+[timemachine]
+comment = Time Machine
+path = /home/raz/disk2
+browseable = yes
+writeable = yes
+create mask = 0600
+directory mask = 0711
+spotlight = yes
+vfs objects = catia fruit streams_xattr
+fruit:aapl = yes
+fruit:time machine = yes
+public = yes
+</code></pre>
+
+<p>Save the file. Reboot, or just restart your samba instance</p>
+
+<pre><code>raz@pi: sudo reboot
+</code></pre>
+
+<p>If you get a kernel panic on boot, you probably have a problem with your <code>fstab</code> file. If not, just make sure your <code>smbd</code> service is running and your disk is mounted as intended!</p>
+
+<p>Now comes the real moment of truth.</p>
+
+<p></br></p>
+
+<h2 id="step-d-a-name-test-a-test-out-your-new-time-machine">Step D<a name="test"></a>: Test out your new time machine.</h2>
+
+<p>On your mac, open up the Time Machine application.</p>
+
+<p>If your installation and configuration went well, there should be an available disk on the network now.</p>
+
+<p>Select a disk.
+<img src="https://alexdunn.io/timemachine_smb2.png" width=700></img></p>
+
+<p>Select the disk on your network.
+<img src="https://alexdunn.io/timemachine_smb3.png" width=700></img></p>
+
+<p>Create a backup now.
+<img src="https://alexdunn.io/timemachine_smb4.png" width=700></img></p>
+
+<p>If you screen looks like this, you&rsquo;ve won!
+<img src="https://alexdunn.io/timemachine_smb5.png" width=700></img></p>
+
+<p>If Time Machine is saying there is a problem with the disk, make sure your <code>/etc/samba/smb.conf</code> is configured correctly. If this is your first time making a Time Machine backup on this disk, it will take a while (probably a day) to make your first backup. After that, it will only take a few minutes each time.</p>
+
+<p></br></p>
+
+<h2 id="congratulations">Congratulations!</h2>
+
+<p>You are now the proud owner of a Raspberry Pi Time Machine. If you didn&rsquo;t make it this far, keep debugging. It took me a handful of hours to get my setup configured correctly - hopefully my debugging saved you at least a little time.</p>
+
+<h2 id="m-a-name-conclusions-a-aintenance-and-conclusions">M<a name="conclusions"></a>aintenance and conclusions</h2>
+
+<p>The beauty of this setup is it requires very little maintenance. Sometimes Time Machine will say there is a problem with the disk (usually after a macOS update). Usually (almost always) just restarting your Mac will take care of this error.</p>
+
+<p>In conclusion, we&rsquo;ve set up a Raspberry Pi with external HDD which will automatically back up your machine in your sleep without having to plug it in. In the event your Mac is subject to an accidental bath, fire, or radioactive bear attack, rest assured the entirety of your Mac&rsquo;s data will be safe and sound.</p>
+
+  </div>
+
+</section>
+
+ 
+
+  
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+

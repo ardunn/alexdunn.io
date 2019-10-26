@@ -631,10 +631,15 @@ sdb           8:16   0  7.3T  0 disk
 mmcblk0     179:0    0 14.9G  0 disk
 ├─mmcblk0p1 179:1    0   63M  0 part /boot
 └─mmcblk0p2 179:2    0 14.8G  0 part /
+</code></pre></li>
+</ol>
+
+<p>I have mine mounted at <code>/home/raz/disk*</code> - yours will by default be mounted elsewhere such as <code>/media/raz</code>. My 8TB disk is mounted as <code>disk8</code> and the 2TB is mounted as <code>disk2</code>. If you want to mount this drive automatically on boot, edit your <code>/etc/fstab</code> file - there are lots of good guides online for this, but to save you some time, determine the UUID for your device with <code>blkid /dev/sdxY</code> and add a line like:</p>
+
+<pre><code>UUID=5C0D3CF332CF3A92  /home/raz/disk8 ntfs defaults 0 2
 </code></pre>
 
-<p>I have mine mounted at <code>/home/raz/disk*</code> - yours will by default be mounted elsewhere such as <code>/media/raz</code>. My 8TB disk is mounted as <code>disk8</code> and the 2TB is mounted as <code>disk2</code>.</p></li>
-</ol>
+<p>To your <code>/etc/fstab</code> file.</p>
 
 <p>Great! If you&rsquo;ve gotten this far, all of your physical configuration should be done.</p>
 
@@ -856,12 +861,6 @@ Guest ok = no
 
   </div>
 
-  <div id=links>
-    
-    
-      <a class="basic-alignment left" href="https://alexdunn.io/posts/roommate_stats/">Bad Statistics: A Tale of Two Roommates &raquo;</a>
-    
-  </div>
 </section>
 
  

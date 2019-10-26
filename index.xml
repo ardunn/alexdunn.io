@@ -6,10 +6,19 @@
     <description>Recent content in Alex Dunn personal site on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexdunn.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raspberry Pi Home Cloud 2: Apple Time Capsule</title>
+      <link>https://alexdunn.io/posts/rpi_time_machine/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexdunn.io/posts/rpi_time_machine/</guid>
+      <description>TOC:  Motivation Step A: Requirements Step B: Physical setup and formatting Step C: Mounting and configuration Step D: Test out your new time machine Maintenance and Conclusions  Motivation I have a Macbook Pro (2017) dedicated exclusively to my work as a graduate student. If I lost it and had no backup, i would be uttely devastated. Having a backup is an absolute necessity - as the saying goes:</description>
+    </item>
     
     <item>
       <title>My (Running) Halls of Software Fame and Shame</title>
