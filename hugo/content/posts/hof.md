@@ -45,6 +45,9 @@ And with that out of the way, enjoy!
 
 </br>
 
+
+---
+
 # <a name="fame"></a> The Hall of Fame
 
 ### Polybar
@@ -119,10 +122,12 @@ It supports Latex math typesetting and is resource-light even when manipulating 
 
 <img src="/darkreader.png" width="300"></img>
 
-</br>
-</br>
+
+---
+
 # <a name="shame"></a> The Hall of Shame
 
+</br>
 ### MongoDB Compass
 `Added 9/22/2019`
 

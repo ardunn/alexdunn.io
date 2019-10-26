@@ -51,7 +51,7 @@ Well it turns out getting it configured was not _too_ troublesome (compared to m
 
 Check out the guide below on how to do it.
 
-
+---
 
 </br>
 ## Step A:<a name="req"></a> Requirements
@@ -157,6 +157,7 @@ If your service is not running, try enabling and starting the `smbd` or `smb` se
     raz@pi: sudo systemctl enable smbd
     raz@pi: sudo systemctl start smbd
 
+---
 
 </br>
 ## Step <a name="setup"></a>B: Physical Setup and Formatting
@@ -207,7 +208,7 @@ Now click `Apply!` to format the drive.
 
 If your drive formatted successfully, you will see `hfs+` as the filesystem for the partition you made. My formatted partition is `/dev/sda2`
 
-
+---
 
 </br>
 ## Step <a name="mount"></a>C: Mounting and configuration
@@ -305,7 +306,7 @@ If you get a kernel panic on boot, you probably have a problem with your `fstab`
 
 Now comes the real moment of truth. 
 
-
+---
 
 </br>
 ## Step D<a name="test"></a>: Test out your new time machine.
@@ -335,6 +336,8 @@ If Time Machine is saying there is a problem with the disk, make sure your `/etc
 
 You are now the proud owner of a Raspberry Pi Time Machine. If you didn't make it this far, keep debugging. It took me a handful of hours to get my setup configured correctly - hopefully my debugging saved you at least a little time. 
 
+
+---
 
 ## M<a name="conclusions"></a>aintenance and conclusions
 

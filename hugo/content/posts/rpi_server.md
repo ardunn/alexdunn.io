@@ -75,6 +75,7 @@ Samba and SFTP servers on the local network; SFTP server outside the local netwo
 5. Some basic bash familiarity
 6. An hour of your dedicated time. 
 
+---
 
 ## Steps
 
@@ -138,6 +139,7 @@ To your `/etc/fstab` file.
 
 Great! If you've gotten this far, all of your physical configuration should be done.
 
+---
 
 ### B<a name="backups"></a>. Configure automatic backups
 
@@ -178,6 +180,8 @@ Great! If you've gotten this far, all of your physical configuration should be d
 
 Now your data is being backed up automatically. You should try running `raz@pi:~$ source ~/sync_script` and check the logs in your newly-setup log dir to make sure it is syncing as intended. The next step is to make your master drive easily accessible from the local network.
 
+---
+
 ### <a name="mount"></a> C. Easily mount your server
 
 By default, all SSH-enabled servers have SFTP enabled. So you are already able to connect via your computer's file explorer or FTP apps on your phone or computer. 
@@ -213,6 +217,7 @@ I keep it stashed away in a drawer, out of sight and out of mind. **Beauty is in
 
 If you want to access your Pi (and data) from outside your local network, read section D. 
 
+---
 
 ### <a name="external"></a> D. Optional - Create and secure access outside the local network
 
@@ -282,6 +287,7 @@ alias pifsremote="sshfs -p 12345 raz@$REMOTE_IP:/home/raz/disk8 /home/x/pi/"
 
 #### Potential problems: If your ISP changes your public IP regularly, this port-forwarding approach will only work for short periods of time (weeks). 
 
+---
 
 ### <a name="samba"></a> E. (optional) Enable a Samba Share
 

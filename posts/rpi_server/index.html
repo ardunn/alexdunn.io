@@ -221,7 +221,7 @@
   }
 
   hr {
-    width:40%;
+    width:100%;
     height: 1px;
     background:#403c3b;
     margin: 25px auto;
@@ -580,6 +580,8 @@ img[src$='#floatright']
 <li><p>An hour of your dedicated time.</p></li>
 </ol>
 
+<hr />
+
 <h2 id="steps">Steps</h2>
 
 <h3 id="a-name-local-a-a-configure-local-ssh-access-to-your-raspberry-pi"><a name="local"></a> A. Configure local SSH access to your Raspberry Pi.</h3>
@@ -643,6 +645,8 @@ mmcblk0     179:0    0 14.9G  0 disk
 
 <p>Great! If you&rsquo;ve gotten this far, all of your physical configuration should be done.</p>
 
+<hr />
+
 <h3 id="b-a-name-backups-a-configure-automatic-backups">B<a name="backups"></a>. Configure automatic backups</h3>
 
 <h4 id="the-two-tools-we-will-be-using-for-automatic-backups-are-rsync-and-crontab-the-idea-is-that-rsync-will-synchronize-the-disks-on-a-schedule-dictated-by-the-system-crontab">The two tools we will be using for automatic backups are <code>rsync</code> and <code>crontab</code>. The idea is that <code>rsync</code> will synchronize the disks on a schedule dictated by the system (<code>crontab</code>).</h4>
@@ -683,6 +687,8 @@ rsync -auvhs /home/raz/disk8/* /home/raz/disk2 --delete &gt; /home/raz/logs/&quo
 
 <p>Now your data is being backed up automatically. You should try running <code>raz@pi:~$ source ~/sync_script</code> and check the logs in your newly-setup log dir to make sure it is syncing as intended. The next step is to make your master drive easily accessible from the local network.</p>
 
+<hr />
+
 <h3 id="a-name-mount-a-c-easily-mount-your-server"><a name="mount"></a> C. Easily mount your server</h3>
 
 <p>By default, all SSH-enabled servers have SFTP enabled. So you are already able to connect via your computer&rsquo;s file explorer or FTP apps on your phone or computer.</p>
@@ -716,6 +722,8 @@ rsync -auvhs /home/raz/disk8/* /home/raz/disk2 --delete &gt; /home/raz/logs/&quo
 I keep it stashed away in a drawer, out of sight and out of mind. <strong>Beauty is in the eye of the beholder&hellip;</strong></p>
 
 <p>If you want to access your Pi (and data) from outside your local network, read section D.</p>
+
+<hr />
 
 <h3 id="a-name-external-a-d-optional-create-and-secure-access-outside-the-local-network"><a name="external"></a> D. Optional - Create and secure access outside the local network</h3>
 
@@ -780,6 +788,8 @@ Port 12345  # pick some random port
 </code></pre>
 
 <h4 id="potential-problems-if-your-isp-changes-your-public-ip-regularly-this-port-forwarding-approach-will-only-work-for-short-periods-of-time-weeks">Potential problems: If your ISP changes your public IP regularly, this port-forwarding approach will only work for short periods of time (weeks).</h4>
+
+<hr />
 
 <h3 id="a-name-samba-a-e-optional-enable-a-samba-share"><a name="samba"></a> E. (optional) Enable a Samba Share</h3>
 

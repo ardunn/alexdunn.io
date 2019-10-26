@@ -74,6 +74,8 @@ If you did say that though, the analyst in me would tell you to hold up! This is
 
 ##### We need to bust out our AP Stats handbook and use statistics to answer this pressing and important question.
 
+---
+
 ## <a name="stats"></a> A statistical test...
 
 Let's get a measure of probability for whether our house acceptance rate is in fact smaller than say, Stanford's acceptance rate of 5.1% (admission year 2019). **First, we must form a proper null hypothesis.** We will formulate our null hypothesis such that rejecting it indicates our acceptance rate is less than Stanford's. If we fail to reject the null hypothesis, there is insufficient statistical evidence.
@@ -171,6 +173,8 @@ Finally, we find `$ \boxed{ P(X \leq 2) = 0.179394} $`, more than our `$ \alpha 
 
 ###### We don't have sufficient evidence that our roommate selection process is more selective than Stanford (at the 5% significance level).
 If you would have jumped to conclusions, you might have sullied the name of the great Stanford university!
+
+---
 
 <br/>
 ## <a name="conclusion"></a> What if I told you...
