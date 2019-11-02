@@ -1,5 +1,5 @@
 +++
-title = "My (Running) Halls of Software Fame and Shame"
+title = "Halls of Software Fame and Shame"
 description = ""
 date = "2019-09-22"
 heading= true

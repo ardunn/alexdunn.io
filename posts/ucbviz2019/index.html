@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120668741-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120668741-2');
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+	The Website Hack Week: Cal DataViz Contest
+      
+    </title>
+    <link rel="canonical" href="https://alexdunn.io/posts/ucbviz2019/">
+
+    
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+
+<style>
+  * {
+    border:0;
+    font-family: 'Barlow Semi Condensed', 'Arial', sans-serif;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: #b0b0b0;
+    text-decoration-skip: ink;
+    background-color: #1f1f1f;
+	    
+  }
+
+  body {
+    font-size:17px;
+    line-height:160%;
+    max-width:700px;
+    margin:auto;
+
+  }
+
+ img {
+    max-width: 100%;
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 100%;    
+}
+
+.image img {
+    -webkit-transition: all 1s ease;  
+  	-moz-transition: all 1s ease;  
+  	-o-transition: all 1s ease;  
+  	-ms-transition: all 1s ease;  
+  	transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(2.00);  
+    -moz-transform:scale(2.00);  
+    -ms-transform:scale(2.00);  
+    -o-transform:scale(2.00);  
+     transform:scale(2.00);
+}
+
+  p {
+    margin: 20px 0;
+
+	 
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 18px  Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  }
+
+  code {
+    font-size: 18px;
+    padding: 4px;
+
+    overflow: hidden;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:inherit;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:100%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:grey;
+    font-size:18px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:55px;
+    color:white;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:22px;
+    padding:20px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:30px;
+  }
+
+  #content .entry-content {
+    margin-top:22px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 20px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:22px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:28px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:22px;
+    }
+
+    #content h1 {
+      font-size:26px;
+    }
+
+    #content h2 {
+      font-size:24px;
+    }
+
+    .posts_listing li div{
+      font-size:22px;
+    }
+  }
+
+img[src$='#floatleft']
+{
+	float:left;
+        
+}
+
+img[src$='#floatright']
+{
+	float:right;
+        margin-left: 15px;
+        margin-right: 30px;
+}
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
+      <ul>
+        
+          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+        
+          <li><a href="https://alexdunn.io/photos/">Photos</a></li>
+        
+          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1>  The Website Hack Week: Cal DataViz Contest </h1> 
+
+  
+    <div id=sub-header>
+      November 2019 · 2 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    
+
+<h4 id="calgraddata-interactive-visualization-of-cal-graduate-financial-data">CalGradData: Interactive Visualization of Cal Graduate Financial Data</h4>
+
+<p>Recently the <a href="https://ga.berkeley.edu">UC Berkeley Graduate Assembly</a> put out a call for a Data Visualization contest of UC Berkeley&rsquo;s graduate financial data. I think their motivation was to take the most boring data on the planet and transform it into an engaging and interesting form. Whether they succeeded or not, only time will tell.</p>
+
+<p>Well my friend (and fellow graduate student) <a href="https://www.linkedin.com/in/johndagdelen/">John Dagdelen</a> and I decided to put our HTML, CSS, JS, and <a href="https://plot.ly/dash/">Plotly Dash</a> skills to use in making an interactive website for this otherwise bone dry data. <strong>The result is CalGradData, a website we built and deployed over the course of the week leading up to Halloween 2019.</strong> Check it out here:</p>
+
+<h2 id="calgraddata-herokuapp-com-https-calgraddata-herokuapp-com"><a href="https://calgraddata.herokuapp.com">calgraddata.herokuapp.com</a></h2>
+
+<p><a href="https://calgraddata.herokuapp.com" target="_blank">
+    <img src="https://alexdunn.io/ucbviz2019_still.png" width="600" ></img>
+</a></p>
+
+<p></br></p>
+
+<hr />
+
+<h2 id="meta-visualization-the-coding-process">Meta-visualization: The Coding Process</h2>
+
+<p><strong>I thought it would be fun to also screen record my coding process as we built this app from scratch</strong>. At first I was certain it would only be a few hours of video&hellip;</p>
+
+<p><em>How long could it take to make a little dashboard?</em>, I thought it my naivete</p>
+
+<p>But - as with all projects - it went beyond the expected schedule. So enjoy a 1000x speedup of ~30 hours of coding. For extra fun and stress, watch the clock on the upper righthand corner.</p>
+
+<p>Includes:</p>
+
+<ul>
+<li>Setting up a virtual environment</li>
+<li>Data munging</li>
+<li>Creating the plotly dash app</li>
+<li>Debugging</li>
+<li>More data munging</li>
+<li>Making cool graphs in Plotly</li>
+<li>More data munging</li>
+<li>Dead air where I take a break at Chipotle</li>
+<li>More debugging</li>
+<li>More debugging (x100)&hellip;</li>
+</ul>
+
+<p></br></p>
+
+<h4 id="epilepsy-warning-bright-flashing-colors">Epilepsy warning: Bright, flashing colors.</h4>
+
+<video width="320" height="240" controls>
+  <source src="https://alexdunn.io/ucbviz2019_coding_1000x.m4v" type="video/mp4">
+Your browser does not support the video tag :(
+</video> 
+
+<p>You can check out our hacky, disgusting code on <a href="https://github.com/calgraddata/ucbviz2019">Github</a> (if you&rsquo;re into that sort of thing).</p>
+
+<hr />
+
+<h2 id="a-quick-video-of-the-website">A quick video of the website</h2>
+
+<p>If the link is down (i.e., if this is many years in the future), check out this quick video demo of the website:</p>
+
+<video width="320" height="240" controls>
+  <source src="https://alexdunn.io/ucbviz2019_websitev1.mp4" type="video/mp4">
+Your browser does not support the video tag :(
+</video> 
+
+  </div>
+
+</section>
+
+ 
+
+  
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+

@@ -6,10 +6,20 @@
     <description>Recent content in Alex Dunn personal site on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexdunn.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Website Hack Week: Cal DataViz Contest</title>
+      <link>https://alexdunn.io/posts/ucbviz2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexdunn.io/posts/ucbviz2019/</guid>
+      <description>CalGradData: Interactive Visualization of Cal Graduate Financial Data Recently the UC Berkeley Graduate Assembly put out a call for a Data Visualization contest of UC Berkeley&amp;rsquo;s graduate financial data. I think their motivation was to take the most boring data on the planet and transform it into an engaging and interesting form. Whether they succeeded or not, only time will tell.
+Well my friend (and fellow graduate student) John Dagdelen and I decided to put our HTML, CSS, JS, and Plotly Dash skills to use in making an interactive website for this otherwise bone dry data.</description>
+    </item>
     
     <item>
       <title>Raspberry Pi Home Cloud 2: Apple Time Capsule</title>
@@ -21,7 +31,7 @@
     </item>
     
     <item>
-      <title>My (Running) Halls of Software Fame and Shame</title>
+      <title>Halls of Software Fame and Shame</title>
       <link>https://alexdunn.io/posts/hof/</link>
       <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
       

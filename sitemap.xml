@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://alexdunn.io/posts/ucbviz2019/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alexdunn.io/posts/rpi_time_machine/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>https://alexdunn.io/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -47,7 +52,7 @@
   
   <url>
     <loc>https://alexdunn.io/posts/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
