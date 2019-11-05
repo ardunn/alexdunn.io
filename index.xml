@@ -49,6 +49,28 @@ Well my friend (and fellow graduate student) John Dagdelen and I decided to put 
     </item>
     
     <item>
+      <title>My DSLR Photos</title>
+      <link>https://alexdunn.io/posts/dslr_photos/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexdunn.io/posts/dslr_photos/</guid>
+      <description>Here&amp;rsquo;s some pictures I took with a DSLR (more coming soon!) yuba river, ca
+yuba river, ca
+astoria, or
+cathedral peak, ca
+eastern sierra, ca
+grouse ridge, ca
+grouse ridge, ca
+downtown la, ca
+echo park, ca
+sabrina wilderness, ca
+santa barbara, ca
+seattle, wa
+lake tahoe, nv
+yosemite, ca</description>
+    </item>
+    
+    <item>
       <title>Tech-MacGyvering a Raspberry Pi Home Cloud</title>
       <link>https://alexdunn.io/posts/rpi_server/</link>
       <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
@@ -77,25 +99,14 @@ If you are hoping to learn more about the research I&amp;rsquo;ve worked on, my 
     </item>
     
     <item>
-      <title>Photos</title>
-      <link>https://alexdunn.io/photos/</link>
+      <title>Projects</title>
+      <link>https://alexdunn.io/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/photos/</guid>
-      <description>Here&amp;rsquo;s some pictures I took with a DSLR (more coming soon!) yuba river, ca
-yuba river, ca
-astoria, or
-cathedral peak, ca
-eastern sierra, ca
-grouse ridge, ca
-grouse ridge, ca
-downtown la, ca
-echo park, ca
-sabrina wilderness, ca
-santa barbara, ca
-seattle, wa
-lake tahoe, nv
-yosemite, ca</description>
+      <guid>https://alexdunn.io/projects/</guid>
+      <description>Here&amp;rsquo;s a short list of recent - and relatively self-contained - software projects I&amp;rsquo;ve created, led, or principally developed.
+
+Work projects automatminer  Github Docs Publication: coming soon  Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials. It works for most materials datasets and includes aspects of AutoML, transfer learning, and reproducible benchmarking (through our benchmark Matbench, analagous to ImageNet for image classification).</description>
     </item>
     
   </channel>

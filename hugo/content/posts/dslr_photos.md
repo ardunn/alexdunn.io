@@ -1,9 +1,10 @@
----
-title: "Photos"
-date: false
-draft: false
-heading: false
----
++++
+title = "My DSLR Photos"
+description = ""
+date = "2019-06-18"
+heading= true
++++
+
 
 #### Here's some pictures I took with a DSLR (more coming soon!)
 

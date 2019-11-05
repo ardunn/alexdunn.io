@@ -38,7 +38,6 @@ Includes:
 - Debugging
 - More data munging
 - Making cool graphs in Plotly
-- More data munging
 - Dead air where I take a break at Chipotle
 - More debugging
 - More debugging (x100)...
