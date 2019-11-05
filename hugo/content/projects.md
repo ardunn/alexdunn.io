@@ -2,7 +2,7 @@
 title: "Projects"
 date: false
 draft: false
-heading: false
+heading: true
 ---
 
 Here's a short list of recent - and relatively self-contained - software projects I've created, led, or principally developed.
