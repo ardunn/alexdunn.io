@@ -275,7 +275,14 @@ And look for the disk, you should see something like:
     /dev/sda2  409640 3906701271 3906291632  1.8T Apple HFS/HFS+
 
 
+There can be problems if you don't allow the correct user rights on the mounted disk though. The easiest way to solve this is just by changing the owner and permissions of the mounted disk. Once mounted, enter (of course changing the mountpoint to your mountpoint and user)
+
+    raz@pi: sudo chown /home/raz/disk2 raz
+    raz@pi: sudo chmod 777 /home/raz/disk2
+
 **The hfs filesystem is now mounted and ready to be used by samba!**
+
+
 
 ### Step C2: Writing the samba config file.
 
@@ -322,6 +329,8 @@ Select a disk.
 
 Select the disk on your network.
 <img src="/timemachine_smb3.png" width=700></img>
+
+If Time Machine asks you to log in, log in as the user on your raspberry pi, **not** as a guest. Time Machine will not work if you use the network location under a guest login; this is because in our samba config we configured the default file and directory masks. So in my case, this means logging in as `raz`, my one and only non-root system user.
 
 Create a backup now.
 <img src="/timemachine_smb4.png" width=700></img>
