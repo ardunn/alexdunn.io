@@ -6,7 +6,7 @@ heading: false
 ---
 
 # I'm Alex. 
-Enthusiast of science, freeskiing, machine intelligence, two-wheelers, and all things computing. Lover of linux and dark mode.
+Enthusiast of science, freeskiing, machine intelligence, two-wheelers, free and open source software, and all things computing. 
 
 <img src="/composite.png"></img>
 
