@@ -33,7 +33,7 @@ Your browser does not support the video tag :(
 
 ---
 
-## Update (Decemeber 12, 2019): 
+## Update (Decemeber 2, 2019): 
 ### We were selected as the overall (schoolwide) winner of the contest!
 
 <img src="/1stplace.png" width="200" ></img>
