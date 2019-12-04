@@ -60,6 +60,6 @@ This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Fin
 
 ### mmai (in progress)
 
-- [Github](https://github.com/calgraddata/ucbviz2019)
+- [Github](https://github.com/ardunn/mmai)
 
 mmai (mma-ai) is a project for predicting the outcomes of mixed martial arts bouts using machine learning. It includes code for scraping multiple data sources, processing, and learning trends in MMA data with time series forecasting. This project is in progress at the moment, so if you're eager to use it to make some extra money at the sportsbook, please be patient!
