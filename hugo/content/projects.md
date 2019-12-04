@@ -52,7 +52,7 @@ Matscholar-Web is the front-end Plotly dash website for the Matscholar project, 
 - [Github](https://github.com/calgraddata/ucbviz2019)
 - [Website](https://calgraddata.herokuapp.com)
 
-This was an entry for the 2019 Cal Graduate Financial Data Visualization contest - it is an interactive website written in Plotly Dash for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. You can read more about it in [this post](/posts/ucbviz2019).
+This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. You can read more about it in [this post](/posts/ucbviz2019).
 
 
 

@@ -17,7 +17,7 @@ heading: false
 
 I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.lbl.gov) at [LBL](https://lbl.gov). **I use computers to help find and design new materials;** I develop machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help others do the same. I also work alongside the [Materials Project](https://materialsproject.org), an online resarch effort with over 100,000 registered users.
 
-`Last updated: 2019.10.25`
+`Last updated: 2019.12.02`
 
 
 ---
@@ -82,7 +82,8 @@ I'm a Ph.D. candidate in the [HackingMaterials group](https://hackingmaterials.l
 
 # Leadership, Memberships,  and Awards
 
-1. **NERSC User Group [Executive Committee](https://www.nersc.gov/users/NUG/NUGEX/)** - Executive Committe Member _(2019 - 2022)_
+1. **NERSC User Group [Executive Committee](https://www.nersc.gov/users/NUG/NUGEX/)** - Elected member of executive committee which administrates supercomputing policy at NERSC. _(2019 - 2022)_
+2. **[UC Berkeley Graduate Data Visualization Contest Overall Winner](/posts/ucbviz2019)** - Won schoolwide competition by creating interactive website for graduate financial data. (_2019_) 
 2. **[Computational Materials Science at Berkeley](https://computationalmaterials.github.io/)** - Co-Founder, officer _(2018)_
 3. **Magna Cum Laude** - UCLA _(2017)_
 4. **Tau Beta Pi CA Epsilon** - Distinguished member _(2016)_

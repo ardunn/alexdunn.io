@@ -1,16 +1,18 @@
 +++
-title = "The Website Hack Week: Cal DataViz Contest"
+title = "Hack Week: Winning the Cal DataViz Contest"
 description = ""
 date = "2019-11-01"
 heading= true
 +++
 
 
+
+
 #### CalGradData: Interactive Visualization of Cal Graduate Financial Data
 
 Recently the [UC Berkeley Graduate Assembly](https://ga.berkeley.edu) put out a call for a Data Visualization contest of UC Berkeley's graduate financial data. I think their motivation was to take the most boring data on the planet and transform it into an engaging and interesting form. Whether they succeeded or not, only time will tell.
 
-Well my friend (and fellow graduate student) [John Dagdelen](https://www.linkedin.com/in/johndagdelen/) and I decided to put our HTML, CSS, JS, and [Plotly Dash](https://plot.ly/dash/) skills to use in making an interactive website for this otherwise bone dry data. **The result is CalGradData, a website we built and deployed over the course of the week leading up to Halloween 2019.** Check it out here:
+Well my friend (and fellow graduate student) [John Dagdelen](https://jdagdelen.github.io) and I decided to put our HTML, CSS, JS, and [Plotly Dash](https://plot.ly/dash/) skills to use in making an interactive website for this otherwise bone dry data. **The result is CalGradData, a website we built and deployed over the course of the week leading up to Halloween 2019.** Check it out here:
 
 ## [calgraddata.herokuapp.com](https://calgraddata.herokuapp.com)
 
@@ -18,7 +20,25 @@ Well my friend (and fellow graduate student) [John Dagdelen](https://www.linkedi
     <img src="/ucbviz2019_still.png" width="600" ></img>
 </a>
 
-</br>
+
+## A quick video of the website
+
+If the link is down (i.e., if this is many years in the future), check out this quick video demo of the website:
+
+<video width="320" height="240" controls>
+  <source src="/ucbviz2019_websitev1.mp4" type="video/mp4">
+Your browser does not support the video tag :(
+</video> 
+
+
+---
+
+## Update (Decemeber 12, 2019): 
+### We were selected as the overall (schoolwide) winner of the contest!
+
+<img src="/1stplace.png" width="200" ></img>
+
+There will be some more info in the first [December edition of the Delegates Digest](http://ga.berkeley.edu/news/delegates-digest/). Both John and I were very excited (and $300 richer in prize money!).  
 
 ---
 
@@ -54,13 +74,4 @@ Your browser does not support the video tag :(
 You can check out our hacky, disgusting code on [Github](https://github.com/calgraddata/ucbviz2019) (if you're into that sort of thing).
 
 ---
-
-## A quick video of the website
-
-If the link is down (i.e., if this is many years in the future), check out this quick video demo of the website:
-
-<video width="320" height="240" controls>
-  <source src="/ucbviz2019_websitev1.mp4" type="video/mp4">
-Your browser does not support the video tag :(
-</video> 
 
