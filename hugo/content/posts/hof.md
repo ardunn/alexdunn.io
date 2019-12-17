@@ -50,6 +50,20 @@ And with that out of the way, enjoy!
 
 # <a name="fame"></a> The Hall of Fame
 
+### Notability
+`Added 12/12/2019`
+
+[Notability](https://www.gingerlabs.com/) is the best note taking app (incorporating handwriting) I have ever used. For people who have to write to learn (e.g., me), having a sustainable system for keeping track of notes is crucial. Notability allows me to do that, in addition to incorporating the typical Apple Notes-style notes (typing, checklists, images, etc.). The ability to export and backup automatically is a huge plus as well. Depsite being a commercial project with closed-source code, t's a truly spectacular app and is worth every penny ($9.99 last I checked).
+<img src="/notability.png" height=500></img>
+
+### Keepass
+`Added 12/12/2019`
+
+[Keepass](https://keepass.info/) is an open-source, locally hosted password management system for those who don't trust online password managers. What you sacrifice in convenience, Keepass makes up for in simplicity. All your passwords are in a single (optional) movable file guarded by a master password - you and you alone are the guardian of your passwords. I recommend it without hesistation to power users.
+
+<img src="/keepass.png">
+
+
 ### Polybar
 `Added 9/22/2019`
 
