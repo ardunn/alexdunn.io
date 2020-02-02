@@ -50,6 +50,17 @@ And with that out of the way, enjoy!
 
 # <a name="fame"></a> The Hall of Fame
 
+### Pi My Life Up
+`Added 2/1/2020`
+
+[Pi My Life Up](https://pimylifeup.com/) is a website dedicated to project guides for the Raspberry Pi single board computer (SBC). The span and depth of their content is truly impressive - their site hosts literally _hundreds_ of raspberry pi projects (many of them server/IT based, which I appreciate), and each of their guides is totally comprehensive - unlike most guides you'll find in the top 10 results of a Google search for "raspberry pi [insert thing here] guide". The authors of this site have obviously put a ton of hard work into the site and deserve all the recognition they can get.
+
+P.S.: They also have several Arduino, Linux, electronics, etc. guides, but I think they're mostly known for their Raspberry Pi articles (if the name didn't let that on).
+
+<img src="/pmluy.png"></img>
+
+
+
 ### Notability
 `Added 12/12/2019`
 
@@ -169,6 +180,8 @@ First off, I want to say my gripes with Apple Music are about the app UI itself,
 - A sane bottom row of icons, such as "Playlists", "Artists", "Albums", etc. At the time of this writing, there is "For You", "Browse", and "Radio". Almost no one I know uses any of these on a regular basis, yet they are permanent and prominent icons on the screen.
 - A reasonable way to see the album/artist from the currently playing song. Now, this requires two taps (once on the relatively small artist screen, and once on the pop up dialog for artist/album). 
 - ...and many other first-world problems
+
+Update Feb 2020: Left AM for Spotify, and never looking back.
 
 <img src="/apple_music.png" height="500"></img>
 
