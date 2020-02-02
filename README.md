@@ -3,9 +3,7 @@
 Source code for alex's personal site published at [ardunn.github.io](https://ardunn.github.io) and [alexdunn.io](https://alexdunn.io)
 
 
-to build it, do:
 
-```
-cd hugo
-hugo --cleanDestinationDir
-```
+## how this site is built
+
+This site is built primarily with `hugo`, a static site generator. I used the template of the [black-and-white](https://github.com/davidhampgonsalves/hugo-black-and-light-theme) theme and modified the templates and partial html snippets for a different appearance.
