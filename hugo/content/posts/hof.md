@@ -50,6 +50,26 @@ And with that out of the way, enjoy!
 
 # <a name="fame"></a> The Hall of Fame
 
+
+### Jellyfin
+`Added 2/13/2020`
+
+[Jellyfin](https://github.com/jellyfin/jellyfin) is a lightweight, no-frills, FOSS version of Plex/Kodi. I use it on my Raspberry Pi NAS to stream DLNA to our house's PS4 (when Kodi and Plex wouldn't work) as well as other devices around the house. It has a beautiful interace with very little frills and *just works*.
+
+<img src="/jellyfin.png"></img>
+
+</br>
+
+
+### BookPlayer (iOS)
+`Added 2/13/2020`
+
+[BookPlayer](https://github.com/TortugaPower/BookPlayer) is an [iOS-compatible](https://apps.apple.com/us/app/bookplayer/id1138219998) open source and (monetarily, not FOSS as in GNU-FOSS) free audiobook player. It has a gorgrous, minimal app and adding local files, whether they be a single audiobook mp3 or a hundred m4a's, is a breeze. Highly recommended.
+
+<img src="/bookplayer.PNG" height=500></img>
+
+</br>
+
 ### Pi My Life Up
 `Added 2/1/2020`
 
@@ -102,14 +122,6 @@ So at all times I have a view of the CPU usage, temp, memory usage, disk usage, 
 |__/                   |
 
 ```
-
-</br>
-### Universal media server
-`Added 9/22/2019`
-
-[Universal media server](https://github.com/UniversalMediaServer/UniversalMediaServer/) is the lightweight, no-frills version of Plex/Kodi. I use it on my Raspberry Pi NAS to stream DLNA to our house's PS4 (when Kodi and Plex wouldn't work). They also have a very helpful forum to help you debug, if you need to.
-
-<img src="/ums.png"></img>
 
 </br>
 ### dmenu-extended
