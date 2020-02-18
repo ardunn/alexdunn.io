@@ -12,8 +12,15 @@ heading: false
 ### Scientific computing and data science. 
 ##### (And sometimes both together) 
 
-| <a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en"><img src="/gscholar.png" width="50" /></a>     | <a href="https://www.linkedin.com/in/dunnslinked/"><img src="/linkedin.png" width="50"></a>   | <a href="https://github.com/ardunn"><img src="/github.png" width="50"></a>    |
-|--------------------------------------------------------------------------------------------------------------------   |---------------------------------------------------------------------------------------------- |-----------------------------------------------------------------------------  |
+<center>
+<table>
+<tr>
+<th><a href="https://scholar.google.com/citations?user=SqGIG_wAAAAJ&hl=en"><img src="/gscholar.png" width="50" /></a></th>
+<th><a href="https://www.linkedin.com/in/dunnslinked/"><img src="/linkedin.png" width="50"></a></th>
+<th><a href="https://github.com/ardunn"><img src="/github.png" width="50"></a></th>
+</tr>
+</table>
+</center>
 
 `Last updated: 2020.02.01`
 
