@@ -52,7 +52,7 @@ Matscholar-Web is the front-end Plotly dash website for the Matscholar project, 
 - [Github](https://github.com/calgraddata/ucbviz2019)
 - [Website](https://calgraddata.herokuapp.com)
 
-This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. You can read more about it in [this post](/posts/ucbviz2019).
+This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in [this post](/posts/ucbviz2019).
 
 
 
@@ -63,3 +63,13 @@ This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Fin
 - [Github](https://github.com/ardunn/mmai)
 
 mmai (mma-ai) is a project for predicting the outcomes of mixed martial arts bouts using machine learning. It includes code for scraping multiple data sources, processing, and learning trends in MMA data with time series forecasting. This project is in progress at the moment, so if you're eager to use it to make some extra money at the sportsbook, please be patient!
+
+
+---
+
+### nikobellicbot
+
+- [Github](https://github.com/ardunn/nikobellicbot)
+- [Website](https://www.reddit.com/u/nikobellicbot)
+
+NikoBellicBot is a heuristic-based Reddit comment and voice-quip bot which quotes Niko Bellic, the protagonist of Rockstar Games' 2008 title *GTAIV*. It's currently running 24/7 on an old Android phone (via Termux) sitting in a drawer. Fair warning: the bot is quite vulgar; all of its dialogue is taken directly from the game. It's quite basic right now, but if NBB gets enough attention, it may be worth adding in NLP to make the bot seem more... "sentient".
