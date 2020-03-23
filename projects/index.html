@@ -488,17 +488,31 @@ img[src$='#floatright']
 
 <h4 id="automatminer">automatminer</h4>
 
+<p><center>
+<a href="https://github.com/hackingmaterials/automatminer" target="_blank">
+    <img src="https://alexdunn.io/automatminer.png" width="300" ></img>
+</a>
+</center></p>
+
+<p>Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials. It works for most materials datasets and includes aspects of AutoML, transfer learning, and reproducible benchmarking (through our benchmark Matbench, analagous to ImageNet for image classification). It is completely automatic and has similar performance to hand-tuned materials ML models. Automatminer is pip installable and can be used by anyone with a Python installation.</p>
+
 <ul>
 <li><a href="https://github.com/hackingmaterials/automatminer/">Github</a></li>
 <li><a href="http://hackingmaterials.lbl.gov/automatminer/">Docs</a></li>
 <li>Publication: coming soon</li>
 </ul>
 
-<p>Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials. It works for most materials datasets and includes aspects of AutoML, transfer learning, and reproducible benchmarking (through our benchmark Matbench, analagous to ImageNet for image classification). It is completely automatic and has similar performance to hand-tuned materials ML models. Automatminer is pip installable and can be used by anyone with a Python installation.</p>
-
 <hr />
 
 <h4 id="rocketsled">rocketsled</h4>
+
+<p><center>
+<a href="https://github.com/hackingmaterials/rocketsled" target="_blank">
+    <img src="https://alexdunn.io/rocketsled.png" width="300" ></img>
+</a>
+</center></p>
+
+<p>Rocketsled is a black-box optimization package &ldquo;on rails&rdquo; for running expensive, high-throughput computations. For example, if you have 1M configurations of a chemical process you&rsquo;d like to simulate, an objective metric to optimize (e.g., reaction rate), and an expensive forward simulation (like finite-difference method), <em>but only the resoures to run 1,000 simulations</em> - rocketsled will help you find the optimal configuration. It is agnostic to the choice of optimization algorithm, the computer it is run on (from a local laptop to a queued supercomputing center), and the problem it is optimizing (hyperparameter tuning, <em>ab initio</em> calculations, engineering simulations, etc.). The advantage of rocketsled over similar optimization packages is that it is designed with parallel computation in mind, meaning you can run many expensive simulations in parallel. Rocketsled is pip installable and can be used by anyone with a Python installation.</p>
 
 <ul>
 <li><a href="https://github.com/hackingmaterials/rocketsled">Github</a></li>
@@ -506,21 +520,25 @@ img[src$='#floatright']
 <li><a href="https://doi.org/10.1088/2515-7639/ab0c3d">Publication</a></li>
 </ul>
 
-<p>Rocketsled is a black-box optimization package &ldquo;on rails&rdquo; for running expensive, high-throughput computations. For example, if you have 1M configurations of a chemical process you&rsquo;d like to simulate, an objective metric to optimize (e.g., reaction rate), and an expensive forward simulation (like finite-difference method), <em>but only the resoures to run 1,000 simulations</em> - rocketsled will help you find the optimal configuration. It is agnostic to the choice of optimization algorithm, the computer it is run on (from a local laptop to a queued supercomputing center), and the problem it is optimizing (hyperparameter tuning, <em>ab initio</em> calculations, engineering simulations, etc.). The advantage of rocketsled over similar optimization packages is that it is designed with parallel computation in mind, meaning you can run many expensive simulations in parallel. Rocketsled is pip installable and can be used by anyone with a Python installation.</p>
-
 <hr />
 
 <h4 id="matscholar-web">matscholar-web*</h4>
+
+<p><center>
+<a href="https://github.com/materialsintelligence/matscholar-web" target="_blank">
+    <img src="https://alexdunn.io/matscholar.png" width="300" ></img>
+</a>
+</center></p>
+
+<p>Matscholar-Web is the front-end Plotly dash website for the Matscholar project, an NLP-based search engine of materials. Matscholar-web provides interactive access to more than 3M scientific papers and can search synthesis methods, non-canonical material names, materials descriptors, phases, characterization and modeling methods, applications, properties, and raw text. By searching and summarizing millions of scientific abstracts using algorithms designed specifically for materials data mining, Matscholar-web can be a powerful tool for exploring the published knowledge of materials, and it goes far beyond what Google Scholar&rsquo;s search offers!</p>
+
+<p><em>Disclaimer: I currently lead development of the frontend website only; I contribute to the backend, API, and  underlying algorithms but those are led (and were principally developed by) others in the <a href="https://github.com/materialsintelligence">Materials Intelligence organization</a>!</em></p>
 
 <ul>
 <li><a href="https://github.com/materialsintelligence/matscholar-web">Github</a></li>
 <li><a href="https://www.matscholar.com/">Website</a></li>
 <li><a href="https://doi.org/10.1038/s41586-019-1335-8">Publication</a></li>
 </ul>
-
-<p>Matscholar-Web is the front-end Plotly dash website for the Matscholar project, an NLP-based search engine of materials. Matscholar-web provides interactive access to more than 3M scientific papers and can search synthesis methods, non-canonical material names, materials descriptors, phases, characterization and modeling methods, applications, properties, and raw text. By searching and summarizing millions of scientific abstracts using algorithms designed specifically for materials data mining, Matscholar-web can be a powerful tool for exploring the published knowledge of materials, and it goes far beyond what Google Scholar&rsquo;s search offers!</p>
-
-<p><em>Disclaimer: I currently lead development of the frontend website only; I contribute to the backend, API, and  underlying algorithms but those are led (and were principally developed by) others in the <a href="https://github.com/materialsintelligence">Materials Intelligence organization</a>!</em></p>
 
 <p></br></p>
 
@@ -530,33 +548,59 @@ img[src$='#floatright']
 
 <h3 id="ucbviz2019">ucbviz2019</h3>
 
+<p><center>
+<a href="https://calgraddata.herokuapp.com" target="_blank">
+    <img src="https://alexdunn.io/ucbviz2019_still.png" width="500"></img>
+</a>
+</center></p>
+
+<p>This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in <a href="https://alexdunn.io/posts/ucbviz2019">this post</a>.</p>
+
 <ul>
 <li><a href="https://github.com/calgraddata/ucbviz2019">Github</a></li>
 <li><a href="https://calgraddata.herokuapp.com">Website</a></li>
 </ul>
 
-<p>This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in <a href="https://alexdunn.io/posts/ucbviz2019">this post</a>.</p>
+<hr />
+
+<h3 id="dion">dion</h3>
+
+<p><center>
+<a href="https://calgraddata.herokuapp.com" target="_blank">
+    <img src="https://alexdunn.io/example_tasks_by_project.png" width="600" ></img>
+</a>
+</center></p>
+
+<p>dion (Dionysus) is an opinionated and ultra-minimal productivity tool operated from the command line. It intelligently tells you what to work on based on task prorities and status (done, doing, on hold, etc.) and keeps all your tasks as local markdown files in a very simple format.</p>
+
+<ul>
+<li><a href="https://github.com/ardunn/dion">Github</a></li>
+</ul>
 
 <hr />
 
 <h3 id="mmai-in-progress">mmai (in progress)</h3>
 
+<p>mmai (mma-ai) is a project for predicting the outcomes of mixed martial arts bouts using machine learning. It includes code for scraping multiple data sources, processing, and learning trends in MMA data with time series forecasting. This project is in progress at the moment, so if you&rsquo;re eager to use it to make some extra money at the sportsbook, please be patient!</p>
+
 <ul>
 <li><a href="https://github.com/ardunn/mmai">Github</a></li>
 </ul>
-
-<p>mmai (mma-ai) is a project for predicting the outcomes of mixed martial arts bouts using machine learning. It includes code for scraping multiple data sources, processing, and learning trends in MMA data with time series forecasting. This project is in progress at the moment, so if you&rsquo;re eager to use it to make some extra money at the sportsbook, please be patient!</p>
 
 <hr />
 
 <h3 id="nikobellicbot">nikobellicbot</h3>
 
+<p><center>
+<img src="https://alexdunn.io/nbbot.png" ></img>
+</center></p>
+
+<p>NikoBellicBot is a heuristic-based Reddit comment and voice-quip bot which quotes Niko Bellic, the protagonist of Rockstar Games&rsquo; 2008 title <em>GTAIV</em>. It&rsquo;s currently running <sup>24</sup>&frasl;<sub>7</sub> on an old Android phone (via Termux) sitting in a drawer. <strong>Fair warning: the bot is quite vulgar</strong>; all of its dialogue is taken directly from the game. It&rsquo;s quite basic right now, but if NBB gets enough attention, it may be worth adding in NLP to make the bot seem more&hellip; &ldquo;sentient&rdquo;.</p>
+
 <ul>
 <li><a href="https://github.com/ardunn/nikobellicbot">Github</a></li>
 <li><a href="https://www.reddit.com/u/nikobellicbot">Website</a></li>
 </ul>
-
-<p>NikoBellicBot is a heuristic-based Reddit comment and voice-quip bot which quotes Niko Bellic, the protagonist of Rockstar Games&rsquo; 2008 title <em>GTAIV</em>. It&rsquo;s currently running <sup>24</sup>&frasl;<sub>7</sub> on an old Android phone (via Termux) sitting in a drawer. Fair warning: the bot is quite vulgar; all of its dialogue is taken directly from the game. It&rsquo;s quite basic right now, but if NBB gets enough attention, it may be worth adding in NLP to make the bot seem more&hellip; &ldquo;sentient&rdquo;.</p>
 
   </div>
 
