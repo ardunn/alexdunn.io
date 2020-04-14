@@ -64,7 +64,7 @@ And with that out of the way, enjoy!
 ### BookPlayer (iOS)
 `Added 2/13/2020`
 
-[BookPlayer](https://github.com/TortugaPower/BookPlayer) is an [iOS-compatible](https://apps.apple.com/us/app/bookplayer/id1138219998) open source and (monetarily, not FOSS as in GNU-FOSS) free audiobook player. It has a gorgrous, minimal app and adding local files, whether they be a single audiobook mp3 or a hundred m4a's, is a breeze. Highly recommended.
+[BookPlayer](https://github.com/TortugaPower/BookPlayer) is an [iOS-compatible](https://apps.apple.com/us/app/bookplayer/id1138219998) open source and (monetarily, not FOSS as in GNU-FOSS) free audiobook player. It has a gorgeous, minimal app and adding local files, whether they be a single audiobook mp3 or a hundred m4a's, is a breeze. Highly recommended.
 
 <img src="/bookplayer.PNG" height=500></img>
 
