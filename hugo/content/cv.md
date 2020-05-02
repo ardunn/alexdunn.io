@@ -51,7 +51,9 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 2. **Dunn, A.**, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** _J. Phys. Mater._ [2, 034002 (2019).](https://doi.org/10.1088/2515-7639/ab0c3d)
 
-3. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
+3. Dylla, M. **Dunn, A.**, Anand, S., Jain, A., Snyder, G. J. **Machine Learning Chemical Guidelines for Engineering Electronic Structures in Half-Heusler Thermoelectric Materials** _Research_ [2020, 6375171, (2020)](https://doi.org/10.34133/2020/6375171) 
+
+4. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
 
 ---
 
