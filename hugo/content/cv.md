@@ -22,7 +22,7 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2020.02.01`
+`Last updated: 2020.07.12`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
@@ -54,6 +54,8 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 3. Dylla, M. **Dunn, A.**, Anand, S., Jain, A., Snyder, G. J. **Machine Learning Chemical Guidelines for Engineering Electronic Structures in Half-Heusler Thermoelectric Materials** _Research_ [2020, 6375171, (2020)](https://doi.org/10.34133/2020/6375171) 
 
 4. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
+
+5. Bartel, C. J., Trewartha, A., Wang, Q., **Dunn, A.,** Jain, A., Ceder, G. **A critical examination of compound stability predictions from machine-learned formation energies.** _npj Computational Materials_ [6, 97 (2020)](https://doi.org/10.1038/s41524-020-00362-y)
 
 ---
 
