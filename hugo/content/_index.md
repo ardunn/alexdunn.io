@@ -12,7 +12,7 @@ Enthusiast of science, freeskiing, machine intelligence, two-wheelers, free and 
 
 * Interested in my work? Check out my [CV](/cv)
 * Want to read some ramblings? Browse the [posts](/posts).
-* Need to contact me? `denhaus@gmail.com`
+* Need to contact me? `denhaus(at)gmail`
 
 <center>
 <table>

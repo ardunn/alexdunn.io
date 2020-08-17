@@ -22,7 +22,7 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2020.07.12`
+`Last updated: 2020.08.14`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
@@ -34,28 +34,55 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 * Predicting materials properties with ML
 * Text mining scientific literature
 * Adaptive design (black box optimization) for scientific computation
-* High throughput and massively parallel scientific computation
+* High throughput and massively parallel methods
 * Presenting these technologies via accessible, open interfaces (e.g., webpages)
 
 ---
 
 # Formal education
 * **B.Sc.**, Chemical Engineering - UCLA (_2014 - 2017_)
+* **M.S.** Materials Science - UC Berkeley (_2017 - 2020_)
 * **Ph.D.** Materials Science - UC Berkeley (_2017 -_ present)
     * **Research topic**: Materials Design with Data Science and HPC
 
 ---
 
-# Papers
-1. Tshitoyan, V., Dagdelen, J., Weston, L., **Dunn, A.**,  Rong Z., Kononova, O., Persson, K.A., Ceder, G.,& Jain, A. **Unsupervised word embeddings capture latent knowledge from materials science literature** _Nature_ [571, 95-98 (2019)](https://doi.org/10.1038/s41586-019-1335-8)
+# Peer-reviewed Papers
 
-2. **Dunn, A.**, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** _J. Phys. Mater._ [2, 034002 (2019).](https://doi.org/10.1088/2515-7639/ab0c3d)
+## 2020
 
-3. Dylla, M. **Dunn, A.**, Anand, S., Jain, A., Snyder, G. J. **Machine Learning Chemical Guidelines for Engineering Electronic Structures in Half-Heusler Thermoelectric Materials** _Research_ [2020, 6375171, (2020)](https://doi.org/10.34133/2020/6375171) 
+<span></span>
 
-4. Ward, L., **Dunn, A.**, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
 
-5. Bartel, C. J., Trewartha, A., Wang, Q., **Dunn, A.,** Jain, A., Ceder, G. **A critical examination of compound stability predictions from machine-learned formation energies.** _npj Computational Materials_ [6, 97 (2020)](https://doi.org/10.1038/s41524-020-00362-y)
+1. <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Wang, Q., Ganose, A., Dopp, D., Jain, A. **Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm** _npj Comput. Mater._ TBD
+
+
+2. Dylla, M. <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span> Anand, S., Jain, A., Snyder, G. J. **Machine Learning Chemical Guidelines for Engineering Electronic Structures in Half-Heusler Thermoelectric Materials** _Research_ [2020, 6375171, (2020)](https://doi.org/10.34133/2020/6375171) 
+
+
+3. Bartel, C. J., Trewartha, A., Wang, Q., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Ceder, G. **A critical examination of compound stability predictions from machine-learned formation energies.** _npj Comput. Mater._ [6, 97 (2020)](https://doi.org/10.1038/s41524-020-00362-y)
+
+
+4. Ricci, F., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Rignanese, G. M., Hautier, G. **Gapped metals as thermoelectric materials revealed by high-throughput screening** _npj Comput. Mater._ [TBD](https://doi.org/10.1039/D0TA05197G)
+
+
+## 2019
+
+<span></span>
+
+
+1. Tshitoyan, V., Dagdelen, J., Weston, L., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>,  Rong Z., Kononova, O., Persson, K.A., Ceder, G.,& Jain, A. **Unsupervised word embeddings capture latent knowledge from materials science literature** _Nature_ [571, 95-98 (2019)](https://doi.org/10.1038/s41586-019-1335-8)
+
+
+2. <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Brenneck, J., Jain, A. **Rocketsled: a software library for optimizing high-throughput computational searches.** _J. Phys. Mater._ [2, 034002 (2019).](https://doi.org/10.1088/2515-7639/ab0c3d)
+
+
+## 2018
+
+<span></span>
+
+1. Ward, L., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Faghaninia, A., Zimmermann, N. E. R., Bajaj, S., Wang, Q., Montoya, J. H., Chen, J., Bystrom, K., Dylla, M., Chard, K., Asta, M., Persson, K., Snyder, G. J., Foster, I., Jain, A. **Matminer: An open source toolkit for materials data mining.** _Comput. Mater. Sci._ [152, 60-69 (2018)](https://doi.org/10.1016/j.commatsci.2018.05.018).
+
 
 ---
 
