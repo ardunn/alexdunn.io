@@ -63,7 +63,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 3. Bartel, C. J., Trewartha, A., Wang, Q., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Ceder, G. **A critical examination of compound stability predictions from machine-learned formation energies.** _npj Comput. Mater._ [6, 97 (2020)](https://doi.org/10.1038/s41524-020-00362-y)
 
 
-4. Ricci, F., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Rignanese, G. M., Hautier, G. **Gapped metals as thermoelectric materials revealed by high-throughput screening** _J. Mater. Chem. A_ [TBD](https://doi.org/10.1039/D0TA05197G)
+4. Ricci, F., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Rignanese, G. M., Hautier, G. **Gapped metals as thermoelectric materials revealed by high-throughput screening** _J. Mater. Chem. A_ [8, 17579-17594 (2020)](https://doi.org/10.1039/D0TA05197G)
 
 
 ## 2019
