@@ -54,7 +54,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 <span></span>
 
 
-1. <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Wang, Q., Ganose, A., Dopp, D., Jain, A. **Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm** _npj Comput. Mater._ TBD
+1. <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Wang, Q., Ganose, A., Dopp, D., Jain, A. **Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm** _npj Comput. Mater._ [6, 138 (2020)](https://doi.org/10.1038/s41524-020-00406-3)
 
 
 2. Dylla, M. <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span> Anand, S., Jain, A., Snyder, G. J. **Machine Learning Chemical Guidelines for Engineering Electronic Structures in Half-Heusler Thermoelectric Materials** _Research_ [2020, 6375171, (2020)](https://doi.org/10.34133/2020/6375171) 
