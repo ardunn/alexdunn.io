@@ -26,7 +26,7 @@ Automatminer is an automatic, general purpose machine learning pipeline for pred
 
 - [Github](https://github.com/hackingmaterials/automatminer/)
 - [Docs](http://hackingmaterials.lbl.gov/automatminer/)
-- Publication: coming soon
+- [Publication](https://doi.org/10.1038/s41524-020-00406-3)
 
 
 
