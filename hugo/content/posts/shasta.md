@@ -165,14 +165,14 @@ As you can see, we were still hiking in shoes to this point, which made scurryin
 <img src="/shasta_11k.jpg"></img>
 _7:30am, 10,000 ft. We dumped most of our camp gear here and considered using this bluff as high camp._
 
-After putting on crampons WF progresses into more "monutaineering" terrain. Steeper. 
+After putting on crampons WF progresses into more "mountaineering" terrain. Steeper. 
 
 
 
 <img src="/shasta_circled.png"></img>
 _The circled area is probably the steepest on the entire WF route. We measured it at more than 50 degrees (if you're familiar with ski terms, this means borderline unski-ably steep). The only way to get up it is on all fours (or with a rope), leading with the ice axe and supported by crampons. It is not good if you slide down; the rock bluff 200 yards below sits right at the outlet. This area becomes important later on..._
 
-By 9:00am we had made it above the steepest section, but the snow had started to soften up and the altitude was starting to get to us. It was too steep to skin up, so we resolved zig-zag cramponing, a technique meant to "even out" the fatigue on your legs across the leg muscles. Every ski-booted step with skis on our back was getting tougher.
+By 9:00am we had made it above the steepest section, but the snow had started to soften up and the altitude was starting to get to us. It was too steep to skin up, so we resolved to zig-zag cramponing, a technique meant to "even out" the fatigue on your legs across the leg muscles. Every ski-booted step with skis on our back was getting tougher.
 
 
 
