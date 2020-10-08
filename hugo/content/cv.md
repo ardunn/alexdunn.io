@@ -22,7 +22,7 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2020.10.02`
+`Last updated: 2020.10.08`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
@@ -104,9 +104,11 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 # Experience
 
-1. **Graduate Student Research Assistant @ LBNL.**  Using data-mining to elucidate structure-property relationships and accelerate predictions of material properties. Running many thousands of density functional theory (DFT) calculations to evaluate candidate thermoelectrics, communicating results to experimental collaborators. Writing open-source software packages for data mining materials properties and running massively parallel calculations on supercomputers. (_2017 -_ present)
+1. **Graduate Student Research Assistant @ [LBNL.](https://eta.lbl.gov/)** Using data-mining to elucidate structure-property relationships and accelerate predictions of material properties. Running many thousands of density functional theory (DFT) calculations to evaluate candidate thermoelectrics, communicating results to experimental collaborators. Writing open-source software packages for data mining materials properties and running massively parallel calculations on supercomputers. (_2017 -_ present)
 
-2. **Consultant @ MaterialsQM Consulting.** High-throughput synthesis pathway screening using density functional theory and combinatorics. Communicating with clients, preparing reports, and helping guide discovery of novel semiconductor materials. (_2018 - 2019_)
+2. **Scientific Software Engineer @ [Toyota Research Institute - Advanced Materials Design and Discovery.](https://www.tri.global/our-work/material-design/)** Software for predicting Li-ion battery cycling characteristics (lifetimes) with machine learning. (_2020 -_ present) 
+
+2. **Consultant @ [MaterialsQM Consulting.](https://materialsqm.com/)** High-throughput synthesis pathway screening using density functional theory and combinatorics. Communicating with clients, preparing reports, and helping guide discovery of novel semiconductor materials. (_2018 - 2019_)
 
 3. **Undergraduate Student Research Assistant @ LBNL.** Remote position. Wrote a black-box Bayesian optimization (adaptive design) package for use with the workflow software FireWorks. Incorporated several machine learning algorithms as optimization engines, and tested the performance on two example use cases in materials science. (_2016 - 2017_)
 
