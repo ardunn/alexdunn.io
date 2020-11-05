@@ -22,7 +22,7 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2020.10.08`
+`Last updated: 2020.11.04`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
@@ -65,6 +65,8 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 4. Ricci, F., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Rignanese, G. M., Hautier, G. **Gapped metals as thermoelectric materials revealed by high-throughput screening** _J. Mater. Chem. A_ [8, 17579-17594 (2020)](https://doi.org/10.1039/D0TA05197G)
 
+
+5. Pohls, J-H., Chanakian, S., Park, J., Ganose, M., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Friesen, N., Bhattacharya, A., Hogan, B., Bux, S., Jain, A., Mar, A., Zevalkink, A. **Experimental validation of high thermoelectric performance in RECuZnP2 predicted by high-throughput DFT calculations** _Materials Horizons_ [TBA](https://doi.org/10.1039/D0MH01112F)
 
 ## 2019
 
