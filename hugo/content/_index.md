@@ -12,7 +12,7 @@ Enthusiast of science, freeskiing, machine intelligence, two-wheelers, free and 
 
 * Interested in my work? Check out my [CV](/cv)
 * Want to read some ramblings? Browse the [posts](/posts).
-* Need to contact me? `denhaus(at)gmail`
+* Need to contact me? `ardunn(at)email(dot)com`
 
 <center>
 <table>
