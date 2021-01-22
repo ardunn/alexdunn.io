@@ -66,6 +66,8 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 4. Ricci, F., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Jain, A., Rignanese, G. M., Hautier, G. **Gapped metals as thermoelectric materials revealed by high-throughput screening** _J. Mater. Chem. A_ [8, 17579-17594 (2020)](https://doi.org/10.1039/D0TA05197G)
 
 
+5. Pohls, J-H., Chanakian, S., Park, J., Ganose, M., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Friesen, N., Bhattacharya, A., Hogan, B., Bux, S., Jain, A., Mar, A., Zevalkink, A. **Experimental validation of high thermoelectric performance in RECuZnP2 predicted by high-throughput DFT calculationsi.** _Materials Horizons_ [8, 209-215 (2020)](https://doi.org/10.1039/D0MH01112F)
+
 ## 2019
 
 <span></span>
