@@ -79,6 +79,7 @@ Matscholar-Web is the front-end Plotly dash website for the Matscholar project, 
 
 ### ucbviz2019
 
+
 <center>
 <a href="https://calgraddata.herokuapp.com" target="_blank">
     <img src="/ucbviz2019_still.png" width="500"></img>
@@ -91,6 +92,20 @@ This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Fin
 - [Github](https://github.com/calgraddata/ucbviz2019)
 - [Website](https://calgraddata.herokuapp.com)
 
+
+---
+
+### dsmt
+
+
+<center>
+   <img src="/dsmt.png" width="500"></img>
+</center>
+
+
+Dumb simple monitoring tool (DSMT) is a server process monitor Web UI meant to monitor the status of a single server's docker containers, systemd services, and arbitrary linux processes. I made it when other tools like Grafana, Prometheus, and LibreRMS were difficult to set up for simple process monitoring.
+
+- [Github](https://github.com/ardunn/dsmt)
 
 
 ---
@@ -106,16 +121,6 @@ This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Fin
 dion (Dionysus) is an opinionated and ultra-minimal productivity tool operated from the command line. It intelligently tells you what to work on based on task prorities and status (done, doing, on hold, etc.) and keeps all your tasks as local markdown files in a very simple format.
 
 - [Github](https://github.com/ardunn/dion)
-
-
----
-
-### mmai (in progress)
-
-mmai (mma-ai) is a project for predicting the outcomes of mixed martial arts bouts using machine learning. It includes code for scraping multiple data sources, processing, and learning trends in MMA data with time series forecasting. This project is in progress at the moment, so if you're eager to use it to make some extra money at the sportsbook, please be patient!
-
-- [Github](https://github.com/ardunn/mmai)
-
 
 
 ---
