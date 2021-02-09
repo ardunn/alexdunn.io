@@ -51,6 +51,54 @@ And with that out of the way, enjoy!
 # <a name="fame"></a> The Hall of Fame
 
 
+### OpenAudible
+`Added 2/9/2021`
+
+
+[OpenAudible](https://github.com/openaudible/openaudible) is an open-source shareware ($12, as of 2021) application for converting Audible audiobooks into mp3 files.
+
+
+<img src="/openaudible.png"></img>
+*Image from the OpenAudible github repo: https://github.com/openaudlble*
+
+</br>
+
+ 
+
+
+
+
+
+### inxi
+`Added 2/9/2021`
+
+[inxi](https://github.com/smxi/inxi) is an minimal hardware information CLI. It works basically everywhere and tells you most of the things you need to know without too much info-spam (looking at you, `lshw`).
+
+```
+$ inxi -Fxz
+
+System:    Kernel: 5.8.0-7625-generic x86_64 bits: 64 compiler: N/A Desktop: Gnome 3.36.4 Distro: Pop!_OS 20.04 LTS 
+           base: Ubuntu 20.04 LTS Focal 
+Machine:   Type: Laptop System: LENOVO product: 20K4S0EB00 v: ThinkPad X1C 5th W10DG serial: <filter> 
+           Mobo: LENOVO model: 20K4S0EB00 v: SDK0J40697 WIN serial: <filter> UEFI: LENOVO v: N1MET49W (1.34 ) date: 07/02/2018 
+Battery:   ID-1: BAT0 charge: 40.6 Wh condition: 49.0/57.0 Wh (86%) model: SMP 01AV431 status: Charging 
+           Device-1: hid-0003:17EF:60EE.0034-battery model: Lenovo TrackPoint Keyboard II charge: N/A status: N/A 
+           Device-2: hidpp_battery_5 model: Logitech Wireless Mouse MX Master 3 charge: 100% (should be ignored) 
+           status: Discharging 
+CPU:       Topology: Dual Core model: Intel Core i5-6200U bits: 64 type: MT MCP arch: Skylake rev: 3 L2 cache: 3072 KiB 
+           flags: avx avx2 lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx bogomips: 19200 
+           Speed: 500 MHz min/max: 400/2800 MHz Core speeds (MHz): 1: 500 2: 500 3: 500 4: 500 
+Graphics:  Device-1: Intel Skylake GT2 [HD Graphics 520] vendor: Lenovo driver: i915 v: kernel bus ID: 00:02.0 
+           Display: x11 server: X.Org 1.20.8 driver: i915 resolution: 3840x2160~30Hz 
+           OpenGL: renderer: Mesa Intel HD Graphics 520 (SKL GT2) v: 4.6 Mesa 20.3.2 direct render: Yes 
+Audio:     Device-1: Intel Sunrise Point-LP HD Audio vendor: Lenovo driver: snd_hda_intel v: kernel bus ID: 00:1f.3 
+           Sound Server: ALSA v: k5.8.0-7625-generic 
+Network:   Device-1: Intel Ethernet I219-V vendor: Lenovo driver: e1000e v: 3.2.6-k port: efa0 bus ID: 00:1f.6 
+..
+```
+
+</br>
+
 ### Jellyfin
 `Added 2/13/2020`
 
