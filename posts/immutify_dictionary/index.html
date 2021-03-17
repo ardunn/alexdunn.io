@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120668741-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120668741-2');
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+	Hash a Nested Python Dictionary
+      
+    </title>
+    <link rel="canonical" href="https://alexdunn.io/posts/immutify_dictionary/">
+
+    
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+
+<style>
+  * {
+    border:0;
+    font-family: 'Barlow Semi Condensed', 'Arial', sans-serif;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: #b0b0b0;
+    text-decoration-skip: ink;
+    background-color: #1f1f1f;
+	    
+  }
+
+  body {
+    font-size:17px;
+    line-height:160%;
+    max-width:700px;
+    margin:auto;
+
+  }
+
+ img {
+    max-width: 100%;
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 100%;    
+}
+
+.image img {
+    -webkit-transition: all 1s ease;  
+  	-moz-transition: all 1s ease;  
+  	-o-transition: all 1s ease;  
+  	-ms-transition: all 1s ease;  
+  	transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(2.00);  
+    -moz-transform:scale(2.00);  
+    -ms-transform:scale(2.00);  
+    -o-transform:scale(2.00);  
+     transform:scale(2.00);
+}
+
+  p {
+    margin: 20px 0;
+
+	 
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 18px  Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  }
+
+  code {
+    font-size: 18px;
+    padding: 4px;
+
+    overflow: hidden;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:inherit;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:100%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:grey;
+    font-size:18px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:55px;
+    color:white;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:22px;
+    padding:20px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:30px;
+  }
+
+  #content .entry-content {
+    margin-top:22px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 20px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:22px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:28px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:22px;
+    }
+
+    #content h1 {
+      font-size:26px;
+    }
+
+    #content h2 {
+      font-size:24px;
+    }
+
+    .posts_listing li div{
+      font-size:22px;
+    }
+  }
+
+img[src$='#floatleft']
+{
+	float:left;
+        
+}
+
+img[src$='#floatright']
+{
+	float:right;
+        margin-left: 15px;
+        margin-right: 30px;
+}
+
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
+      <ul>
+        
+          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+        
+          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+        
+          <li><a href="https://alexdunn.io/projects/">Projects</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1>  Hash a Nested Python Dictionary </h1> 
+
+  
+    <div id=sub-header>
+      March 2021 · 6 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    
+
+<p>I came upon a Python situation recently where I had to hash a dictionary of arbitary depth, where:</p>
+
+<ol>
+<li>all keys are strings</li>
+<li>all values are either strings, numbers (numpy or native python ints/floats), basic iterables (non-object dtype numpy <code>ndarrays</code>, numerical pandas <code>Series</code>, or native python <code>list</code>s or <code>tuple</code>s of python native numbers/strings), OR&hellip;</li>
+<li>&hellip;values are themselves dictionaries subject to these 3 rules.</li>
+</ol>
+
+<p>For example:</p>
+
+<pre><code>some_dictionary = {
+
+	&quot;a&quot;: 12,
+	&quot;b&quot;: &quot;some_string&quot;,
+	&quot;c&quot;: {
+		&quot;q&quot;: np.ndarray([1,2,3...]),
+		&quot;some_key&quot;: pd.Series([19.283, 20.873....]),
+		&quot;k&quot;: 11,
+		&quot;a&quot;: {
+			&quot;nested_key&quot;: [8, 9, 11],
+			&quot;other nested key&quot;: (11, 15),
+			&quot;c&quot;: &quot;eleven&quot;,
+			&quot;d&quot; : { 
+				# of arbitrary depth
+				...
+			}
+		}
+	}
+	&quot;d&quot;: np.ndarray([0.001, 0.002, 0.003...]),
+	&quot;something&quot;: np.int64(40000),
+	...
+	# of arbitrary length
+}
+</code></pre>
+
+<p>How would we possibly hash this?</p>
+
+<h2 id="a-solution">A solution</h2>
+
+<p>If you&rsquo;re feeling intimidated, then you know how I felt when there was no answer to be found on StackOverflow or seemingly <em>anywhere</em> in the Googlesphere. So, in the spirit of a frantic coding interview, I wrote a brief (? maybe?) solution that works (pretty well? as far as I know?).</p>
+
+<pre><code>import hashlib
+import json
+
+import numpy as np
+import pandas as pd
+
+
+# Collapse the dictionary to a single representation
+def immutify_dictionary(d):
+    d_new = {}
+    for k, v in d.items():
+	
+	# convert to python native immutables
+        if isinstance(v, (np.ndarray, pd.Series)):
+            d_new[k] = tuple(v.tolist())
+
+	# immutify any lists
+        elif isinstance(v, list):
+            d_new[k] = tuple(v)
+
+	# recursion if nested
+        elif isinstance(v, dict):
+            d_new[k] = immutify_dictionary(v)
+
+	# ensure numpy &quot;primitives&quot; are casted to json-friendly python natives
+        else:
+            # convert numpy types to native
+            if hasattr(v, &quot;dtype&quot;):
+                d_new[k] = v.item()
+            else:
+                d_new[k] = v
+    
+    return dict(sorted(d_new.items(), key=lambda item: item[0]))
+
+# Make a json string from the sorted dictionary
+# then hash that string
+def hash_dictionary(d):
+    d_hashable = immutify_dictionary(d)
+    s_hashable = json.dumps(d_hashable).encode(&quot;utf-8&quot;)
+    m = hashlib.sha256(s_hashable).hexdigest()
+    return m
+</code></pre>
+
+<p>Here&rsquo;s an example:</p>
+
+<pre><code>d = {
+	&quot;q&quot;: [1, 2, 3], 
+	&quot;b&quot;: {
+		&quot;c&quot;: &quot;12&quot;, 
+		&quot;d&quot;: 15, 
+		&quot;e&quot;: np.asarray([4, 5, 6]),
+                &quot;f&quot;: {
+			&quot;z&quot;: 12, 
+			&quot;a&quot;: [7, 8]
+		}
+	}, 
+	&quot;c&quot;: np.int64(400)
+}
+</code></pre>
+
+<pre><code>&gt;&gt;&gt; hash_dictionary(d)
+
+'e68f1472030c1dbba09fda5eca116c9e7d5ae37e4742d619102b63972fdf9e50'
+</code></pre>
+
+<p>Note if we permute the keys (Python 3.6+ dictionaries are insertion-sorted, but we are considering dictionaries unsorted as they can be permuted while holding the same data) we obtain the same result:</p>
+
+<pre><code>d_permuted = {
+        &quot;b&quot;: {
+                &quot;c&quot;: &quot;12&quot;, 
+                &quot;f&quot;: {
+                        &quot;a&quot;: [7, 8],
+                        &quot;z&quot;: 12, 
+                },
+                &quot;e&quot;: np.asarray([4, 5, 6]),
+                &quot;d&quot;: 15, 
+        }, 
+        &quot;c&quot;: np.int64(400),
+        &quot;q&quot;: [1, 2, 3], 
+}
+</code></pre>
+
+<pre><code>&gt;&gt;&gt; hash_dictionary(d_permuted)
+
+'e68f1472030c1dbba09fda5eca116c9e7d5ae37e4742d619102b63972fdf9e50'
+</code></pre>
+
+<p>But if we change any of the keys or the values, we get a different hash:</p>
+
+<pre><code>d_new_value = {
+        &quot;b&quot;: {
+                &quot;c&quot;: &quot;12&quot;,
+                &quot;f&quot;: {
+                        &quot;a&quot;: [7, 8],
+                        &quot;z&quot;: 12,
+                },
+                &quot;e&quot;: np.asarray([4, 5, 6]),
+                &quot;d&quot;: 15,
+        },
+
+	# changed this value
+        &quot;c&quot;: np.int64(399),
+        &quot;q&quot;: [1, 2, 3],
+}
+</code></pre>
+
+<pre><code>&gt;&gt;&gt; hash_dictionary(d_new_value)
+
+'2e3756de5565262aba8f0f888d2938cde93e5b6bc4735b730f673a798a9d72d5'
+</code></pre>
+
+<p>If you find a more concise/performant solution, or find an edge case where this does not work, please email me! This solution relies on making a copy of the dictionary which is not efficient in terms of memory, so there is likely a better way to do inplace or without sorting.</p>
+
+<h2 id="walkthrough">Walkthrough</h2>
+
+<p><br></p>
+
+<h4 id="mutability">Mutability</h4>
+
+<p>In Python, dictionaries are unhashable because they are <em>mutable</em>, meaning they can be changed. So we need a way to get an immutable version of (or &lsquo;immutify&rsquo;) a dictionary subject to the constraints above. Everything inside the dictionary must also be immutable; for example, Python <code>list</code>s are not hashable because they are mutable.</p>
+
+<p>If you are dealing with the most basic case, where the dictionary is flat:</p>
+
+<pre><code>{
+	key_1: value_1,
+	key_2: value_2,
+	key_3: value_3,
+}
+</code></pre>
+
+<p>Python&rsquo;s builtin <code>frozenset</code> function makes it trivial to immutify this dictionary. You can think of what <code>frozenset</code> does as similar to creating an immutable <code>set</code> of <code>tuple</code>s, which together is immutable and therefore hashable. Provided your values are themselves hashable (e.g., native Python numbers, strings, tuples, etc.) <code>frozenset</code> immediately solves your problem.</p>
+
+<p>However, if we make the dictionary a bit more complicated and include mutable datatypes as values, we will need to immutify them before creating a frozenset:</p>
+
+<pre><code>{
+	key 1: [item1, item2, item3],
+	key 2: (item4, item5),
+	key 3: value_3,
+	key 4: np.ndarray([1,2,3])
+}
+</code></pre>
+
+<p>The lists can be changed to <code>tuple</code>s with the <code>tuple()</code> function; the builtin <code>ndarray.tolist()</code> will take care of changing numpy and pandas objects to native lists, which then can be cast to immutable tuples.</p>
+
+<p>For values which are themselves numpy primitive data types (e.g., <code>int64</code>), these should be cast to python natives.</p>
+
+<hr />
+
+<h4 id="recursion">Recursion</h4>
+
+<p>We add yet another layer of complexity when we consider that any dictionary value can itself be another dictionary. The only way to deal with this is recursion - or <em>dynamic programming</em> if we&rsquo;re feeling particularly fancy.</p>
+
+<p>The pseudocode for dealing with this problem is:</p>
+
+<pre><code>function immutify_dictionary(d)
+	for key, value in d
+		if type(value) = dictionary
+			immutify_dictionary(value))
+		else:
+			immutify_iterable_or_primitive(value)
+</code></pre>
+
+<p>The algorithm runs over values until it either runs into a &ldquo;stop point&rdquo; (array or primitive) or recursively continues by finding a dictionary value.</p>
+
+<hr />
+
+<h4 id="regular-hash-doesn-t-cut-it">Regular <code>hash</code> doesn&rsquo;t cut it</h4>
+
+<p>Provided we can now get each part of our dictionary into an immutable form, we still face a problem. The builtin python hash, which can natively hash python objects, does not give reliable digests because it is seeded with a random number from the system as a source of entropy. Instead, we need to use the <code>hashlib</code> module (specifically, SHA256).</p>
+
+<p>However, the <code>hashlib</code> algorithms require strings as input, <strong>not any immutable python object</strong>.</p>
+
+<p>So as opposed to using <code>hash</code> on a <code>frozenset</code>, where ordering does not matter, we must (1) order the dictionary deterministically and then (2) convert the dictionary to a string. If dictionary A and dictionary B have the same keys and same values but are string-ified with different orderings, they will have different hashes! Essentially&hellip;</p>
+
+<blockquote>
+<p>Essentially, if two dictionaries have the same information contained in them, <strong>they must produce the same dictionary string</strong> and therefore <strong>the same hash</strong>.</p>
+</blockquote>
+
+<p>At first it may seem like our previous work immutifying the dictionary is wasted, since we&rsquo;ll be immutifying by just converting our dictionaries to a big string. This is not true. <strong>Since different formats of the same data must be represented identically, different formats of arrays or numbers must collapse to the same string.</strong> In other words, running the code for immutification will collapse the various numpy/pandas/native arrays into the same tuples and the various primitive numerical types to the native python types. Our work was not wasted!</p>
+
+<p>This is where the final line of <code>immutify_dictionary</code> comes in:</p>
+
+<pre><code>return dict(sorted(d_new.items(), key=lambda item: item[0]))
+</code></pre>
+
+<p>This line simply re-sorts the dictionary by the keys, producing an insertion-sorted dictionary as output.</p>
+
+<p>Next, this sorted, deterministically collapsed dictionary can truly become immutable:</p>
+
+<pre><code>d_hashable = immutify_dictionary(d)
+s_hashable = json.dumps(d_hashable).encode(&quot;utf-8&quot;)
+</code></pre>
+
+<p>The <code>s_hashable</code> here is just itself a very long &ldquo;hash&rdquo; of the input dictionary. The same information, <strong>regardless of insertion order or  array/primitive format, collapses to the same string</strong>.</p>
+
+<hr />
+
+<h4 id="the-final-step">The final step</h4>
+
+<p>Much shorter than the string representation of the dictionary is the hexdigest of the SHA256 hash of that string. That is where <code>hashlib</code> finally comes in:</p>
+
+<pre><code>   m = hashlib.sha256(s_hashable).hexdigest()
+</code></pre>
+
+<p>The output is the 256-bit, or 64-hex character digest of our dictionary.</p>
+
+  </div>
+
+</section>
+
+ 
+
+  
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
