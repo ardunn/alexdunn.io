@@ -43,7 +43,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 * **B.Sc.**, Chemical Engineering - UCLA (_2014 - 2017_)
 * **M.S.** Materials Science - UC Berkeley (_2017 - 2020_)
 * **Ph.D.** Materials Science - UC Berkeley (_2017 -_ present)
-    * **Research topic**: Materials Design with Data Science and HPC
+    * **Research topic**: High throughput Modelling, Data-driven design, and Text Mining for Semiconductor Materials
 
 ---
 
