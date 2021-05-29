@@ -134,7 +134,7 @@ If you are hoping to learn more about the research I&amp;rsquo;ve worked on, my 
       
       <guid>https://alexdunn.io/cv/</guid>
       <description>My CV   Scientific computing and data science. (And sometimes both together)         
-Last updated: 2021.01.21
+Last updated: 2021.05.26
 I&#39;m a Ph.D. candidate in the HackingMaterials group at LBL. I use computers to help find and design new materials; I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the Materials Project, an online resarch effort with over 100,000 registered users.</description>
     </item>
     
@@ -144,10 +144,10 @@ I&#39;m a Ph.D. candidate in the HackingMaterials group at LBL. I use computers 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alexdunn.io/projects/</guid>
-      <description>Here&amp;rsquo;s a short list of recent - and relatively self-contained - software projects I&amp;rsquo;ve created, led, or principally developed.
+      <description>Here&amp;rsquo;s a short list of recent - and relatively self-contained - software projects I&amp;rsquo;ve created, led, or principally developed. If you are interested in larger scale projects that I helped develop, but did not lead, see my Github profile.
 
 Work projects automatminer    
-Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials. It works for most materials datasets and includes aspects of AutoML, transfer learning, and reproducible benchmarking (through our benchmark Matbench, analagous to ImageNet for image classification). It is completely automatic and has similar performance to hand-tuned materials ML models.</description>
+Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials. It works for most materials datasets and includes aspects of AutoML, transfer learning, and reproducible benchmarking (through our benchmark Matbench, analagous to ImageNet for image classification).</description>
     </item>
     
   </channel>

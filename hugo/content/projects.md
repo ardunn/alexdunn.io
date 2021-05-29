@@ -5,7 +5,8 @@ draft: false
 heading: true
 ---
 
-Here's a short list of recent - and relatively self-contained - software projects I've created, led, or principally developed.
+Here's a short list of recent - and relatively self-contained - software projects I've created, led, or principally developed. 
+If you are interested in larger scale projects that I helped develop, but did not lead, see my [Github profile](https://github.com/ardunn). 
 
 </br>
 
@@ -29,10 +30,55 @@ Automatminer is an automatic, general purpose machine learning pipeline for pred
 - [Publication](https://doi.org/10.1038/s41524-020-00406-3)
 
 
+---
 
+
+#### matbench
+
+
+
+<center>
+<a href="https://github.com/hackingmaterials/matbench" target="_blank">
+    <img src="/matbench.png" width="200" ></img>
+</a>
+</center>
+
+Matbench is a online dynamic leaderboard (similar to online leaderboards for ImageNet) and Python package for benchmarking ML property prediction algorithms in materials science. The leaderboard is 
+updated via pull request, is extensible to many types of materials data and benchmark versions, and contains comprehensive data about every algorithm on every ML task in every benchmark.
+The leaderboard also contains task-specific leaderboards and high-level leaderboard overviews for making broad conclusions from diverse and complex materials-ML predictions. The python
+package contains code for
+ 
+- obtaining standardized  benchmarking data for solid-state chemistry and materials science in common formats (such as dataframes)
+- recording algorithm results in self-contained and validatable intermediate formats for persistence, distribution, and reproduction
+- automatically computing comprehensive error metrics for 10+ datasets spanning multiple domains of solid state materials science
+
+
+Matbench is pip installable and can be used by anyone with a Python installation.
+
+- [Github](https://github.com/hackingmaterials/matbench/)
+- [Docs](http://hackingmaterials.lbl.gov/matbench/)
+- [Publication](https://doi.org/10.1038/s41524-020-00406-3)
 
 
 ---
+
+
+#### lbnlp
+
+
+<center>
+<a href="https://github.com/lbnlp/lbnlp" target="_blank">
+    <img src="/lbnlp1.png" width="300" ></img>
+</a>
+</center>
+
+LBNLP (LBNL + NLP) is a collection of Natural Language Processing tools jointly developed by the Persson, Ceder, and HackingMaterials groups at Lawrence Berkeley National Laboratory. It includes methods for common NLP pre- and post-processing tasks as well as one-line commands to load models (such as named entity recognition, relevance classification, Word2Vec, BERT, and more)  we have trained and validated on millions of materials science texts.
+
+- [Github](https://github.com/lbnlp/lbnlp)
+- [Docs](http://lbnlp.github.io/lbnlp)
+
+---
+
 
 #### rocketsled
 
@@ -110,17 +156,17 @@ Dumb simple monitoring tool (DSMT) is a server process monitor Web UI meant to m
 
 ---
 
-### dion
+### dex
 
 <center>
-<a href="https://calgraddata.herokuapp.com" target="_blank">
+<a href="https://github.com/ardunn/dex" target="_blank">
     <img src="/example_tasks_by_project.png" width="600" ></img>
 </a>
 </center>
 
-dion (Dionysus) is an opinionated and ultra-minimal productivity tool operated from the command line. It intelligently tells you what to work on based on task prorities and status (done, doing, on hold, etc.) and keeps all your tasks as local markdown files in a very simple format.
+dex (Day-executor) is an opinionated and ultra-minimal productivity tool operated from the command line. It intelligently tells you what to work on based on task prorities and status (done, doing, on hold, etc.) and keeps all your tasks as local markdown files in a very simple format compatible with most markdown note-taking apps and version control systems. 
 
-- [Github](https://github.com/ardunn/dion)
+- [Github](https://github.com/ardunn/dex)
 
 
 ---
