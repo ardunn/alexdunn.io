@@ -2,7 +2,7 @@
 title: "Projects"
 date: false
 draft: false
-heading: true
+heading: false
 ---
 
 Here's a short list of recent - and relatively self-contained - software projects I've created, led, or principally developed. 
@@ -10,7 +10,7 @@ If you are interested in larger scale projects that I helped develop, but did no
 
 </br>
 
-## Work projects
+## Data Mining
 
 ---
 
@@ -35,8 +35,6 @@ Automatminer is an automatic, general purpose machine learning pipeline for pred
 
 #### matbench
 
-
-
 <center>
 <a href="https://github.com/hackingmaterials/matbench" target="_blank">
     <img src="/matbench.png" width="200" ></img>
@@ -60,25 +58,12 @@ Matbench is pip installable and can be used by anyone with a Python installation
 - [Publication](https://doi.org/10.1038/s41524-020-00406-3)
 
 
----
 
+</br>
 
-#### lbnlp
-
-
-<center>
-<a href="https://github.com/lbnlp/lbnlp" target="_blank">
-    <img src="/lbnlp1.png" width="300" ></img>
-</a>
-</center>
-
-LBNLP (LBNL + NLP) is a collection of Natural Language Processing tools jointly developed by the Persson, Ceder, and HackingMaterials groups at Lawrence Berkeley National Laboratory. It includes methods for common NLP pre- and post-processing tasks as well as one-line commands to load models (such as named entity recognition, relevance classification, Word2Vec, BERT, and more)  we have trained and validated on millions of materials science texts.
-
-- [Github](https://github.com/lbnlp/lbnlp)
-- [Docs](http://lbnlp.github.io/lbnlp)
+## High throughput computing
 
 ---
-
 
 #### rocketsled
 
@@ -95,31 +80,30 @@ Rocketsled is a black-box optimization package "on rails" for running expensive,
 - [Publication](https://doi.org/10.1088/2515-7639/ab0c3d)
 
 
+</br> 
+
+## Natural Language Processing
 
 ---
 
-#### matscholar-web*
+#### lbnlp
 
 <center>
-<a href="https://github.com/materialsintelligence/matscholar-web" target="_blank">
-    <img src="/matscholar.png" width="300" ></img>
+<a href="https://github.com/lbnlp/lbnlp" target="_blank">
+    <img src="/lbnlp1.png" width="300" ></img>
 </a>
 </center>
 
-Matscholar-Web is the front-end Plotly dash website for the Matscholar project, an NLP-based search engine of materials. Matscholar-web provides interactive access to more than 3M scientific papers and can search synthesis methods, non-canonical material names, materials descriptors, phases, characterization and modeling methods, applications, properties, and raw text. By searching and summarizing millions of scientific abstracts using algorithms designed specifically for materials data mining, Matscholar-web can be a powerful tool for exploring the published knowledge of materials, and it goes far beyond what Google Scholar's search offers!
+LBNLP (LBNL + NLP) is a collection of Natural Language Processing tools jointly developed by the Persson, Ceder, and HackingMaterials groups at Lawrence Berkeley National Laboratory. It includes methods for common NLP pre- and post-processing tasks as well as one-line commands to load models (such as named entity recognition, relevance classification, Word2Vec, BERT, and more)  we have trained and validated on millions of materials science texts.
 
-*Disclaimer: I currently lead development of the frontend website only; I contribute to the backend, API, and  underlying algorithms but those are led (and were principally developed by) others in the [Materials Intelligence organization](https://github.com/materialsintelligence)!*
-
-- [Github](https://github.com/materialsintelligence/matscholar-web)
-- [Website](https://www.matscholar.com/)
-- [Publication](https://doi.org/10.1038/s41586-019-1335-8)
-
-
+- [Github](https://github.com/lbnlp/lbnlp)
+- [Docs](http://lbnlp.github.io/lbnlp)
 
 
 </br>
 
-## Personal projects
+
+## Assorted Personal projects
 
 ---
 
@@ -133,7 +117,7 @@ Matscholar-Web is the front-end Plotly dash website for the Matscholar project, 
 </center>
 
 
-This was the overall winning entry for the (schoolwide) UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in [this post](/posts/ucbviz2019).
+This was the overall winning entry for the schoolwide UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in [this post](/posts/ucbviz2019).
 
 - [Github](https://github.com/calgraddata/ucbviz2019)
 - [Website](https://calgraddata.herokuapp.com)
@@ -172,6 +156,7 @@ dex (Day-executor) is an opinionated and ultra-minimal productivity tool operate
 ---
 
 ### nikobellicbot
+###### (old, no longer maintained)
 
 <center>
 <img src="/nbbot.png" ></img>

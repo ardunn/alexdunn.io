@@ -174,6 +174,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 # Open source software
 * **[rocketsled](https://github.com/hackingmaterials/rocketsled):** (maintainer) Black box optimization framework for high-throughput computing.
 * **[automatminer](https://github.com/hackingmaterials/automatminer):** (maintainer) An autoML tool for predicting materials properties..
+* **[matbench](https://github.com/hackingmaterials/matbench):** (maintainer) A benchmarking test set and python package for property prediction in materials science.
 * **[matminer](https://github.com/hackingmaterials/matminer):** (primary developer) Data mining tools for materials science.
 * **[matscholar](https://github.com/materialsintelligence):** (developer) Text mining analysis of millions of materials science abstracts, including public API and [website](matscholar.com).
 * **[pymatgen](https://github.com/materialsproject/pymatgen):** (contributor) Python materials genomics.
