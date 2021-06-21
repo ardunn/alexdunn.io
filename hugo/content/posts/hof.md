@@ -1,5 +1,5 @@
 +++
-title = "Halls of Software Fame and Shame"
+title = "Halls of Software Fame and Shame (updated 06/2021)"
 description = ""
 date = "2019-09-22"
 heading= true
@@ -49,6 +49,30 @@ And with that out of the way, enjoy!
 ---
 
 # <a name="fame"></a> The Hall of Fame
+
+
+### vaultwarden (formerly bitwarden_rs)
+`Added 6/20/2021`
+
+[vaultwarden](https://github.com/dani-garcia/vaultwarden) is a self-hosted fork of Bitwarden, a password management server, written in rust. It is efficient enough to run on something as small as a raspberry pi. Although it is a bit of a pain to set up correctly, you can run it in docker and back up your credentials as sql files to your hearts content. I love it because I have convenient access to secure passwords and my data is under my control (as opposed to an external service).
+
+
+<img src="/bwrs.png"></img>
+
+</br>
+
+
+
+
+### bpytop
+`Added 6/7/2021`
+
+[bpytop](https://github.com/aristocratos/bpytop) is a stable and generally reliable system monitor tool for Unix systems. I use it across almost every device I have.
+
+<img src="/bpytop.png"></img>
+
+</br>
+
 
 
 ### OpenAudible
@@ -112,7 +136,7 @@ Network:   Device-1: Intel Ethernet I219-V vendor: Lenovo driver: e1000e v: 3.2.
 ### BookPlayer (iOS)
 `Added 2/13/2020`
 
-[BookPlayer](https://github.com/TortugaPower/BookPlayer) is an [iOS-compatible](https://apps.apple.com/us/app/bookplayer/id1138219998) open source and (monetarily, not FOSS as in GNU-FOSS) free audiobook player. It has a gorgeous, minimal app and adding local files, whether they be a single audiobook mp3 or a hundred m4a's, is a breeze. Highly recommended.
+[BookPlayer](https://github.com/TortugaPower/BookPlayer) is an [iOS-compatible](https://apps.apple.com/us/app/bookplayer/id1138219998) open source and free (monetarily, not free as in GNU-FOSS) audiobook player. It has a gorgeous, minimal app and adding local files, whether they be a single audiobook mp3 or a hundred m4a's, is a breeze. Highly recommended.
 
 <img src="/bookplayer.PNG" height=500></img>
 
