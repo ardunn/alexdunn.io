@@ -22,7 +22,7 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2021.05.26`
+`Last updated: 2021.08.18`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
@@ -108,7 +108,9 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 # Speaking
 
-1. **[Invited]** **Dunn, A.**, Jain, A. "Software tools for Accelerating Materials Discovery with Machine Learning" at Foundational and Applied Data Science for Molecular and Material Science Engineering (Lehigh I-DISC Institute for Data, Intelligent Systems, and Computation), Bethlehem, Pennsylvania. _May 23, 2019_.
+0. **Dunn, A.** "Machine Learning with Matminer" at Materials Project Workshop 2021, Remote. _August 8, 2021_
+
+1. **Dunn, A.**, Jain, A. "Software tools for Accelerating Materials Discovery with Machine Learning" at Foundational and Applied Data Science for Molecular and Material Science Engineering (Lehigh I-DISC Institute for Data, Intelligent Systems, and Computation), Bethlehem, Pennsylvania. _May 23, 2019_.
 
 2. **Dunn, A.**, Wang, Q., Ganose, A., Faghaninia, A., Jain, A. “An Automatic Materials Science Machine Learning Tool for Benchmarking and Prediction” at AI-based Investigation of Material Properties (TMS 2019), San Antonio, Texas. _March 12, 2019_
 
@@ -126,6 +128,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 # Leadership, Memberships,  and Awards
 
 1. **NERSC User Group [Executive Committee](https://www.nersc.gov/users/NUG/NUGEX/)** - Elected member of executive committee which administrates supercomputing policy at NERSC. _(2019 - 2022)_
+2. **UCLA Chemical and Biomolecular Engineering Alumni Association** - VP of Technology _(2021 - present)_
 2. **[UC Berkeley Graduate Data Visualization Contest Overall Winner](/posts/ucbviz2019)** - Won schoolwide competition by creating interactive website for graduate financial data. (_2019_) 
 2. **[Computational Materials Science at Berkeley](https://computationalmaterials.github.io/)** - Co-Founder, officer _(2018)_
 3. **Magna Cum Laude** - UCLA _(2017)_
@@ -139,7 +142,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 # Skills
 
 ### Programming
-* **Python** - 4+ years experience
+* **Python** - 5+ years experience
 * **Bash scripting** - 4+ years experience
 * **NoSQL (MongoDB)** - 4+ years experience
 * **Julia** - 1 year experience
@@ -167,12 +170,14 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 - **LaTeX**
 - **Git**
 - **MATLAB**
+- **Julia**
 - **VASP** - _Ab-initio_ Density Functional Theory simulation software
 
 ---
 
 # Open source software
 * **[rocketsled](https://github.com/hackingmaterials/rocketsled):** (maintainer) Black box optimization framework for high-throughput computing.
+* **[lbnlp](https://github.com/lbnlp/lbnlp):** (maintainer) Natural language processing tools for chemistry/physics/materials science literature.
 * **[automatminer](https://github.com/hackingmaterials/automatminer):** (maintainer) An autoML tool for predicting materials properties..
 * **[matbench](https://github.com/hackingmaterials/matbench):** (maintainer) A benchmarking test set and python package for property prediction in materials science.
 * **[matminer](https://github.com/hackingmaterials/matminer):** (primary developer) Data mining tools for materials science.
