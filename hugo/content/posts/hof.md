@@ -51,6 +51,16 @@ And with that out of the way, enjoy!
 # <a name="fame"></a> The Hall of Fame
 
 
+### albert
+`Added 9/04/2021`
+
+[albert](https://albertlauncher.github.io/) is a launcher for linux distributions. It's pretty and fast and works well for file search, unlike GNOME's launcher.
+
+<img src="/albert.png"></img>
+
+</br>
+
+
 ### vaultwarden (formerly bitwarden_rs)
 `Added 6/20/2021`
 
