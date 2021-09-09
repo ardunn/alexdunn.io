@@ -1,5 +1,5 @@
 +++
-title = "Hash a Nested Python Dictionary"
+title = "hash a nested python dictionary"
 description = ""
 date = "2021-03-16"
 heading= true

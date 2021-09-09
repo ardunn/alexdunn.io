@@ -1,5 +1,5 @@
 +++
-title = "Tech-MacGyvering a Raspberry Pi Home Cloud"
+title = "tech macgyvering a raspberry pi home cloud"
 description = ""
 date = "2019-04-05"
 heading= true

@@ -1,5 +1,5 @@
 +++
-title = "About the Posts"
+title = "about the posts"
 description = ""
 date = "2019-03-29"
 heading= true

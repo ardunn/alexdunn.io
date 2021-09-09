@@ -1,5 +1,5 @@
 +++
-title = "Skiing Mt. Shasta"
+title = "skiing mt. shasta"
 description = ""
 date = "2020-07-11"
 heading= true
@@ -287,7 +287,6 @@ Surprisingly, we managed to ski down to the absolute edge of the snowline, at ab
 
 Unsurpisingly, we didn't attempt to summit on the following day but instead hiked down to Bunny Flat. 
 
-**We made peace with the mountain.**
 
 
 

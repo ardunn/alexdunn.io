@@ -1,5 +1,5 @@
 +++
-title = "We're in the Wall Street Journal?"
+title = "we're in the wall street journal?"
 description = ""
 date = "2020-02-01"
 heading= true

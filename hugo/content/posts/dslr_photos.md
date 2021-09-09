@@ -1,5 +1,5 @@
 +++
-title = "My DSLR Photos"
+title = "my dslr photos"
 description = ""
 date = "2019-06-18"
 heading= true

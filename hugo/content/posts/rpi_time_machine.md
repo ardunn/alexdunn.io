@@ -1,5 +1,5 @@
 +++
-title = "Raspberry Pi Home Cloud 2: Apple Time Capsule"
+title = "raspberry pi home cloud 2: apple time capsule"
 description = ""
 date = "2019-10-25"
 heading= true

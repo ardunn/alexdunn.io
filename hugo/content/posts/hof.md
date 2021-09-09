@@ -1,5 +1,5 @@
 +++
-title = "Halls of Software Fame and Shame (updated 06/2021)"
+title = "halls of software fame and shame (updated 09/2021)"
 description = ""
 date = "2019-09-22"
 heading= true
@@ -263,21 +263,6 @@ Slack should do essentially what IRC does: store  short text conversations, and 
 
 <img src="/slack.png" width="500"></img>
 
-
-### Apple Music App (mobile) 
-`Added 10/19/2019`
-
-First off, I want to say my gripes with Apple Music are about the app UI itself, not the music streaming, playlist selection, etc. The most frustrating thing about Apple Music is that Apple had something truly great: the Music app of a few years ago. But Apple being Apple is hellbent on slowly-but-surely making the app more unusable. Let's take a very brief tally on features of the app that were present at some point - but are no longer;
-
-- The ability to filter your library by downloaded songs.
-- Sane repeat buttons (now it requires 3 taps in very unintuitive places onscreen)
-- A sane bottom row of icons, such as "Playlists", "Artists", "Albums", etc. At the time of this writing, there is "For You", "Browse", and "Radio". Almost no one I know uses any of these on a regular basis, yet they are permanent and prominent icons on the screen.
-- A reasonable way to see the album/artist from the currently playing song. Now, this requires two taps (once on the relatively small artist screen, and once on the pop up dialog for artist/album). 
-- ...and many other first-world problems
-
-Update Feb 2020: Left AM for Spotify, and never looking back.
-
-<img src="/apple_music.png" height="500"></img>
 
 
 

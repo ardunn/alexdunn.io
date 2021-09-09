@@ -1,5 +1,5 @@
 +++
-title = "Bad Statistics: A Tale of Two Roommates"
+title = "bad statistics: a tale of roommates"
 description = ""
 date = "2019-08-08"
 heading= true

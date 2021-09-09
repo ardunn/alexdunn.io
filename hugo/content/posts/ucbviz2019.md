@@ -1,5 +1,5 @@
 +++
-title = "Hack Week: Winning the Cal DataViz Contest"
+title = "winning the uc berkeley data viz contest"
 description = ""
 date = "2019-11-01"
 heading= true
