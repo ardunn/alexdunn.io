@@ -1,4 +1,4 @@
-baseurl = "https://alexdunn.io/"
+baseurl = "https://ardunn.us/"
 title = ""
 author = "Alex Dunn"
 canonifyurls = true
@@ -10,7 +10,7 @@ pygmentsstyle       = "colorful"
 pygmentscodefences  = true
 
 [params]
-  sitename = "alexdunn.io"
+  sitename = "ardunn.us"
   disableWebFonts = false
 
 

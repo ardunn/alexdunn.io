@@ -51,7 +51,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 1. **Graduate Student Research Assistant @ [LBNL.](https://eta.lbl.gov/)** Using data-mining to elucidate structure-property relationships and accelerate predictions of material properties. Running many thousands of density functional theory (DFT) calculations to evaluate candidate thermoelectrics, communicating results to experimental collaborators. Writing open-source software packages for data mining materials properties and running massively parallel calculations on supercomputers. (_2017 -_ present)
 
-2. **Scientific Software Engineering @ [Toyota Research Institute - Advanced Materials Design and Discovery.](https://www.tri.global/our-work/material-design/)** Software for predicting Li-ion battery cycling characteristics (lifetimes) with machine learning. (_2020 -_ present)
+2. **Scientific Software Engineering Consultant @ [Toyota Research Institute - Advanced Materials Design and Discovery.](https://www.tri.global/our-work/material-design/)** (Contracted thru HireArt) Software for predicting Li-ion battery cycling characteristics (lifetimes) with machine learning. (_2020 -_ present)
 
 2. **Consultant @ [MaterialsQM Consulting.](https://materialsqm.com/)** High-throughput synthesis pathway screening using density functional theory and combinatorics. Communicating with clients, preparing reports, and helping guide discovery of novel semiconductor materials. (_2018 - 2019_)
 

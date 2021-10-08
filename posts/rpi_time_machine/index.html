@@ -25,17 +25,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     
 
-    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="https://ardunn.us/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://ardunn.us/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://ardunn.us/favicon_128x128.png" sizes="128x128">
 
     <title>
       
       
-	Raspberry Pi Home Cloud 2: Apple Time Capsule
+	raspberry pi home cloud 2: apple time capsule
       
     </title>
-    <link rel="canonical" href="https://alexdunn.io/posts/rpi_time_machine/">
+    <link rel="canonical" href="https://ardunn.us/posts/rpi_time_machine/">
 
     
 
@@ -457,21 +457,21 @@ img[src$='#floatright']
 
   <body>
     <section id=nav>
-      <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
+      <h1><a href="https://ardunn.us/">ardunn.us</a></h1>
       <ul>
         
-          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+          <li><a href="https://ardunn.us/cv/">CV</a></li>
         
-          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+          <li><a href="https://ardunn.us/posts/">Posts</a></li>
         
-          <li><a href="https://alexdunn.io/projects/">Projects</a></li>
+          <li><a href="https://ardunn.us/projects/">Projects</a></li>
         
       </ul>
     </section>
 
 
 <section id=content>
-  <h1>  Raspberry Pi Home Cloud 2: Apple Time Capsule </h1> 
+  <h1>  raspberry pi home cloud 2: apple time capsule </h1> 
 
   
     <div id=sub-header>
@@ -501,21 +501,21 @@ img[src$='#floatright']
 
 <p>Since the connector for the HDD is USB 3.0 but my Macbook only accepts USB-C type connections, a dongle is required. Plugging in a drive via a dongle is annoying and (in my experience) unreliable, depending on the dongle. Yes, I am aware we are dealing with some real first-world-problems here, but&hellip;</p>
 
-<p><img src="https://alexdunn.io/mbp.png" width=400></img></p>
+<p><img src="https://ardunn.us/mbp.png" width=400></img></p>
 
 <p><strong>There has to be a better way. Why not wireless, automatic, and reliable?</strong></p>
 
 <p>Well, I could buy an official Apple AirPort Time Capsule, right?</p>
 
-<p><img src="https://alexdunn.io/time_capsule.png" width=400></img></p>
+<p><img src="https://ardunn.us/time_capsule.png" width=400></img></p>
 
 <p>Let&rsquo;s see how much these are going for now&hellip;</p>
 
-<p><img src="https://alexdunn.io/time_capsule_price.png" width=400></img></p>
+<p><img src="https://ardunn.us/time_capsule_price.png" width=400></img></p>
 
 <p><em>Ah, cool. More than rent in most states.</em></p>
 
-<p>Since I already had a <a href="https://alexdunn.io/posts/rpi_server/">hacky home cloud set up</a> and the needed hardware to make the Time Capsule, I decided to add a wireless time machine backup to my existing setup. What I wound up with was a system that:</p>
+<p>Since I already had a <a href="https://ardunn.us/posts/rpi_server/">hacky home cloud set up</a> and the needed hardware to make the Time Capsule, I decided to add a wireless time machine backup to my existing setup. What I wound up with was a system that:</p>
 
 <ul class="task-list">
 <li><label><input type="checkbox" checked disabled class="task-list-item"> <strong>Backs up my work Macbook to an external HDD <em>wirelessly</em> and <em>automatically</em></strong> every time it connects to my home network</label></li>
@@ -661,7 +661,7 @@ raz@pi: sudo systemctl start smbd
 
 <p>Whether or not you did step B0, plug in your HDD to the Pi. Your physical setup should be similar to this diagram.</p>
 
-<p><img src="https://alexdunn.io/time_capsule_diagram.png" width=800></img></p>
+<p><img src="https://ardunn.us/time_capsule_diagram.png" width=800></img></p>
 
 <p>Check that the HDD is recognized as a block device with <code>lsblk</code>. If you have already formatted the drive then the disk may have automatically mounted.</p>
 
@@ -692,7 +692,7 @@ sda           8:0    0  1.8T  0 disk
 <pre><code>raz@pi: sudo gparted
 </code></pre>
 
-<p><img src="https://alexdunn.io/time_machine_pi_gparted.png" width=700></img>
+<p><img src="https://ardunn.us/time_machine_pi_gparted.png" width=700></img>
 <em>My drive is already formatted in this picture</em></p>
 
 <p>Select your HDD using the selection box in the upper righthand corner. <strong>Make sure you are using the correct drive.</strong> I am no longer accepting angry emails from people who formatted their root filesystems.</p>
@@ -824,18 +824,18 @@ public = yes
 <p>If your installation and configuration went well, there should be an available disk on the network now.</p>
 
 <p>Select a disk.
-<img src="https://alexdunn.io/timemachine_smb2.png" width=700></img></p>
+<img src="https://ardunn.us/timemachine_smb2.png" width=700></img></p>
 
 <p>Select the disk on your network.
-<img src="https://alexdunn.io/timemachine_smb3.png" width=700></img></p>
+<img src="https://ardunn.us/timemachine_smb3.png" width=700></img></p>
 
 <p>If Time Machine asks you to log in, log in as the user on your raspberry pi, <strong>not</strong> as a guest. Time Machine will not work if you use the network location under a guest login; this is because in our samba config we configured the default file and directory masks. So in my case, this means logging in as <code>raz</code>, my one and only non-root system user.</p>
 
 <p>Create a backup now.
-<img src="https://alexdunn.io/timemachine_smb4.png" width=700></img></p>
+<img src="https://ardunn.us/timemachine_smb4.png" width=700></img></p>
 
 <p>If you screen looks like this, you&rsquo;ve won!
-<img src="https://alexdunn.io/timemachine_smb5.png" width=700></img></p>
+<img src="https://ardunn.us/timemachine_smb5.png" width=700></img></p>
 
 <p>If Time Machine is saying there is a problem with the disk, make sure your <code>/etc/samba/smb.conf</code> is configured correctly. If this is your first time making a Time Machine backup on this disk, it will take a while (probably a day) to make your first backup. After that, it will only take a few minutes each time.</p>
 

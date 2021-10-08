@@ -2,42 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alex Dunn personal site on </title>
-    <link>https://alexdunn.io/</link>
+    <link>https://ardunn.us/</link>
     <description>Recent content in Alex Dunn personal site on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://alexdunn.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ardunn.us/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hash a Nested Python Dictionary</title>
-      <link>https://alexdunn.io/posts/immutify_dictionary/</link>
+      <title>halls of software fame and shame (updated 10/2021)</title>
+      <link>https://ardunn.us/posts/hof/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ardunn.us/posts/hof/</guid>
+      <description>TOC:  What is this? The Hall of Fame The Hall of Shame  What is this? Much as great literature, high art, or great music deserves praise, so does software. And I mean software in all of its forms - from robust bash scripts which hide in the internet&amp;rsquo;s shadows, to the expansive open-source projects known the world over, to weirdly helpful websites which refuse to run ads, and even to a select few high-gloss corporate products.</description>
+    </item>
+    
+    <item>
+      <title>hash a nested python dictionary</title>
+      <link>https://ardunn.us/posts/immutify_dictionary/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/immutify_dictionary/</guid>
+      <guid>https://ardunn.us/posts/immutify_dictionary/</guid>
       <description>I came upon a Python situation recently where I had to hash a dictionary of arbitary depth, where:
  all keys are strings all values are either strings, numbers (numpy or native python ints/floats), basic iterables (non-object dtype numpy ndarrays, numerical pandas Series, or native python lists or tuples of python native numbers/strings), OR&amp;hellip; &amp;hellip;values are themselves dictionaries subject to these 3 rules.  For example:
 some_dictionary = { &amp;quot;a&amp;quot;: 12, &amp;quot;b&amp;quot;: &amp;quot;some_string&amp;quot;, &amp;quot;c&amp;quot;: { &amp;quot;q&amp;quot;: np.</description>
     </item>
     
     <item>
-      <title>Skiing Mt. Shasta</title>
-      <link>https://alexdunn.io/posts/shasta/</link>
+      <title>skiing mt. shasta</title>
+      <link>https://ardunn.us/posts/shasta/</link>
       <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/shasta/</guid>
+      <guid>https://ardunn.us/posts/shasta/</guid>
       <description>At 2:00 AM on June 21, 2020, my two friends and I began climbing Mt. Shasta; what followed was an exhausting 2 day trek filled with many highs, lows, and a helicopter rescue. Whether you&amp;rsquo;re reading this just for kicks or preparing for a Shasta climb of your own, this post should offer some interesting content.
 If you&amp;rsquo;re just looking for cool video, skip to the Helicopter rescue section</description>
     </item>
     
     <item>
-      <title>We&#39;re in the Wall Street Journal?</title>
-      <link>https://alexdunn.io/posts/wsj/</link>
+      <title>we&#39;re in the wall street journal?</title>
+      <link>https://ardunn.us/posts/wsj/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/wsj/</guid>
+      <guid>https://ardunn.us/posts/wsj/</guid>
       <description>Just a quick and fun update: earlier in December, my friend and I got put in a Wall Street Journal story about&amp;hellip;
 Science?
 Politics?
@@ -50,48 +59,39 @@ In case (no pun intended) you&amp;rsquo;re wondering, I do in fact have the beef
     </item>
     
     <item>
-      <title>Hack Week: Winning the Cal DataViz Contest</title>
-      <link>https://alexdunn.io/posts/ucbviz2019/</link>
+      <title>winning the uc berkeley data viz contest</title>
+      <link>https://ardunn.us/posts/ucbviz2019/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/ucbviz2019/</guid>
+      <guid>https://ardunn.us/posts/ucbviz2019/</guid>
       <description>CalGradData: Interactive Visualization of Cal Graduate Financial Data Recently the UC Berkeley Graduate Assembly put out a call for a Data Visualization contest of UC Berkeley&amp;rsquo;s graduate financial data. I think their motivation was to take the most boring data on the planet and transform it into an engaging and interesting form. Whether they succeeded or not, only time will tell.
 Well my friend (and fellow graduate student) John Dagdelen and I decided to put our HTML, CSS, JS, and Plotly Dash skills to use in making an interactive website for this otherwise bone dry data.</description>
     </item>
     
     <item>
-      <title>Raspberry Pi Home Cloud 2: Apple Time Capsule</title>
-      <link>https://alexdunn.io/posts/rpi_time_machine/</link>
+      <title>raspberry pi home cloud 2: apple time capsule</title>
+      <link>https://ardunn.us/posts/rpi_time_machine/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/rpi_time_machine/</guid>
+      <guid>https://ardunn.us/posts/rpi_time_machine/</guid>
       <description>TOC:  Motivation Step A: Requirements Step B: Physical setup and formatting Step C: Mounting and configuration Step D: Test out your new time machine Maintenance and Conclusions  Motivation I have a Macbook Pro (2017) dedicated exclusively to my work as a graduate student. If I lost it and had no backup, i would be uttely devastated. Having a backup is an absolute necessity - as the saying goes:</description>
     </item>
     
     <item>
-      <title>Halls of Software Fame and Shame (updated 06/2021)</title>
-      <link>https://alexdunn.io/posts/hof/</link>
-      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexdunn.io/posts/hof/</guid>
-      <description>TOC:  What is this? The Hall of Fame The Hall of Shame  What is this? Much as great literature, high art, or great music deserves praise, so does software. And I mean software in all of its forms - from robust bash scripts which hide in the internet&amp;rsquo;s shadows, to the expansive open-source projects known the world over, to weirdly helpful websites which refuse to run ads, and even to a select few high-gloss corporate products.</description>
-    </item>
-    
-    <item>
-      <title>Bad Statistics: A Tale of Two Roommates</title>
-      <link>https://alexdunn.io/posts/roommate_stats/</link>
+      <title>bad statistics: a tale of roommates</title>
+      <link>https://ardunn.us/posts/roommate_stats/</link>
       <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/roommate_stats/</guid>
+      <guid>https://ardunn.us/posts/roommate_stats/</guid>
       <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\[&#39;,&#39;\]&#39;]], processEscapes: true, processEnvironments: true, skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;], TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; }, extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] } } });  MathJax.Hub.Queue(function() { // Fix  tags after MathJax finishes running. This is a // hack to overcome a shortcoming of Markdown. Discussion at // https://github.com/mojombo/jekyll/issues/199 var all = MathJax.Hub.getAllJax(), i; for(i = 0; i Finding new roommates can be a serious pain.</description>
     </item>
     
     <item>
-      <title>My DSLR Photos</title>
-      <link>https://alexdunn.io/posts/dslr_photos/</link>
+      <title>my dslr photos</title>
+      <link>https://ardunn.us/posts/dslr_photos/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/dslr_photos/</guid>
+      <guid>https://ardunn.us/posts/dslr_photos/</guid>
       <description>Here&amp;rsquo;s some pictures I took with a DSLR (more coming soon!) yuba river, ca
 yuba river, ca
 astoria, or
@@ -109,30 +109,30 @@ yosemite, ca</description>
     </item>
     
     <item>
-      <title>Tech-MacGyvering a Raspberry Pi Home Cloud</title>
-      <link>https://alexdunn.io/posts/rpi_server/</link>
+      <title>tech macgyvering a raspberry pi home cloud</title>
+      <link>https://ardunn.us/posts/rpi_server/</link>
       <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/rpi_server/</guid>
+      <guid>https://ardunn.us/posts/rpi_server/</guid>
       <description>TOC:  Introduction Step A: Configure SSH Access Step B: Configure automatic backups with crontab and rsync Step C: Easily mount your Pi with SSHFS Step D (optional): Configure access outside the local network Step E (optional): Configure a samba share Maintenance and Conclusions  For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home, or make a robot - the list goes on and on.</description>
     </item>
     
     <item>
-      <title>About the Posts</title>
-      <link>https://alexdunn.io/posts/about_posts/</link>
+      <title>about the posts</title>
+      <link>https://ardunn.us/posts/about_posts/</link>
       <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/posts/about_posts/</guid>
+      <guid>https://ardunn.us/posts/about_posts/</guid>
       <description>The posts section on this website are an elcectic collection of my non-work interests, experiments, and thoughts. Generally what&amp;rsquo;s here is related to computing, technology, science, or mathematics, but not strictly so!
 If you are hoping to learn more about the research I&amp;rsquo;ve worked on, my Google Scholar is the best place for that; if you&amp;rsquo;re looking for the code I&amp;rsquo;ve contributed to, check out the Github pages of the academic organizations I&amp;rsquo;ve worked with: HackingMaterials, Materials Intelligence, and the Materials Project.</description>
     </item>
     
     <item>
       <title>My CV</title>
-      <link>https://alexdunn.io/cv/</link>
+      <link>https://ardunn.us/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/cv/</guid>
+      <guid>https://ardunn.us/cv/</guid>
       <description>My CV   Scientific computing and data science. (And sometimes both together)         
 Last updated: 2021.08.18
 I&#39;m a Ph.D. candidate in the HackingMaterials group at LBL. I use computers to help find and design new materials; I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the Materials Project, an online resarch effort with over 100,000 registered users.</description>
@@ -140,10 +140,10 @@ I&#39;m a Ph.D. candidate in the HackingMaterials group at LBL. I use computers 
     
     <item>
       <title>Projects</title>
-      <link>https://alexdunn.io/projects/</link>
+      <link>https://ardunn.us/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alexdunn.io/projects/</guid>
+      <guid>https://ardunn.us/projects/</guid>
       <description>Here&amp;rsquo;s a short list of recent - and relatively self-contained - software projects I&amp;rsquo;ve created, led, or principally developed. If you are interested in larger scale projects that I helped develop, but did not lead, see my Github profile.
 
 Data Mining automatminer    

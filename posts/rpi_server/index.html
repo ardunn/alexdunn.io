@@ -25,17 +25,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     
 
-    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://alexdunn.io/favicon_128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="https://ardunn.us/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://ardunn.us/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://ardunn.us/favicon_128x128.png" sizes="128x128">
 
     <title>
       
       
-	Tech-MacGyvering a Raspberry Pi Home Cloud
+	tech macgyvering a raspberry pi home cloud
       
     </title>
-    <link rel="canonical" href="https://alexdunn.io/posts/rpi_server/">
+    <link rel="canonical" href="https://ardunn.us/posts/rpi_server/">
 
     
 
@@ -457,21 +457,21 @@ img[src$='#floatright']
 
   <body>
     <section id=nav>
-      <h1><a href="https://alexdunn.io/">alexdunn.io</a></h1>
+      <h1><a href="https://ardunn.us/">ardunn.us</a></h1>
       <ul>
         
-          <li><a href="https://alexdunn.io/cv/">CV</a></li>
+          <li><a href="https://ardunn.us/cv/">CV</a></li>
         
-          <li><a href="https://alexdunn.io/posts/">Posts</a></li>
+          <li><a href="https://ardunn.us/posts/">Posts</a></li>
         
-          <li><a href="https://alexdunn.io/projects/">Projects</a></li>
+          <li><a href="https://ardunn.us/projects/">Projects</a></li>
         
       </ul>
     </section>
 
 
 <section id=content>
-  <h1>  Tech-MacGyvering a Raspberry Pi Home Cloud </h1> 
+  <h1>  tech macgyvering a raspberry pi home cloud </h1> 
 
   
     <div id=sub-header>
@@ -496,7 +496,7 @@ img[src$='#floatright']
 
 <p>For $35, the Raspberry Pi is an incredible single board computer. You can connect to the internet, run Linux, automate your home,  or make a robot - the list goes on and on. And regardless of your choice of project, the Raspberry Pi community will almost always be there for you if (read: when) you need help.</p>
 
-<p><img src="https://alexdunn.io/rpi.png" alt="rpi" /></p>
+<p><img src="https://ardunn.us/rpi.png" alt="rpi" /></p>
 
 <h2 id="but-what-good-is-a-pi-if-you-don-t-have-a-good-project">But what good is a Pi if you don&rsquo;t have a good project?</h2>
 
@@ -506,7 +506,7 @@ img[src$='#floatright']
 
 <p>This year, my personal archive (holding 20+ years of my family&rsquo;s beloved family pictures, my financial documents, and my photography) spilled over the 1TB mark. My old laptop&rsquo;s HDD could no longer hold it all. Plus, my HDD was the only current and full copy of my data I had. If it got lost, corrupted, or destroyed somehow, my entire digital life was as good as gone! Backing up to external HDDs via wires was annoying, cloud services for backup cost money (+ I don&rsquo;t trust them), and premanufactured network attached storage (NAS) systems can cost hundreds of dollars. I needed a better solution, using tech I already had. Hence, my Raspberry Pi &ldquo;Home Cloud&rdquo; was born.</p>
 
-<p><img src="https://alexdunn.io/cloud.png" alt="cloud" /></p>
+<p><img src="https://ardunn.us/cloud.png" alt="cloud" /></p>
 
 <h2 id="making-the-home-cloud">Making the Home Cloud</h2>
 
@@ -546,14 +546,14 @@ img[src$='#floatright']
 
 <tbody>
 <tr>
-<td align="center"><img src="https://alexdunn.io/laptop_lowres.png" alt="laptop" /></td>
-<td align="center"><img src="https://alexdunn.io/iphone-x-terminus.png" alt="phone" /></td>
+<td align="center"><img src="https://ardunn.us/laptop_lowres.png" alt="laptop" /></td>
+<td align="center"><img src="https://ardunn.us/iphone-x-terminus.png" alt="phone" /></td>
 </tr>
 </tbody>
 </table></li>
 
 <li><p><strong>A Raspberry Pi with an OS installed</strong> - This will control your network attached storage. I used a Raspberry Pi 3b+.
-<img src="https://alexdunn.io/rpi_lowres.png" alt="rpi lowres" /></p></li>
+<img src="https://ardunn.us/rpi_lowres.png" alt="rpi lowres" /></p></li>
 
 <li><p><strong>One (or some) external HDDs and connection cables</strong> - These will be your storage disks. I used some garbage 2TB Seagate Backup Slim I had lying around, and a 8TB Seagate Backup Plus I got as a christmas present. Most external HDDs connect using USB-SATA connections.</p>
 
@@ -567,14 +567,14 @@ img[src$='#floatright']
 
 <tbody>
 <tr>
-<td align="center"><img src="https://alexdunn.io/4tb_lowres.png" alt="4tb" /></td>
-<td align="center"><img src="https://alexdunn.io/8tb_lowres.png" alt="8tb" /></td>
+<td align="center"><img src="https://ardunn.us/4tb_lowres.png" alt="4tb" /></td>
+<td align="center"><img src="https://ardunn.us/8tb_lowres.png" alt="8tb" /></td>
 </tr>
 </tbody>
 </table></li>
 
 <li><p><strong>Access to your wifi network and router, + an ethernet cable</strong> - In the interest of rapid file transfer,  you&rsquo;ll definitely want to have your Pi wired rather than wireless. The raspberry pi&rsquo;s wireless speed is noticeably less than the LAN speed: Jeff Greerling&rsquo;s <a href="https://www.pidramble.com/wiki/benchmarks/networking">Raspberry Pi Dramble site</a> has a great table comparing the LAN vs WiFi speeds:
-<img src="https://alexdunn.io/lan_table.png" alt="lan" /></p></li>
+<img src="https://ardunn.us/lan_table.png" alt="lan" /></p></li>
 
 <li><p>Some basic bash familiarity</p></li>
 
@@ -619,7 +619,7 @@ $ sudo service ssh start
 
 <p>On your computer or phone, go into your router and assign your Pi an infinite (or very long) DHCP lease on its IP address. This will enable you to SSH or Samba into your Pi in the future without IP hiccups. Go into your browser and configure your router by going to usually <code>192.168.0.1</code> or <code>10.0.0.1</code>.  Exactly how you change this lease time depends on your router. When you&rsquo;re done, you should see something like this:</p>
 
-<p><img src="https://alexdunn.io/dhcp.png" alt="dhcp" /></p>
+<p><img src="https://ardunn.us/dhcp.png" alt="dhcp" /></p>
 
 <p>The Pi&rsquo;s lease on this IP will last for the next 4,166 days (just long enough to make a DMV appointment). From here forward, you&rsquo;ll be able to SSH into your Pi at this local IP.</p></li>
 
@@ -708,7 +708,7 @@ rsync -auvhs /home/raz/disk8/* /home/raz/disk2 --delete &gt; /home/raz/logs/&quo
 
 <p>Now go ahead and mount your server with <code>pifs</code>. You should be able to browse your server files in a terminal, file browser, or almost any other application!</p>
 
-<p><img src="https://alexdunn.io/sshfs_mountd.png" alt="sshfs_mounted" /></p>
+<p><img src="https://ardunn.us/sshfs_mountd.png" alt="sshfs_mounted" /></p>
 
 <p><em>If you go through the steps in part D, you&rsquo;ll need to change your IP to your public facing one (or add an additional alias). You&rsquo;ll also need to specify the port you are using if it is not the standard port 22.</em></p>
 
@@ -719,7 +719,7 @@ rsync -auvhs /home/raz/disk8/* /home/raz/disk2 --delete &gt; /home/raz/logs/&quo
 <p>This is what my physical setup looks like:</p>
 
 <p><em>Stunning, I know</em>
-<img src="https://alexdunn.io/disaster_lowres.jpg" alt="disaster" />
+<img src="https://ardunn.us/disaster_lowres.jpg" alt="disaster" />
 I keep it stashed away in a drawer, out of sight and out of mind. <strong>Beauty is in the eye of the beholder&hellip;</strong></p>
 
 <p>If you want to access your Pi (and data) from outside your local network, read section D.</p>
@@ -773,7 +773,7 @@ Port 12345  # pick some random port
 
 <p>This is a screenshot of what my configuration looks like (custom ports redacted):</p>
 
-<p><img src="https://alexdunn.io/port_forward.png" alt="port forward" /></p></li>
+<p><img src="https://ardunn.us/port_forward.png" alt="port forward" /></p></li>
 
 <li><p>Test our your SSH/SFTP remote connection. Try connecting to your public IP from a login source outside of your local network (trying this from inside your local network will sometimes not work depending on your router and ISP). You can find out your public IP using:</p>
 
@@ -831,22 +831,22 @@ Guest ok = no
 
 <p>On Linux, most file browsers (such as Nautilus) will have a &ldquo;connect to server&rdquo; option which can be configured to automatically connect via SMB or SFTP to your share.</p>
 
-<p><img src="https://alexdunn.io/connect_to_server.png" alt="connect1" /></p>
+<p><img src="https://ardunn.us/connect_to_server.png" alt="connect1" /></p>
 
 <p><em>These linux screenshots are from an earlier verison of this tutorial which used a different IP and mountpoint.</em></p>
 
-<p><img src="https://alexdunn.io/connect_to_server_2.png" alt="connect1" /></p>
+<p><img src="https://ardunn.us/connect_to_server_2.png" alt="connect1" /></p>
 
 <p><em>Protip: Only make your password four letters long for extra danger!</em></p>
 
-<p><img src="https://alexdunn.io/connect_to_server_3.png" alt="connect1" /></p>
+<p><img src="https://ardunn.us/connect_to_server_3.png" alt="connect1" /></p>
 
 <p>Configured correctly, your linux device will now automatically connect to your share.</p>
 
 <p>On Mac, you can just press cmd + K in Finder to connect via SMB or SFTP. Unfortunately, newer versions of MacOS (10.14+ but possibly earlier versions) allow read/write to SMB, but only allow read for SFTP. If you want to <em>upload</em> as well as <em>download</em> files then, you&rsquo;ll need to use SMB or a 3rd party app.
-<img src="https://alexdunn.io/smb_window.png" alt="finder" /></p>
+<img src="https://ardunn.us/smb_window.png" alt="finder" /></p>
 
-<p><img src="https://alexdunn.io/mac_smb.png" alt="finder2" /></p></li>
+<p><img src="https://ardunn.us/mac_smb.png" alt="finder2" /></p></li>
 </ol>
 
 <p>On Windows, you can typically just click &ldquo;Network&rdquo; or &ldquo;Network locations&rdquo; in File Explorer. On your phone, most SFTP or Samba apps will work fine.</p>

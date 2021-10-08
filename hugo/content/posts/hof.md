@@ -1,7 +1,7 @@
 +++
-title = "halls of software fame and shame (updated 09/2021)"
+title = "halls of software fame and shame (updated 10/2021)"
 description = ""
-date = "2019-09-22"
+date = "2021-10-05"
 heading= true
 +++
 
@@ -49,6 +49,30 @@ And with that out of the way, enjoy!
 ---
 
 # <a name="fame"></a> The Hall of Fame
+
+
+</br>
+
+### doi2bib
+`Added 10/5/2021`
+
+[doi2bib](https://doi2bib.org) is an online utility which takes a doi (whether it be a book, scientific article, data object, or other) and converts it into a well-formatted BibTeX entry. In the time
+I have been using it, it's been pretty much flawless. It's free, [FOSS](https://github.com/davidagraf/doi2bib2), fast, and awesome.
+
+<img src="/doi2bib.png"></img>
+
+</br>
+
+
+### SciHub
+`Added 9/16/2021`
+[SciHub](https://sci-hub.se/) is an online platform for making paywalled research papers available to any interested scientist.
+
+<img src="/scihub.png"></img>
+
+</br>
+
+
 
 
 ### albert
@@ -161,6 +185,8 @@ P.S.: They also have several Arduino, Linux, electronics, etc. guides, but I thi
 
 <img src="/pmluy.png"></img>
 
+</br>
+
 
 
 ### Notability
@@ -168,13 +194,10 @@ P.S.: They also have several Arduino, Linux, electronics, etc. guides, but I thi
 
 [Notability](https://www.gingerlabs.com/) is the best note taking app (incorporating handwriting) I have ever used. For people who have to write to learn (e.g., me), having a sustainable system for keeping track of notes is crucial. Notability allows me to do that, in addition to incorporating the typical Apple Notes-style notes (typing, checklists, images, etc.). The ability to export and backup automatically is a huge plus as well. Depsite being a commercial project with closed-source code, t's a truly spectacular app and is worth every penny ($9.99 last I checked).
 <img src="/notability.png" height=500></img>
+*My notes from my graduate thermodynamics final.*
 
-### Keepass
-`Added 12/12/2019`
 
-[Keepass](https://keepass.info/) is an open-source, locally hosted password management system for those who don't trust online password managers. What you sacrifice in convenience, Keepass makes up for in simplicity. All your passwords are in a single (optional) movable file guarded by a master password - you and you alone are the guardian of your passwords. I recommend it without hesistation to power users.
-
-<img src="/keepass.png">
+</br>
 
 
 ### Polybar
@@ -189,6 +212,7 @@ P.S.: They also have several Arduino, Linux, electronics, etc. guides, but I thi
 So at all times I have a view of the CPU usage, temp, memory usage, disk usage, network usage and signal, my current workspace, power consumption, etc (and it matches with my desktop theme!). You can do much better though if you put some time into it. Copy my config: [link](https://github.com/ardunn/scraps/blob/master/polybar_config.txt)
 
 </br>
+
 ### Julia
 `Added 9/22/2019`
 
@@ -206,6 +230,7 @@ So at all times I have a view of the CPU usage, temp, memory usage, disk usage, 
 ```
 
 </br>
+
 ### dmenu-extended
 `Added 9/22/2019`
 
@@ -247,6 +272,7 @@ It supports Latex math typesetting and is resource-light even when manipulating 
 # <a name="shame"></a> The Hall of Shame
 
 </br>
+
 ### MongoDB Compass
 `Added 9/22/2019`
 
