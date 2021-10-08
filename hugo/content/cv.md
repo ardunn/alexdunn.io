@@ -22,11 +22,13 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2021.08.18`
+`Last updated: 2021.10.05`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
 </div>
+
+<img src="/multigraphic_matsciAI.png"></img>
 
 ---
 
@@ -34,8 +36,9 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 * Predicting materials properties with ML
 * Text mining scientific literature
 * Adaptive design (black box optimization) for scientific computation
-* High throughput and massively parallel methods
 * Presenting these technologies via accessible, open interfaces (e.g., webpages)
+
+
 
 ---
 
