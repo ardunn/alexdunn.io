@@ -32,10 +32,10 @@
     <title>
       
       
-	Posts
+	wdash: a weather dashboard
       
     </title>
-    <link rel="canonical" href="https://ardunn.us/posts/">
+    <link rel="canonical" href="https://ardunn.us/posts/wdashv1/">
 
     
 
@@ -453,8 +453,6 @@ img[src$='#floatright']
 
 
     
-      <link href="https://ardunn.us/posts/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    
   </head>
 
   <body>
@@ -473,87 +471,96 @@ img[src$='#floatright']
 
 
 <section id=content>
-  <ul class=posts_listing>
+  <h1>  wdash: a weather dashboard </h1> 
+
+  
+    <div id=sub-header>
+      November 2021 · 3 minute read
+    </div>
+  
+
+  <div class="entry-content">
     
-      <li>
-        <h2><a href="https://ardunn.us/posts/wdashv1/">wdash: a weather dashboard</a></h2>
-        <div id=date>
-          <time>November 2021</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/hof/">halls of software fame and shame (updated 10/2021)</a></h2>
-        <div id=date>
-          <time>October 2021</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/immutify_dictionary/">hash a nested python dictionary</a></h2>
-        <div id=date>
-          <time>March 2021</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/shasta/">skiing mt. shasta</a></h2>
-        <div id=date>
-          <time>July 2020</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/wsj/">we&#39;re in the wall street journal?</a></h2>
-        <div id=date>
-          <time>February 2020</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/ucbviz2019/">winning the uc berkeley data viz contest</a></h2>
-        <div id=date>
-          <time>November 2019</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/rpi_time_machine/">raspberry pi home cloud 2: apple time capsule</a></h2>
-        <div id=date>
-          <time>October 2019</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/roommate_stats/">bad statistics: a tale of roommates</a></h2>
-        <div id=date>
-          <time>August 2019</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/dslr_photos/">my dslr photos</a></h2>
-        <div id=date>
-          <time>June 2019</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/rpi_server/">tech macgyvering a raspberry pi home cloud</a></h2>
-        <div id=date>
-          <time>April 2019</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ardunn.us/posts/about_posts/">about the posts</a></h2>
-        <div id=date>
-          <time>March 2019</time>
-        </div>
-      </li>
-    
-  </ul>
+
+<p>Over a couple of weekends a few months ago, I made a weather dashboard which you can run yourself and which stores all it&rsquo;s data (optionally) on your own
+resources in perpetuity. It is a relatively basic from a meteorology perspective
+but shows a lot of data pertinent to a layman (like me). It is configurable for any latitude and longitude in the world and
+includes air quality measurements alongside regular weather stuff (e.g., temperature, probability of precipitation, etc.).</p>
+
+<h2 id="the-dashboard">The dashboard</h2>
+
+<p>The first segment is an overview of basic current weather and abbreviated forecasts - telling you, for example, it&rsquo;s going to snow
+for the next 6 hours. There is also an embeddable map from Windy which is updated live and has overlays for temperature, precipitation,
+barometry, CO concentration, etc.</p>
+
+<p><img src="https://ardunn.us/wdashv1_1.png"></img></p>
+
+<p>The rest of the dashboard is a bunch of interactive graphs formed from pulls to OpenWeatherMapsAPI, including forecasts predicted during
+different intervals. They usually show ~7 days worth of data.</p>
+
+<p><img src="https://ardunn.us/wdashv1_2.png"></img>
+<em>Coding the wind star from scratch was not fun</em>.</p>
+
+<p>There is some basic AQI-relevant data, such as the PM2.5 and concentrations of trace air pollutants in logscale.</p>
+
+<p>At the very bottom, there are some &ldquo;all-time&rdquo; graphs of some limited metrics like temperature. These graphs show
+data collected over the entire time you&rsquo;ve been running wdash. I accidentally deleted my database in early October,
+otherwise I&rsquo;d have ~4 months more data to show :(</p>
+
+<p><img src="https://ardunn.us/wdashv1_alltime.png"></img>
+<em>The flat sections that stick out were periods where wdash went down and didn&rsquo;t collect data.</em></p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>The dashboard is made of two parts:</p>
+
+<ol>
+<li>A data daemon which pulls data from OpenWeatherMapsAPI and stores it in a MongoDB (mine is local on my server).</li>
+<li>A plotly dash script which reads from this MongoDB and displays the graphs on the dashboard.</li>
+</ol>
+
+<p>The data the daemon pulls is stored in your own database exactly as it is received from the server. This means if you
+run the server long enough, you&rsquo;ll have your own <strong>free</strong> historical record of both forecasts and live weather conditions.
+At the moment, OpenWeatherMaps requires paid subscriptions for this kind of data.</p>
+
+<h2 id="run-your-own">Run your own</h2>
+
+<p>Find the code <a href="https://github.com/ardunn/wdash">here</a>.</p>
+
+<p>There&rsquo;s a single configuration file where you can enter in your latitude and longitude, as well as the port you&rsquo;d
+like the application to run on.</p>
+
+<pre><code>
+LAT: 39.35559
+LON: -120.22110
+
+DB_HOST: localhost
+DB_PORT: 27017
+DB_NAME: &quot;wdash&quot;
+INTERVAL: 1800
+PORT: 57042
+# Your api key goes here
+API_KEY: &quot;&quot;
+</code></pre>
+
+<p>Once configured with an accessible MongoDB database, you should be able to run the
+dashboard with a single command.</p>
+
+<pre><code>$: source wdash/run.sh
+</code></pre>
+
+<p>You&rsquo;ll probably want to run wdash on a server of some kind; the longer and more consistently it is run, the better
+and more complete your data will be. If you&rsquo;re running a server on your LAN, accessing the dashboard
+will be as easy as pointing your browser to the server IP/port once both the daemon and the dash script are running.</p>
+
+<p>It&rsquo;s been updated a few times for stability but <strong>disclaimer</strong>! It&rsquo;s basically just two hacky scripts. In my experience
+though it can go months without problems.</p>
+
+  </div>
+
 </section>
+
+ 
 
   
 
@@ -562,5 +569,6 @@ img[src$='#floatright']
 </script>
 </body>
 </html>
+
 
 
