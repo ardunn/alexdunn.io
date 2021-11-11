@@ -22,7 +22,7 @@ heading: false
 </table>
 </center>
 
-`Last updated: 2021.10.05`
+`Last updated: 2021.11.11`
 
 <div style=float:none>
 I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingMaterials group</a> at <a href="https://lbl.gov">LBL</a>. <b>I use computers to help find and design new materials;</b> I design and deploy machine learning pipelines, run quantum-mechanical simulations, and develop open source software to help automate these processes. I also work alongside the <a href=https://materialsproject.org>Materials Project</a>, an online resarch effort with over 100,000 registered users.
@@ -68,7 +68,15 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 ---
 
-# Peer-reviewed Papers
+# Peer-reviewed Papers and Books
+
+## 2021
+
+<span></span>
+
+1. Dagdelen, J., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>. **"Algorithms for Materials Discovery" in _Accelerated Materials Discovery_**. De Gruyter. [Chapter DOI](https://doi.org/10.1515/9783110738087-005). Forthcoming (2021)
+
+2. Walker, N., Trewartha, A., Huo, H., Lee, S., Cruse, K., Dagdelen, J., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Persson, K., Ceder, G., Jain, A. **The Impact of Domain-Specific Pre-training on Named Entity Recognition Tasks in Materials Science.** _Patterns_. Forthcoming (2021)
 
 ## 2020
 
