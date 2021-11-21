@@ -12,7 +12,12 @@ Enthusiast of science, freeskiing, machine intelligence, two-wheelers, free and 
 
 * Interested in my work? Check out my [CV](/cv)
 * Want to read some ramblings? Browse the [posts](/posts).
-* Need to contact me? `ardunn(at)email(dot)com`
+
+
+**Need to contact me?**
+
+* Professional inquiries: `ardunn(dot)professional(at)protonmail.com`
+* Everything else: `ardunn(dot)personal(at)protonmail.com`
 
 <center>
 <table>
