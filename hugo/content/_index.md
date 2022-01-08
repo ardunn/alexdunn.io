@@ -16,8 +16,8 @@ Enthusiast of science, freeskiing, machine intelligence, two-wheelers, free and 
 
 **Need to contact me?**
 
-* Professional inquiries: `ardunn(dot)professional(at)protonmail.com`
-* Everything else: `ardunn(dot)personal(at)protonmail.com`
+* `professional(at)ardunn(dot)us` for professional and research inquiry
+* `personal(at)ardunn(dot)us` for everything else
 
 <center>
 <table>
