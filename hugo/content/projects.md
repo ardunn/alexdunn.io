@@ -161,11 +161,12 @@ This was the overall winning entry for the schoolwide UC Berkeley Graduate Finan
 
 ### wdash
 
-wdash is a self-hosted weather dashboard that pulls data from OpenWeatherMaps API and Windy. The data you collect is yours forever and stays locally on a MongoDB. You can read more about it in [this post](/posts/wdashv1).
-
 <center>
-<img src="/wdash_demo.gif" ></img>
+<img src="/wdashv1_1.png" ></img>
 </center>
+
+
+wdash is a self-hosted weather dashboard that pulls data from OpenWeatherMaps API and Windy. The data you collect is yours forever and stays locally on a MongoDB. You can read more about it in [this post](/posts/wdashv1).
 
 - [Github](https://github.com/ardunn/wdash)
 
