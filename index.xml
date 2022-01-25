@@ -162,10 +162,10 @@ I&#39;m a Ph.D. candidate in the HackingMaterials group at LBL. I use computers 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ardunn.us/projects/</guid>
-      <description>Here&amp;rsquo;s a short list of recent - and relatively self-contained - software projects I&amp;rsquo;ve created, led, or principally developed. If you are interested in larger scale projects that I helped develop, but did not lead, see my Github profile.
+      <description>Here&amp;rsquo;s a short list of recent - and relatively self-contained - open-source software projects I&amp;rsquo;ve created, led, or principally developed. If you are interested in larger scale projects that I helped develop, but did not lead (e.g., matminer), see my Github profile. If you are interested in non-open source projects I&amp;rsquo;ve lead , please contact me via email.
 
 Data Mining automatminer    
-Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials. It works for most materials datasets and includes aspects of AutoML, transfer learning, and reproducible benchmarking (through our benchmark Matbench, analagous to ImageNet for image classification).</description>
+Automatminer is an automatic, general purpose machine learning pipeline for predicting the properties of materials.</description>
     </item>
     
   </channel>

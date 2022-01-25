@@ -5,8 +5,8 @@ draft: false
 heading: false
 ---
 
-Here's a short list of recent - and relatively self-contained - software projects I've created, led, or principally developed. 
-If you are interested in larger scale projects that I helped develop, but did not lead, see my [Github profile](https://github.com/ardunn). 
+Here's a short list of recent - and relatively self-contained - open-source software projects I've created, led, or principally developed. 
+If you are interested in larger scale projects that I helped develop, but did not lead (e.g., matminer), see my [Github profile](https://github.com/ardunn). If you are interested in non-open source projects I've lead , please contact me via email.
 
 </br>
 
@@ -53,8 +53,8 @@ package contains code for
 
 Matbench is pip installable and can be used by anyone with a Python installation.
 
-- [Github](https://github.com/hackingmaterials/matbench/)
-- [Docs](http://hackingmaterials.lbl.gov/matbench/)
+- [Github](https://github.com/materialsproject/matbench)
+- [Docs](http://matbench.materialsproject.org)
 - [Publication](https://doi.org/10.1038/s41524-020-00406-3)
 
 
@@ -107,24 +107,6 @@ LBNLP (LBNL + NLP) is a collection of Natural Language Processing tools jointly 
 
 ---
 
-### ucbviz2019
-
-
-<center>
-<a href="https://calgraddata.herokuapp.com" target="_blank">
-    <img src="/ucbviz2019_still.png" width="500"></img>
-</a>
-</center>
-
-
-This was the overall winning entry for the schoolwide UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in [this post](/posts/ucbviz2019).
-
-- [Github](https://github.com/calgraddata/ucbviz2019)
-- [Website](https://calgraddata.herokuapp.com)
-
-
----
-
 ### dsmt
 
 
@@ -153,10 +135,43 @@ dex (Day-executor) is an opinionated and ultra-minimal productivity tool operate
 - [Github](https://github.com/ardunn/dex)
 
 
+
+</br>
+ 
+## Defunct (no longer maintained) personal projects
+
 ---
 
+### ucbviz2019
+
+
+<center>
+<a href="https://calgraddata.herokuapp.com" target="_blank">
+    <img src="/ucbviz2019_still.png" width="500"></img>
+</a>
+</center>
+
+
+This was the overall winning entry for the schoolwide UC Berkeley Graduate Financial Data Visualization Contest (2019). Our entry was an interactive website (written in Plotly Dash) for analyzing trends in the UC Berkeley cost of attendance for graduate and professional programs. We incorporated predictive modelling for future program years as well. You can read more about it in [this post](/posts/ucbviz2019).
+
+- [Github](https://github.com/calgraddata/ucbviz2019)
+- [Website](https://calgraddata.herokuapp.com)
+
+---
+
+### wdash
+
+wdash is a self-hosted weather dashboard that pulls data from OpenWeatherMaps API and Windy. The data you collect is yours forever and stays locally on a MongoDB. You can read more about it in [this post](/posts/wdashv1).
+
+<center>
+<img src="/wdash_demo.gif" ></img>
+</center>
+
+- [Github](https://github.com/ardunn/wdash)
+
+---
+ 
 ### nikobellicbot
-###### (old, no longer maintained)
 
 <center>
 <img src="/nbbot.png" ></img>
