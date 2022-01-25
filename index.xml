@@ -6,10 +6,19 @@
     <description>Recent content in Alex Dunn&#39;s personal site on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ardunn.us/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>snowpocalypse december in truckee</title>
+      <link>https://ardunn.us/posts/snowpocalypse/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ardunn.us/posts/snowpocalypse/</guid>
+      <description>If you lived in Northern California during the December of 2021, you may have noticed the torrential downpour causing thousands of downed trees, multi-week power outages, and general mayhem. Up here in the mountains, we received the snowiest December on record and the third-snowiest month of all time. We, of course, took advantage of this snowpocalypse with some dives off of our deck - normally a 15-20ft drop to the ground - which went semi-viral on Nextdoor and made our local Moonshine Ink newspaper.</description>
+    </item>
     
     <item>
       <title>wdash: a weather dashboard</title>
