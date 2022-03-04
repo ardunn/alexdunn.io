@@ -70,11 +70,11 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 # Peer-reviewed Papers and Books
 
-## 2021
+## 2022
 
 <span></span>
 
-1. Dagdelen, J., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>. **"Algorithms for Materials Discovery" in _Accelerated Materials Discovery_**. De Gruyter. [Chapter DOI](https://doi.org/10.1515/9783110738087-005). Forthcoming (2021)
+1. Dagdelen, J., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>. **"Algorithms for Materials Discovery" in _Accelerated Materials Discovery_**. De Gruyter. [Chapter](https://doi.org/10.1515/9783110738087-005), [Book](https://doi.org/10.1515/9783110738087)
 
 2. Walker, N., Trewartha, A., Huo, H., Lee, S., Cruse, K., Dagdelen, J., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Persson, K., Ceder, G., Jain, A. **The Impact of Domain-Specific Pre-training on Named Entity Recognition Tasks in Materials Science.** _Patterns_. Forthcoming (2021)
 
