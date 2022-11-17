@@ -78,7 +78,7 @@ I'm a Ph.D. candidate in the <a href="https://hackingmaterials.lbl.gov">HackingM
 
 2. Walker, N., Trewartha, A., Huo, H., Lee, S., Cruse, K., Dagdelen, J., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Persson, K., Ceder, G., Jain, **Quantifying the advantage of domain-specific pre-training on named entity recognition tasks in materials science** _Patterns_. [3, 4 (2022)](https://doi.org/10.1016/j.patter.2022.100488)
 
-3. Huo, H., Bartel, C., He, T., Trewartha, A., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Ouyang, B., Jain, A., Ceder, G. **"Machine-Learning Rationalization and Prediction of Solid-State Synthesis Conditions**. _Chemistry of Materials_. [2022, Issue number TBA](https://doi.org/10.1021/acs.chemmater.2c01293) 
+3. Huo, H., Bartel, C., He, T., Trewartha, A., <span style="text-decoration: underline; font-weight: bold;">Dunn, A.</span>, Ouyang, B., Jain, A., Ceder, G. **"Machine-Learning Rationalization and Prediction of Solid-State Synthesis Conditions**. _Chemistry of Materials_. [34, 16 (2022)](https://doi.org/10.1021/acs.chemmater.2c01293) 
 
 
 ## 2020
